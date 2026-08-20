@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0E0B0A">
+<title>Contacto — La Virage Club</title>
+<meta name="description" content="Encargos, patrocinios y veladas privadas. Respondemos en 24 horas.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 160'><rect width='200' height='160' fill='%230E0B0A'/><path d='M 30 150 C 28 60, 60 22, 100 22 C 140 22, 172 60, 168 105 L 160 138' fill='none' stroke='%23E8352B' stroke-width='16' stroke-linecap='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a class="mark" href="index.html"><svg viewBox="0 0 200 160" aria-hidden="true"><path d="M 30 150 C 28 60, 60 22, 100 22 C 140 22, 172 60, 168 105 L 160 138"/></svg>LVC</a>
+  <div class="links">
+    <a href="servicios.html">Qué hacemos</a>
+    <a class="oculta" href="servicios.html#formato">El formato</a>
+    <a class="oculta" href="https://instagram.com/lavirageclub" target="_blank" rel="noopener">Instagram</a>
+    <a class="cta" href="contacto.html" class="on">Hablemos</a>
+  </div>
+</nav>
+<header class="page-head">
+  <div class="inner">
+    <div class="km-tag rv"><b>01</b> CONTACTO</div>
+    <h1 class="rv">Hablemos.</h1>
+    <p class="rv d1">CUÉNTANOS QUÉ CARRERA, QUÉ FECHA Y CUÁNTA GENTE. RESPONDEMOS EN 24 HORAS.</p>
+  </div>
+</header>
+
+<section class="form-zona" style="padding-top:80px">
+  <div class="inner">
+    <form class="rv" action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre y apellidos">
+      </div>
+      <div class="campo">
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+      </div>
+      <div class="campo">
+        <label for="tipo">Tipo de encargo</label>
+        <select id="tipo" name="tipo">
+          <option>Marca o patrocinio</option>
+          <option>Rally u organizador</option>
+          <option>Velada privada</option>
+          <option>Quiero venir a la próxima</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="mensaje">Cuéntanos</label>
+        <textarea id="mensaje" name="mensaje" required placeholder="Qué carrera, qué fecha aproximada y cuánta gente."></textarea>
+      </div>
+      <button class="enviar" type="submit">Enviar</button>
+    </form>
+
+    <div class="rv d1">
+      <div class="dato-contacto">
+        <div class="et">Encargos</div>
+        <a href="mailto:hola@lavirage.club">hola@lavirage.club</a>
+      </div>
+      <div class="dato-contacto">
+        <div class="et">Marcas y patrocinio</div>
+        <a href="mailto:marcas@lavirage.club">marcas@lavirage.club</a>
+      </div>
+      <div class="dato-contacto">
+        <div class="et">Instagram</div>
+        <a href="https://instagram.com/lavirageclub" target="_blank" rel="noopener">@lavirageclub</a>
+      </div>
+      <div class="dato-contacto">
+        <div class="et">Base</div>
+        <p>Barcelona · Cataluña<br>Operamos en todo el Mediterráneo.</p>
+      </div>
+      <div class="dato-contacto">
+        <div class="et">Tiempo de respuesta</div>
+        <p>24 horas laborables.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="giant-wrap" aria-hidden="true">
+    <div class="giant">
+      <span>LA VIR<em>A</em>GE</span><span>LA VIR<em>A</em>GE</span><span>LA VIR<em>A</em>GE</span><span>LA VIR<em>A</em>GE</span>
+    </div>
+  </div>
+  <div class="meta">
+    <span>© 2026 LA VIRAGE CLUB</span>
+    <a href="https://instagram.com/lavirageclub" target="_blank" rel="noopener">@LAVIRAGECLUB</a>
+    <span>AGENCIA DE EVENTOS · MOTORSPORT · BARCELONA</span>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

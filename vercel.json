@@ -1,0 +1,18 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "lavirageclub.com" }],
+      "destination": "https://lavirage.club/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.lavirageclub.com" }],
+      "destination": "https://lavirage.club/:path*",
+      "permanent": true
+    }
+  ]
+}

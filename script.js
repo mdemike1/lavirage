@@ -1,0 +1,68 @@
+(function(){
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveals */
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.14});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+  if (reduce) return;   // a partir de aquí, solo efectos de movimiento
+
+  /* ── interludio: la frase se enciende palabra a palabra ── */
+  const inter = document.getElementById('interludio');
+  const palabras = inter ? [...inter.querySelectorAll('.w')] : [];
+  const mini = document.getElementById('frase-mini');
+
+  /* ── deriva horizontal de la galería ── */
+  const drift = document.getElementById('drift');
+
+  /* ── parallax de numerales fantasma ── */
+  const ghosts = [...document.querySelectorAll('.ghost')];
+
+  function onScroll(){
+    /* interludio */
+    if (inter && palabras.length){
+      const r = inter.getBoundingClientRect();
+      const total = r.height - innerHeight;
+      const p = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 1;
+      const enc = Math.floor(p * (palabras.length + 1));
+      palabras.forEach((w,i)=> w.classList.toggle('on', i < enc));
+      if (mini) mini.classList.toggle('on', p > .92);
+    }
+    /* deriva */
+    if (drift){
+      const r = drift.getBoundingClientRect();
+      const total = innerHeight + r.height;
+      const p = Math.min(1, Math.max(0, (innerHeight - r.top) / total));
+      const max = Math.max(0, drift.scrollWidth - innerWidth + 120);
+      drift.style.transform = `translateX(${(-p * max).toFixed(1)}px)`;
+    }
+    /* ghosts */
+    ghosts.forEach(g=>{
+      const r = g.getBoundingClientRect();
+      const off = (r.top + r.height/2 - innerHeight/2) * .1;
+      g.style.transform = `translateY(${off.toFixed(1)}px)`;
+    });
+  }
+  addEventListener('scroll', onScroll, {passive:true});
+  addEventListener('resize', onScroll);
+  onScroll();
+
+  /* ── tilt 3D suave en los posters (solo desktop) ── */
+  if (matchMedia('(hover:hover) and (pointer:fine)').matches){
+    document.querySelectorAll('.tilt').forEach(card=>{
+      card.addEventListener('pointermove', e=>{
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - .5;
+        const py = (e.clientY - r.top) / r.height - .5;
+        card.style.setProperty('--ry', (px * 7).toFixed(2) + 'deg');
+        card.style.setProperty('--rx', (-py * 7).toFixed(2) + 'deg');
+      });
+      card.addEventListener('pointerleave', ()=>{
+        card.style.setProperty('--ry','0deg');
+        card.style.setProperty('--rx','0deg');
+      });
+    });
+  }
+})();
