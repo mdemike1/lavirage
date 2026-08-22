@@ -1,0 +1,12 @@
+Imágenes del sitio.
+
+og.jpg  — imagen de previsualización al compartir el enlace (WhatsApp, Instagram,
+          Twitter/X, LinkedIn). Pendiente de añadir.
+          Formato: JPG, 1200 × 630 px, menos de 1 MB.
+          Ya está referenciada desde el <head> de las tres páginas como
+          https://lavirage.vercel.app/assets/og.jpg
+          Hasta que exista, el enlace compartido no mostrará imagen.
+
+Aquí van también las fotos de las veladas cuando lleguen: los bloques
+.poster, .pola y .foto de la home son degradados CSS pensados para
+sustituirse por <img>.

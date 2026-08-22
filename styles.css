@@ -31,20 +31,6 @@
   .rv.d2{transition-delay:.16s}
   .rv.d3{transition-delay:.24s}
 
-  /* ═══ NAV ═══ */
-  nav{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    display:flex;justify-content:space-between;align-items:center;
-    padding:20px 28px;
-    mix-blend-mode:difference;
-  }
-  nav .mark{font-family:var(--marker);font-size:1.15rem;letter-spacing:.5px;text-decoration:none}
-  nav .lado{display:flex;align-items:center;gap:26px;font-family:var(--mono);font-size:.7rem;letter-spacing:.12em}
-  nav .lado .fecha b{color:var(--rojo)}
-  nav .ig{text-decoration:none;opacity:.85}
-  nav .ig:hover{text-decoration:underline}
-  @media(max-width:640px){nav .fecha{display:none}}
-
   /* ═══ HERO con carretera gigante ═══ */
   .hero{
     min-height:100svh;position:relative;overflow:hidden;
@@ -115,6 +101,40 @@
     opacity:0;animation:aparecer .8s 1.5s ease forwards;
   }
 
+  /* claim bajo el bloque del logo: dice qué vendemos, sin competir con el wordmark */
+  .hero-claim{
+    position:relative;z-index:2;margin-top:22px;
+    display:flex;align-items:center;justify-content:center;gap:clamp(10px,2.4vw,18px);
+    font-family:var(--mono);font-weight:700;
+    font-size:clamp(.62rem,1.8vw,.84rem);
+    letter-spacing:.22em;text-transform:uppercase;color:var(--crema);
+    max-width:min(720px,100%);text-align:center;line-height:1.7;
+    opacity:0;animation:aparecer .8s 1.35s ease forwards;
+  }
+  .hero-claim::before,.hero-claim::after{
+    content:'';flex:0 0 auto;width:clamp(16px,5vw,50px);height:2px;background:var(--rojo);
+  }
+
+  /* botones de acción del hero */
+  .hero-cta{
+    position:relative;z-index:2;margin-top:30px;
+    display:flex;gap:16px;flex-wrap:wrap;justify-content:center;
+    max-width:100%;
+    opacity:0;animation:aparecer .8s 1.75s ease forwards;
+  }
+  .hero-cta .btn{font-size:1rem;padding:15px 30px}
+  .hero-nota{
+    position:relative;z-index:2;margin-top:20px;
+    font-family:var(--mono);font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;
+    max-width:100%;opacity:0;animation:aparecer-tenue .8s 1.95s ease forwards;
+  }
+  @keyframes aparecer-tenue{to{opacity:.55}}
+  @media(max-width:560px){
+    .hero-claim{margin-top:18px;letter-spacing:.16em}
+    .hero-cta{flex-direction:column;align-items:stretch;width:min(290px,100%);gap:12px;margin-top:24px}
+    .hero-cta .btn{text-align:center;font-size:.95rem;padding:14px 20px}
+  }
+
   .hero-foot{
     position:absolute;bottom:0;left:0;right:0;z-index:2;
     display:flex;justify-content:space-between;align-items:flex-end;
@@ -131,9 +151,24 @@
   }
   @keyframes hint{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,7px)}}
   @media(max-width:640px){
-    .hero-foot{flex-direction:column;gap:10px;align-items:center;text-align:center}
+    /* en móvil el pie entra en el flujo: con los botones dentro, ya no cabe
+       superpuesto. margin-top:auto lo mantiene abajo del todo, y el padding
+       inferior deja libre la barra fija de CTA */
+    .hero{padding:96px 20px 94px}
+    .hero-foot{
+      position:static;margin-top:auto;padding:34px 0 0;
+      flex-direction:column;gap:10px;align-items:center;text-align:center;
+    }
     .hero-foot .col,.hero-foot .col.der{text-align:center}
     .hero-foot .baja{display:none}
+  }
+  @media(max-width:640px) and (max-height:860px){
+    .hero .hairpin{width:min(120px,30vw);margin-bottom:4px}
+    .hero-claim{margin-top:14px}
+    .tagline{margin-top:20px}
+    .hero-cta{margin-top:20px}
+    .hero-nota{margin-top:14px}
+    .hero-foot{padding-top:24px}
   }
 
   /* ═══ MARQUEE ═══ */
@@ -240,8 +275,38 @@
   }
   .interludio .mini.on{opacity:.55}
 
+  /* ═══ CAPACIDADES: datos ciertos, entre el manifiesto y "Qué hacemos" ═══ */
+  .capacidades{background:var(--negro);padding:0 28px}
+  .capacidades .inner{
+    max-width:1000px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(4,1fr);
+    border-top:1px solid rgba(243,236,223,.14);
+    border-bottom:1px solid rgba(243,236,223,.14);
+  }
+  .capacidades .cap{
+    padding:40px 20px;text-align:center;
+    border-left:1px solid rgba(243,236,223,.14);
+  }
+  .capacidades .cap:first-child{border-left:none}
+  .capacidades .dato{
+    font-family:var(--marker);font-weight:400;color:var(--rojo);
+    font-size:clamp(1.8rem,4.6vw,2.9rem);line-height:1;
+  }
+  .capacidades .et{
+    font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+    opacity:.55;margin-top:14px;line-height:1.7;
+  }
+  @media(max-width:760px){
+    .capacidades .inner{grid-template-columns:repeat(2,1fr)}
+    .capacidades .cap{padding:30px 14px}
+    .capacidades .cap:nth-child(odd){border-left:none}
+    .capacidades .cap:nth-child(n+3){border-top:1px solid rgba(243,236,223,.14)}
+  }
+
   /* ═══ 02 HOJA DE TIEMPOS ═══ */
   .calendario{background:var(--negro);padding:120px 28px 140px}
+  .calendario.seguida{padding-top:0}
+  .calendario .enlace-grande{margin-top:52px}
   .calendario .inner{max-width:960px;margin:0 auto;position:relative;z-index:1}
   .calendario h2{
     font-family:var(--marker);font-weight:400;color:var(--blanco);
@@ -269,7 +334,6 @@
     border:1px solid var(--rojo);color:var(--rojo);
     padding:6px 14px;border-radius:99px;white-space:nowrap;
   }
-  .evento.tba{opacity:.4}
   @media(max-width:640px){
     .evento{grid-template-columns:1fr;gap:8px}
     .evento .tag{justify-self:start}
@@ -406,6 +470,29 @@
     font-family:var(--mono);font-size:.72rem;opacity:.45;letter-spacing:.1em;
   }
 
+  /* ═══ QUÉ INCLUYE UN ENCARGO ═══ */
+  .incluye{background:var(--negro);padding:120px 28px 130px}
+  .incluye .inner{max-width:960px;margin:0 auto;position:relative;z-index:1}
+  .incluye h2{
+    font-family:var(--marker);font-weight:400;color:var(--blanco);
+    font-size:clamp(2.2rem,7vw,4.2rem);margin-bottom:10px;transform:rotate(-1deg);
+  }
+  .incluye .sub{font-family:var(--mono);font-size:.76rem;opacity:.55;margin-bottom:56px;letter-spacing:.08em}
+  .entregables{
+    list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 60px;
+    border-top:1px solid rgba(243,236,223,.14);
+  }
+  .entregables li{padding:26px 0;border-bottom:1px solid rgba(243,236,223,.14)}
+  .entregables b{
+    display:block;font-family:var(--sans);font-weight:700;font-size:1.05rem;
+    color:var(--blanco);letter-spacing:-.01em;
+  }
+  .entregables span{
+    display:block;font-family:var(--mono);font-size:.72rem;opacity:.55;
+    margin-top:9px;line-height:1.8;letter-spacing:.03em;
+  }
+  @media(max-width:760px){.entregables{grid-template-columns:1fr;gap:0}}
+
   /* ═══ 05 PRINCIPIOS ═══ */
   .principios{
     background:var(--rojo);color:var(--blanco);
@@ -480,6 +567,7 @@
     border-bottom:2px solid var(--negro);padding-bottom:10px;margin-bottom:8px;
   }
   .dorsal .d-num{font-family:var(--marker);font-size:6.2rem;line-height:1;text-align:center;color:var(--rojo)}
+  .dorsal .d-num.sigla{font-size:4.4rem;letter-spacing:.04em}
   .dorsal .d-nombre{font-family:var(--marker);text-align:center;font-size:1.05rem;margin-top:2px}
   .dorsal .d-mini{
     font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-align:center;
@@ -494,7 +582,10 @@
       var(--negro) 14px 16px, transparent 16px 17px,
       var(--negro) 17px 21px, transparent 21px 24px);
   }
-  .dorsal .d-code{font-family:var(--mono);font-size:.56rem;text-align:center;letter-spacing:.3em;margin-top:5px}
+  .dorsal .d-code{
+    font-family:var(--mono);font-size:.56rem;text-align:center;
+    letter-spacing:.22em;margin-top:5px;line-height:1.8;
+  }
 
   /* ═══ FOOTER ═══ */
   footer{
@@ -527,7 +618,8 @@
     .hairpin .trazo{stroke-dashoffset:0}
     .hairpin .punta{opacity:1}
     .hairpin .coche,.hairpin .estela{display:none}
-    .club-circle,.tagline,.hero-foot{opacity:1}
+    .club-circle,.tagline,.hero-foot,.hero-claim,.hero-cta{opacity:1}
+    .hero-nota{opacity:.55}
     .club-circle svg ellipse{stroke-dashoffset:0}
     h1.wordmark{transform:rotate(-1.5deg)}
     .rv{opacity:1;transform:none}
@@ -546,7 +638,6 @@
     background:rgba(14,11,10,.72);
     backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
     border-bottom:1px solid rgba(243,236,223,.09);
-    mix-blend-mode:normal;
   }
   nav .mark{
     display:flex;align-items:center;gap:10px;
@@ -663,3 +754,22 @@
     color:var(--crema);text-decoration:none;line-height:1.7;
   }
   .dato-contacto a:hover{color:var(--rojo)}
+
+  /* ═══ CTA FIJO EN MÓVIL ═══ */
+  .cta-movil{display:none}
+  @media(max-width:720px){
+    .cta-movil{
+      display:block;position:fixed;left:0;right:0;bottom:0;z-index:90;
+      padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+      background:rgba(14,11,10,.86);
+      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border-top:1px solid rgba(243,236,223,.12);
+    }
+    .cta-movil .btn{
+      display:block;text-align:center;
+      font-size:.98rem;padding:13px 20px;box-shadow:3px 3px 0 var(--blanco);
+    }
+    .cta-movil .btn:hover{transform:none;box-shadow:3px 3px 0 var(--blanco)}
+    /* que la barra no tape el final del footer */
+    body:has(.cta-movil){padding-bottom:74px}
+  }
