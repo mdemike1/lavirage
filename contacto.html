@@ -77,6 +77,7 @@
           2. Sustituir ID_DE_FORMSPREE en el action por el ID real (formspree.io/f/xxxxxxxx).
           3. Quitar estas líneas de comentario para que el form quede activo.
           4. Probarlo una vez desde la web publicada: Formspree pide confirmar el correo la primera vez.
+          5. Antes de activarlo, publicar la política de privacidad (rama legales) y enlazarla en la casilla.
         script.js ya gestiona el envío (mensaje de éxito y de error) y preselecciona el tipo con ?tipo=.
 
       <form data-formspree action="https://formspree.io/f/ID_DE_FORMSPREE" method="POST" style="margin-top:56px">
@@ -109,7 +110,7 @@
         </div>
         <label class="campo-check">
           <input type="checkbox" name="privacidad" value="acepto" required>
-          <span>He leído y acepto la <a href="/privacidad">política de privacidad</a>. Usamos tus datos solo para responderte.</span>
+          <span>He leído y acepto la política de privacidad (TODO: enlazar cuando se publique). Usamos tus datos solo para responderte.</span>
         </label>
         <button class="enviar" type="submit">Enviar</button>
         <p class="form-estado" role="status" aria-live="polite"></p>
@@ -135,10 +136,6 @@
       <li><a href="/servicios">Servicios</a></li>
       <li><a href="/veladas">Veladas</a></li>
       <li><a href="/contacto">Contacto</a></li>
-    </ul>
-    <ul class="pie-legal" aria-label="Legal">
-      <li><a href="/aviso-legal">Aviso legal</a></li>
-      <li><a href="/privacidad">Privacidad</a></li>
     </ul>
     <span><a class="correo" href="mailto:hola@lavirageclub.com">hola@lavirageclub.com</a> · <a href="https://www.instagram.com/lavirageclub/" target="_blank" rel="noopener">@lavirageclub</a></span>
   </div>

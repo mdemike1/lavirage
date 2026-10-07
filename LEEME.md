@@ -11,8 +11,6 @@ derechos.html     Comercialización de derechos y cómo cobramos (a éxito)
 servicios.html    Eventos por encargo, activaciones, servicios a clubes y organizadores
 veladas.html      La línea de eventos: manifiesto, la noche hora a hora, principios
 contacto.html     Qué contarnos por tipo de cliente + correo (formulario desactivado)
-aviso-legal.html  Borrador: faltan los datos [PENDIENTE] del titular
-privacidad.html   Borrador: faltan los datos [PENDIENTE] del titular
 styles.css        Todos los estilos (compartido)
 script.js         Reveals, interludio, deriva, tilt, ?tipo= en contacto, envío del formulario
 vercel.json       URLs limpias + 301 del dominio de Vercel y del apex a www
@@ -24,9 +22,10 @@ scripts/          Generador de og.jpg e iconos (no se publica, ver .vercelignore
 
 Nav, footer y `<head>` se repiten en cada página: si se cambia uno, hay que cambiarlo en todas.
 
-## Pendientes antes de publicar en `main`
+## Pendientes
 
-1. **Legales.** Rellenar los `[PENDIENTE: …]` de `aviso-legal.html` y `privacidad.html`.
+1. **Legales.** Aviso legal y política de privacidad están en la rama `legales`, retirados hasta
+   tener los datos del titular. Al completarlos, volver a enlazarlos en el pie y en el sitemap.
 2. **Correo.** `hola@lavirageclub.com` tiene que recibir correo (MX en el dominio).
 3. **Formulario.** En `contacto.html` hay un formulario comentado con un TODO: poner el ID
    de Formspree en el `action` y quitar el comentario.
