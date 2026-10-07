@@ -18,7 +18,7 @@ en/               Versión en inglés
 vercel.json       URLs limpias + 301 del dominio de Vercel y del apex a www
 robots.txt        Permite todo y apunta al sitemap
 sitemap.xml       Páginas indexables
-assets/           og.jpg, iconos y, más adelante, las fotos
+assets/           og.jpg (es), og-en.jpg (en), iconos y, más adelante, las fotos
 scripts/          Generador de og.jpg e iconos (no se publica, ver .vercelignore)
 ```
 

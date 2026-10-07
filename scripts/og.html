@@ -33,5 +33,9 @@
   <div class="wm"><span class="l">L</span><span class="l">A</span>&nbsp;<span class="l">V</span><span class="l">I</span><span class="l">R</span><span class="l flip">A</span><span class="l">G</span><span class="l">E</span></div>
   <div class="club">CLUB<svg viewBox="0 0 120 52"><ellipse cx="60" cy="26" rx="55" ry="21"/></svg></div>
   <div class="claim">Más curvas. Menos tribuna.</div>
+  <script>
+    const c = new URLSearchParams(location.search).get('claim');
+    if (c) document.querySelector('.claim').textContent = c;
+  </script>
 </body>
 </html>
