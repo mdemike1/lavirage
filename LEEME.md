@@ -10,7 +10,6 @@ index.html        Home: qué hacemos, para quién, cómo trabajamos, manifiesto,
 derechos.html     Comercialización de derechos y cómo cobramos (a éxito)
 servicios.html    Eventos por encargo, activaciones, servicios a clubes y organizadores
 veladas.html      La línea de eventos: manifiesto, la noche hora a hora, principios
-vidreres.html     Lanzamiento 28–29 nov 2026. Sin publicar: noindex y sin enlaces
 contacto.html     Qué contarnos por tipo de cliente + correo (formulario desactivado)
 aviso-legal.html  Borrador: faltan los datos [PENDIENTE] del titular
 privacidad.html   Borrador: faltan los datos [PENDIENTE] del titular
@@ -33,13 +32,6 @@ Nav, footer y `<head>` se repiten en cada página: si se cambia uno, hay que cam
    de Formspree en el `action` y quitar el comentario.
 4. **Analítica.** Activar Web Analytics en el proyecto de Vercel (Analytics → Enable).
 5. **Instagram.** Confirmar que existe @lavirageclub.
-
-## Publicar Vidreres
-
-1. `vidreres.html`: quitar `<meta name="robots" content="noindex, follow">`.
-2. En todas las páginas, descomentar `<a class="destacada" href="/vidreres">Vidreres</a>` del nav.
-3. `index.html`: descomentar el bloque `VIDRERES`.
-4. `sitemap.xml`: añadir la URL `/vidreres`.
 
 ## Imágenes de marca
 

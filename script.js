@@ -7,13 +7,12 @@
   }, {threshold:.14});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
-  /* ── contacto: ?tipo=organizador|piloto|marca|privado|vidreres ── */
+  /* ── contacto: ?tipo=organizador|piloto|marca|privado ── */
   const ASUNTOS = {
     organizador: 'Organizo un evento',
     piloto: 'Soy piloto o equipo',
     marca: 'Soy una marca',
-    privado: 'Quiero una velada privada',
-    vidreres: 'Quiero estar en Vidreres'
+    privado: 'Quiero una velada privada'
   };
   const tipo = new URLSearchParams(location.search).get('tipo');
   if (tipo && ASUNTOS[tipo]){
@@ -41,7 +40,7 @@
         if (!r.ok) throw new Error(r.status);
         form.reset();
         estado.classList.add('ok');
-        estado.textContent = 'Recibido. Te contestamos en 24 horas laborables.';
+        estado.textContent = 'Recibido. Te contestamos en 48 horas laborables.';
       } catch {
         estado.classList.add('error');
         estado.textContent = 'No se ha podido enviar. Escríbenos a hola@lavirageclub.com.';
