@@ -185,7 +185,9 @@
   .curva-div{display:block;width:100%;height:clamp(46px,9vw,110px);margin-bottom:-1px}
 
   /* ═══ numerales fantasma con parallax ═══ */
-  section{position:relative}
+  /* clip: los numerales fantasma (right:-20px) no generan scroll lateral en móvil */
+  main{display:block;overflow-x:clip}
+  section{position:relative;overflow-x:clip}
   .ghost{
     position:absolute;top:40px;right:-20px;z-index:0;
     font-family:var(--marker);font-size:clamp(9rem,26vw,22rem);line-height:1;
