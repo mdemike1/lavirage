@@ -7,6 +7,50 @@
   }, {threshold:.14});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
+  /* ── contacto: ?tipo=organizador|piloto|marca|privado|vidreres ── */
+  const ASUNTOS = {
+    organizador: 'Organizo un evento',
+    piloto: 'Soy piloto o equipo',
+    marca: 'Soy una marca',
+    privado: 'Quiero una velada privada',
+    vidreres: 'Quiero estar en Vidreres'
+  };
+  const tipo = new URLSearchParams(location.search).get('tipo');
+  if (tipo && ASUNTOS[tipo]){
+    const li = document.querySelector(`.tipos [data-tipo="${tipo}"]`);
+    if (li) li.classList.add('activo');
+    const sel = document.getElementById('tipo');
+    if (sel && sel.querySelector(`option[value="${tipo}"]`)) sel.value = tipo;
+    document.querySelectorAll('a[data-mailto]').forEach(a=>{
+      a.href = 'mailto:hola@lavirageclub.com?subject=' + encodeURIComponent(ASUNTOS[tipo]);
+    });
+  }
+
+  /* ── formulario (Formspree): envío sin salir de la página ── */
+  const form = document.querySelector('form[data-formspree]');
+  if (form){
+    const estado = form.querySelector('.form-estado');
+    form.addEventListener('submit', async e=>{
+      e.preventDefault();
+      const boton = form.querySelector('button[type="submit"]');
+      boton.disabled = true;
+      estado.className = 'form-estado';
+      estado.textContent = 'Enviando…';
+      try {
+        const r = await fetch(form.action, {method:'POST', body:new FormData(form), headers:{Accept:'application/json'}});
+        if (!r.ok) throw new Error(r.status);
+        form.reset();
+        estado.classList.add('ok');
+        estado.textContent = 'Recibido. Te contestamos en 24 horas laborables.';
+      } catch {
+        estado.classList.add('error');
+        estado.textContent = 'No se ha podido enviar. Escríbenos a hola@lavirageclub.com.';
+      } finally {
+        boton.disabled = false;
+      }
+    });
+  }
+
   if (reduce) return;   // a partir de aquí, solo efectos de movimiento
 
   /* ── interludio: la frase se enciende palabra a palabra ── */
