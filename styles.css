@@ -35,7 +35,7 @@
   .hero{
     min-height:100svh;position:relative;overflow:hidden;
     display:flex;flex-direction:column;justify-content:center;align-items:center;
-    text-align:center;padding:110px 20px 90px;
+    text-align:center;padding:96px 20px 90px;
   }
   .hero::before{
     content:'';position:absolute;top:-18%;left:50%;transform:translateX(-50%);
@@ -57,7 +57,7 @@
   }
   @keyframes rodar{to{stroke-dashoffset:-60}}
 
-  .hero .hairpin{width:min(185px,40vw);margin-bottom:10px;overflow:visible;position:relative;z-index:2}
+  .hero .hairpin{width:min(120px,30vw);margin-bottom:6px;overflow:visible;position:relative;z-index:2}
   .hairpin .trazo{
     fill:none;stroke:var(--rojo);stroke-width:10;stroke-linecap:round;stroke-linejoin:round;
     stroke-dasharray:900;stroke-dashoffset:900;
@@ -72,7 +72,7 @@
   .wm-mask{overflow:hidden;padding:0 10px;position:relative;z-index:2}
   .wordmark{
     font-family:var(--marker);font-weight:400;text-transform:uppercase;
-    font-size:clamp(3rem,12vw,8.6rem);
+    font-size:clamp(3rem,11vw,7.2rem);
     line-height:.95;color:var(--blanco);white-space:nowrap;
     transform:translateY(110%);
     animation:subir 1s .5s cubic-bezier(.2,.8,.2,1) forwards;
@@ -96,16 +96,16 @@
   .tagline{
     font-family:var(--marker);color:var(--rojo);
     font-size:clamp(1.15rem,3.2vw,1.8rem);
-    margin-top:26px;transform:rotate(-1.5deg);
+    margin-top:18px;transform:rotate(-1.5deg);
     position:relative;z-index:2;
     opacity:0;animation:aparecer .8s 1.45s ease forwards;
   }
 
   /* qué hacemos y para quién: el mensaje que se entiende sin hacer scroll */
   .hero-titulo{
-    position:relative;z-index:2;max-width:900px;margin-top:30px;
+    position:relative;z-index:2;max-width:1060px;margin-top:22px;
     font-family:var(--marker);font-weight:400;color:var(--blanco);
-    font-size:clamp(1.5rem,4.4vw,2.9rem);line-height:1.2;
+    font-size:clamp(1.5rem,3.6vw,2.5rem);line-height:1.2;
     opacity:0;animation:aparecer .8s 1.6s ease forwards;
   }
   .hero-titulo span{color:var(--rojo)}
@@ -118,14 +118,14 @@
 
   /* botones de acción del hero */
   .hero-cta{
-    position:relative;z-index:2;margin-top:30px;
+    position:relative;z-index:2;margin-top:24px;
     display:flex;gap:16px;flex-wrap:wrap;justify-content:center;
     max-width:100%;
     opacity:0;animation:aparecer .8s 1.9s ease forwards;
   }
   .hero-cta .btn{font-size:1rem;padding:15px 30px}
   .hero-nota{
-    position:relative;z-index:2;margin-top:20px;
+    position:relative;z-index:2;margin-top:16px;
     font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
     max-width:100%;opacity:0;animation:aparecer .8s 2.05s ease forwards;
   }
@@ -830,3 +830,4 @@
   @media(max-width:820px){.tres.cuatro{grid-template-columns:1fr}}
   .cta-inner.una{grid-template-columns:1fr}
   .cta-inner.una .cta-doble{text-align:left}
+  .teaser.seguida{padding-top:0}
