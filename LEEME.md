@@ -1,44 +1,43 @@
 # La Virage Club — web
 
-Sitio estático de tres páginas. Sin dependencias ni build: se sube tal cual.
+Sitio estático. Sin dependencias ni build: se sube tal cual.
+Dominio principal: https://www.lavirageclub.com
 
 ## Estructura
 
 ```
-index.html      Home — hero con CTA, manifiesto, capacidades, teaser de servicios,
-                los tres encargos, el formato, galería, CTA
-servicios.html  Qué hacemos, para quién, la noche hora a hora, qué incluye
-                un encargo, principios
-contacto.html   Formulario + datos de contacto
-styles.css      Todos los estilos (compartido por las tres páginas)
-script.js       Reveals, deriva de la galería, interludio, tilt (compartido)
-vercel.json     URLs limpias + redirección del .com al .club
-assets/         og.jpg (imagen al compartir) y las fotos cuando las tengas
+index.html        Home: qué hacemos, para quién, cómo trabajamos, manifiesto, CTA
+derechos.html     Comercialización de derechos y cómo cobramos (a éxito)
+servicios.html    Eventos por encargo, activaciones, servicios a clubes y organizadores
+veladas.html      La línea de eventos: manifiesto, la noche hora a hora, principios
+contacto.html     Qué contarnos por tipo de cliente + correo (formulario desactivado)
+styles.css        Todos los estilos (compartido)
+script.js         Reveals, interludio, deriva, tilt, ?tipo= en contacto, envío del formulario
+vercel.json       URLs limpias + 301 del dominio de Vercel y del apex a www
+robots.txt        Permite todo y apunta al sitemap
+sitemap.xml       Páginas indexables
+assets/           og.jpg, iconos y, más adelante, las fotos
+scripts/          Generador de og.jpg e iconos (no se publica, ver .vercelignore)
 ```
 
-## Antes de publicar
+Nav, footer y `<head>` se repiten en cada página: si se cambia uno, hay que cambiarlo en todas.
 
-1. **Formulario de contacto.** En `contacto.html`, línea del `<form>`, sustituir
-   `TU_ID_AQUI` por tu ID de Formspree (formspree.io — gratis, 50 envíos/mes).
-   Mientras tanto el formulario no envía; los enlaces de correo sí funcionan.
-2. **Correo.** Configurar `hola@lavirage.club` como redirección al Gmail
-   personal (ImprovMX o el propio registrador). Es el único correo del sitio.
-3. **Redes.** Los enlaces apuntan a Instagram (@mdemike__) y YouTube (@mdemikee).
-4. **Imagen para compartir.** Añadir `assets/og.jpg` (1200 × 630 px). Sin ella,
-   al pegar el enlace en WhatsApp o Instagram no sale previsualización.
+## Pendientes
 
-## Despliegue en Vercel
+1. **Legales.** Aviso legal y política de privacidad están en la rama `legales`, retirados hasta
+   tener los datos del titular. Al completarlos, volver a enlazarlos en el pie y en el sitemap.
+2. **Correo.** `hola@lavirageclub.com` tiene que recibir correo (MX en el dominio).
+3. **Formulario.** En `contacto.html` hay un formulario comentado con un TODO: poner el ID
+   de Formspree en el `action` y quitar el comentario.
+4. **Analítica.** Activar Web Analytics en el proyecto de Vercel (Analytics → Enable).
+5. **Instagram.** Confirmar que existe @lavirageclub.
 
-- Subir la carpeta a un repo de GitHub y conectar el repo a Vercel, o
-  arrastrar la carpeta en vercel.com/new.
-- El sitio vive en https://lavirage.vercel.app/ (dominio de Vercel).
-- Si algún día se compra un dominio propio: proyecto → Settings → Domains,
-  añadirlo como principal y actualizar los `canonical`, `og:url` y las
-  redirecciones de `vercel.json`.
-- Gracias a `cleanUrls`, las rutas son `/servicios` y `/contacto` sin `.html`.
+## Imágenes de marca
+
+`sh scripts/genera-imagenes.sh` regenera `assets/og.jpg`, `apple-touch-icon.png` y
+`favicon-32.png` desde las plantillas `scripts/og.html` y `scripts/icono.html` (macOS + Chrome).
 
 ## Cuando lleguen las fotos
 
-Los bloques `.poster`, `.pola` y `.foto` son degradados CSS pensados para
-sustituirse por `<img>`. Meter las imágenes en `assets/` y reemplazar el
-contenido de esos divs. La galería de la home es la primera que hay que llenar.
+Los bloques `.poster`, `.pola` y `.foto` de `veladas.html` son degradados CSS pensados para
+sustituirse por `<img>` con su `alt`. Nada de fotos de stock ni generadas.

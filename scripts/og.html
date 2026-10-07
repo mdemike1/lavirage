@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- Plantilla de la imagen para compartir (1200 × 630). La renderiza scripts/genera-imagenes.sh -->
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono:wght@700&display=block" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    background:#0E0B0A;color:#F3ECDF;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;
+    position:relative;font-family:'Permanent Marker',cursive;
+  }
+  body::before{
+    content:'';position:absolute;top:-30%;left:50%;transform:translateX(-50%);
+    width:1100px;height:820px;border-radius:50%;
+    background:radial-gradient(circle, rgba(232,53,43,.16), transparent 60%);
+  }
+  .carretera{position:absolute;inset:-14% -10%;opacity:.5}
+  .carretera path{fill:none;stroke:#171310;stroke-width:74;stroke-linecap:round;stroke-linejoin:round}
+  .wm{position:relative;font-size:172px;line-height:.95;color:#FFFDF8;white-space:nowrap;transform:rotate(-1.5deg)}
+  .wm .l{display:inline-block}
+  .wm .flip{transform:rotate(180deg) translateY(8px);color:#E8352B}
+  .club{position:relative;font-size:46px;margin-top:14px;padding:4px 30px;transform:rotate(-2deg)}
+  .club svg{position:absolute;inset:-10px -8px;width:calc(100% + 16px);height:calc(100% + 20px)}
+  .club ellipse{fill:none;stroke:#E8352B;stroke-width:3.5}
+  .claim{position:relative;font-size:44px;color:#F3ECDF;margin-top:34px;transform:rotate(-1.5deg)}
+</style>
+</head>
+<body>
+  <svg class="carretera" viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice"><path d="M 30 150 C 28 60, 60 22, 100 22 C 140 22, 172 60, 168 105 L 160 138"/></svg>
+  <div class="wm"><span class="l">L</span><span class="l">A</span>&nbsp;<span class="l">V</span><span class="l">I</span><span class="l">R</span><span class="l flip">A</span><span class="l">G</span><span class="l">E</span></div>
+  <div class="club">CLUB<svg viewBox="0 0 120 52"><ellipse cx="60" cy="26" rx="55" ry="21"/></svg></div>
+  <div class="claim">Más curvas. Menos tribuna.</div>
+</body>
+</html>
