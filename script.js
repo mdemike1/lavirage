@@ -7,14 +7,31 @@
   }, {threshold:.14});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
-  /* ── contacto: ?tipo=organizador|piloto|marca|privado ── */
-  const ASUNTOS = {
+  const EN = document.documentElement.lang === 'en';
+
+  /* ── selector ES / EN: recuerda la elección un año (la lee middleware.js) ── */
+  document.querySelectorAll('.idioma a[data-lang]').forEach(a=>{
+    a.addEventListener('click', ()=>{
+      document.cookie = `lang=${a.dataset.lang}; max-age=31536000; path=/; SameSite=Lax` + (location.protocol === 'https:' ? '; Secure' : '');
+    });
+  });
+
+  /* ── contacto: ?tipo=organizador|piloto|marca|privado (o ?type=organiser|driver|brand|private) ── */
+  const ASUNTOS = EN ? {
+    organizador: 'I run an event',
+    piloto: "I'm a driver or a team",
+    marca: "I'm a brand",
+    privado: "I'd like a private evening"
+  } : {
     organizador: 'Organizo un evento',
     piloto: 'Soy piloto o equipo',
     marca: 'Soy una marca',
     privado: 'Quiero una velada privada'
   };
-  const tipo = new URLSearchParams(location.search).get('tipo');
+  const ALIAS = {organiser:'organizador', organizer:'organizador', driver:'piloto', team:'piloto', brand:'marca', private:'privado'};
+  const params = new URLSearchParams(location.search);
+  let tipo = params.get('tipo') || params.get('type');
+  tipo = ALIAS[tipo] || tipo;
   if (tipo && ASUNTOS[tipo]){
     const li = document.querySelector(`.tipos [data-tipo="${tipo}"]`);
     if (li) li.classList.add('activo');
@@ -34,16 +51,16 @@
       const boton = form.querySelector('button[type="submit"]');
       boton.disabled = true;
       estado.className = 'form-estado';
-      estado.textContent = 'Enviando…';
+      estado.textContent = EN ? 'Sending…' : 'Enviando…';
       try {
         const r = await fetch(form.action, {method:'POST', body:new FormData(form), headers:{Accept:'application/json'}});
         if (!r.ok) throw new Error(r.status);
         form.reset();
         estado.classList.add('ok');
-        estado.textContent = 'Recibido. Te contestamos en 48 horas laborables.';
+        estado.textContent = EN ? 'Got it. We reply within 48 working hours.' : 'Recibido. Te contestamos en 48 horas laborables.';
       } catch {
         estado.classList.add('error');
-        estado.textContent = 'No se ha podido enviar. Escríbenos a hola@lavirageclub.com.';
+        estado.textContent = EN ? "It didn't go through. Write to us at hola@lavirageclub.com." : 'No se ha podido enviar. Escríbenos a hola@lavirageclub.com.';
       } finally {
         boton.disabled = false;
       }
