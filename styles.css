@@ -224,7 +224,7 @@
   .man-p strong{background:linear-gradient(transparent 55%, rgba(232,53,43,.32) 55%)}
   .firma{
     font-family:var(--marker);color:var(--rojo);
-    font-size:1.4rem;margin-top:44px;transform:rotate(-2deg);display:inline-block;
+    font-size:1.5rem;margin-top:44px;transform:rotate(-2deg);display:inline-block;
   }
   .sticker{
     position:absolute;top:-170px;right:0;z-index:2;
@@ -632,8 +632,7 @@
     color:var(--crema);border:1px solid rgba(232,53,43,.6);
     padding:8px 16px;border-radius:2px;transition:background .25s,border-color .25s;
   }
-  nav .links a.cta:hover{background:var(--rojo);border-color:var(--rojo)}
-  nav .links a.destacada{color:var(--rojo)}
+  nav .links a.cta:hover{background:rgba(232,53,43,.18);border-color:var(--rojo);color:var(--blanco)}
   @media(max-width:860px){
     nav .mark .txt{display:none}
   }
@@ -811,11 +810,6 @@
   .form-estado.error{color:var(--rojo)}
   .oculto{position:absolute!important;left:-9999px!important}
 
-  /* ═══ VIDRERES ═══ */
-  .ficha .evento .n{font-size:clamp(1rem,2.6vw,1.3rem)}
-  .invitacion{display:flex;justify-content:center;padding:20px 28px 0}
-  .invitacion .poster{flex:0 0 min(360px,86vw);transform:rotate(-1.5deg)}
-
   /* ═══ LEGALES ═══ */
   .legal{background:var(--negro);padding:70px 28px 130px}
   .legal .inner{max-width:760px;margin:0 auto}
@@ -833,3 +827,9 @@
   .cta-inner.una{grid-template-columns:1fr}
   .cta-inner.una .cta-doble{text-align:left}
   .teaser.seguida,.incluye.seguida{padding-top:0}
+
+  /* ═══ CONTRASTE (sin tocar la paleta) ═══
+     Blanco sobre rojo da 4,15:1: solo vale como texto grande (negrita ≥ 18,66 px).
+     Rojo sobre crema da 3,59:1: en tamaños pequeños el texto pasa a negro. */
+  .btn.rojo,.hero-cta .btn.rojo,.cta-movil .btn.rojo,.enviar{font-size:1.1875rem;font-weight:700}
+  .crema-bg .km-tag b,.crema-bg .nota-mano{color:var(--negro)}
