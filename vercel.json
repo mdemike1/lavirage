@@ -3,16 +3,16 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "lavirageclub.com" }],
-      "destination": "https://lavirage.vercel.app/:path*",
-      "permanent": true
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "lavirage.vercel.app" }],
+      "destination": "https://www.lavirageclub.com/$1",
+      "statusCode": 301
     },
     {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.lavirageclub.com" }],
-      "destination": "https://lavirage.vercel.app/:path*",
-      "permanent": true
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "lavirageclub.com" }],
+      "destination": "https://www.lavirageclub.com/$1",
+      "statusCode": 301
     }
   ]
 }
