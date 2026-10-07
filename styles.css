@@ -850,3 +850,13 @@
     nav .links a{letter-spacing:.02em}
     nav .links a.cta{padding:7px 8px}
   }
+  @media(max-width:360px){
+    nav{padding:12px 10px}
+    nav .mark svg{width:22px}
+    nav .links{gap:7px}
+    nav .links a{font-size:.55rem;letter-spacing:0}
+    nav .links a.cta{padding:6px 6px}
+    nav .links .idioma a{font-size:.55rem}
+    .cta{padding-left:18px;padding-right:18px}
+    .dorsal{width:min(280px,100%)}
+  }
