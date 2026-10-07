@@ -1,6 +1,7 @@
 #!/bin/sh
 # Genera las imágenes de marca a partir de las plantillas HTML de esta carpeta:
-#   assets/og.jpg               1200 × 630  imagen para compartir (Open Graph / X)
+#   assets/og.jpg               1200 × 630  imagen para compartir (Open Graph / X), claim en español
+#   assets/og-en.jpg            1200 × 630  la misma con el claim en inglés
 #   assets/apple-touch-icon.png  180 × 180  icono de inicio en iOS
 #   assets/favicon-32.png         32 × 32   favicon PNG de respaldo
 #
@@ -22,6 +23,8 @@ captura () { # plantilla ancho alto salida.png
 
 captura og.html 1200 630 "$TMP/og.png"
 sips -s format jpeg -s formatOptions 88 "$TMP/og.png" --out "$RAIZ/assets/og.jpg" >/dev/null
+captura "og.html?claim=More%20bends.%20Less%20grandstand." 1200 630 "$TMP/og-en.png"
+sips -s format jpeg -s formatOptions 88 "$TMP/og-en.png" --out "$RAIZ/assets/og-en.jpg" >/dev/null
 
 # Chrome headless no baja de ~500 px de ventana: se renderiza grande y se reduce
 captura icono.html 600 600 "$TMP/icono.png"
@@ -29,4 +32,4 @@ sips -z 180 180 "$TMP/icono.png" --out "$RAIZ/assets/apple-touch-icon.png" >/dev
 sips -z 32 32 "$TMP/icono.png" --out "$RAIZ/assets/favicon-32.png" >/dev/null
 
 rm -rf "$TMP"
-sips -g pixelWidth -g pixelHeight "$RAIZ/assets/og.jpg" "$RAIZ/assets/apple-touch-icon.png" "$RAIZ/assets/favicon-32.png"
+sips -g pixelWidth -g pixelHeight "$RAIZ/assets/og.jpg" "$RAIZ/assets/og-en.jpg" "$RAIZ/assets/apple-touch-icon.png" "$RAIZ/assets/favicon-32.png"
