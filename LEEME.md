@@ -19,7 +19,7 @@ en/               Versión en inglés
 vercel.json       URLs limpias + 301 del dominio de Vercel y del apex a www
 robots.txt        Permite todo y apunta al sitemap
 sitemap.xml       Páginas indexables
-assets/           og.jpg (es), og-en.jpg (en), iconos y, más adelante, las fotos
+assets/           og.jpg (es), og-ca.jpg (ca), og-en.jpg (en), iconos y, más adelante, las fotos
 scripts/          Generador de og.jpg e iconos (no se publica, ver .vercelignore)
 ```
 
@@ -34,7 +34,9 @@ Nav, footer y `<head>` se repiten en cada página: si se cambia uno, hay que cam
   cookie `lang` → navegador en catalán (Accept-Language) → país AD → país distinto de ES (inglés)
   → castellano. No toca `/ca` ni `/en`, ni a bots. El selector ES / CA / EN guarda la cookie `lang` un año.
 - hreflang es / ca / en / x-default (→ castellano) en cada página y en `sitemap.xml`.
-- El claim «Más curvas. Menos tribuna.» va en castellano en `/ca` (con `lang="es"`) y en inglés en `/en`.
+- El claim va traducido: «Más curvas. Menos tribuna.» (castellano), «Més revolts. Menys tribuna.» (`/ca`)
+  y «More bends. Less grandstand.» (`/en`), cada uno con su imagen para compartir.
+- El selector de idioma va en el nav; por debajo de 360 px pasa al pie.
 
 ## Pendientes
 
