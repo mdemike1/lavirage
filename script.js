@@ -7,30 +7,29 @@
   }, {threshold:.14});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
-  const EN = document.documentElement.lang === 'en';
+  const LANG = ['ca','en'].includes(document.documentElement.lang) ? document.documentElement.lang : 'es';
+  const T = (es, ca, en) => ({es, ca, en})[LANG];
 
-  /* ── selector ES / EN: recuerda la elección un año (la lee middleware.js) ── */
+  /* ── selector ES / CA / EN: recuerda la elección un año (la lee middleware.js) ── */
   document.querySelectorAll('.idioma a[data-lang]').forEach(a=>{
     a.addEventListener('click', ()=>{
       document.cookie = `lang=${a.dataset.lang}; max-age=31536000; path=/; SameSite=Lax` + (location.protocol === 'https:' ? '; Secure' : '');
     });
   });
 
-  /* ── contacto: ?tipo=organizador|piloto|marca|privado (o ?type=organiser|driver|brand|private) ── */
-  const ASUNTOS = EN ? {
-    organizador: 'I run an event',
-    piloto: "I'm a driver or a team",
-    marca: "I'm a brand",
-    privado: "I'd like a private evening"
-  } : {
-    organizador: 'Organizo un evento',
-    piloto: 'Soy piloto o equipo',
-    marca: 'Soy una marca',
-    privado: 'Quiero una velada privada'
+  /* ── contacto: ?tipo=organizador|piloto|marca|privado
+        (también ?tipus=organitzador|pilot|marca|particular y ?type=organiser|driver|brand|private) ── */
+  const ASUNTOS = {
+    es: {organizador: 'Organizo un evento', piloto: 'Soy piloto o equipo', marca: 'Soy una marca', privado: 'Quiero una velada privada'},
+    ca: {organizador: 'Organitzo un esdeveniment', piloto: 'Soc pilot o equip', marca: 'Soc una marca', privado: 'Vull una vetllada particular'},
+    en: {organizador: 'I run an event', piloto: "I'm a driver or a team", marca: "I'm a brand", privado: "I'd like a private evening"}
+  }[LANG];
+  const ALIAS = {
+    organiser:'organizador', organizer:'organizador', driver:'piloto', team:'piloto', brand:'marca', private:'privado',
+    organitzador:'organizador', pilot:'piloto', equip:'piloto', particular:'privado'
   };
-  const ALIAS = {organiser:'organizador', organizer:'organizador', driver:'piloto', team:'piloto', brand:'marca', private:'privado'};
   const params = new URLSearchParams(location.search);
-  let tipo = params.get('tipo') || params.get('type');
+  let tipo = params.get('tipus') || params.get('tipo') || params.get('type');
   tipo = ALIAS[tipo] || tipo;
   if (tipo && ASUNTOS[tipo]){
     const li = document.querySelector(`.tipos [data-tipo="${tipo}"]`);
@@ -51,16 +50,16 @@
       const boton = form.querySelector('button[type="submit"]');
       boton.disabled = true;
       estado.className = 'form-estado';
-      estado.textContent = EN ? 'Sending…' : 'Enviando…';
+      estado.textContent = T('Enviando…', 'Enviant…', 'Sending…');
       try {
         const r = await fetch(form.action, {method:'POST', body:new FormData(form), headers:{Accept:'application/json'}});
         if (!r.ok) throw new Error(r.status);
         form.reset();
         estado.classList.add('ok');
-        estado.textContent = EN ? 'Got it. We reply within 48 working hours.' : 'Recibido. Te contestamos en 48 horas laborables.';
+        estado.textContent = T('Recibido. Te contestamos en 48 horas laborables.', 'Rebut. Et responem en 48 hores laborables.', 'Got it. We reply within 48 working hours.');
       } catch {
         estado.classList.add('error');
-        estado.textContent = EN ? "It didn't go through. Write to us at hola@lavirageclub.com." : 'No se ha podido enviar. Escríbenos a hola@lavirageclub.com.';
+        estado.textContent = T('No se ha podido enviar. Escríbenos a hola@lavirageclub.com.', "No s'ha pogut enviar. Escriu-nos a hola@lavirageclub.com.", "It didn't go through. Write to us at hola@lavirageclub.com.");
       } finally {
         boton.disabled = false;
       }
