@@ -13,7 +13,8 @@ veladas.html      La línea de eventos: manifiesto, la noche hora a hora, princi
 contacto.html     Qué contarnos por tipo de cliente + correo (formulario desactivado)
 styles.css        Todos los estilos (compartido)
 script.js         Reveals, interludio, deriva, tilt, ?tipo= en contacto, envío del formulario
-middleware.js     Idioma por cookie y país (302 a /en)
+middleware.js     Idioma por cookie, navegador y país (302 a /ca o /en)
+ca/               Versión en catalán
 en/               Versión en inglés
 vercel.json       URLs limpias + 301 del dominio de Vercel y del apex a www
 robots.txt        Permite todo y apunta al sitemap
@@ -26,12 +27,14 @@ Nav, footer y `<head>` se repiten en cada página: si se cambia uno, hay que cam
 
 ## Idiomas
 
-- Español en la raíz; inglés en `/en` (`/en`, `/en/rights`, `/en/services`, `/en/evenings`, `/en/contact`).
-  Cada página existe dos veces: si se cambia el texto de una, hay que cambiar su equivalente.
-- `middleware.js` (Vercel Routing Middleware) decide el idioma al entrar en una página en español:
-  cookie `lang` primero; sin cookie, país distinto de ES → 302 a `/en`. No toca las páginas `/en`
-  ni a bots. El selector ES / EN del nav guarda la cookie `lang` un año.
-- hreflang es / en / x-default (→ español) en cada página y en `sitemap.xml`.
+- Castellano en la raíz; catalán en `/ca` (`/ca`, `/ca/drets`, `/ca/serveis`, `/ca/vetllades`,
+  `/ca/contacte`); inglés en `/en` (`/en`, `/en/rights`, `/en/services`, `/en/evenings`, `/en/contact`).
+  Cada página existe tres veces: si se cambia el texto de una, hay que cambiar sus equivalentes.
+- `middleware.js` (Vercel Routing Middleware) decide el idioma al entrar en una página en castellano:
+  cookie `lang` → navegador en catalán (Accept-Language) → país AD → país distinto de ES (inglés)
+  → castellano. No toca `/ca` ni `/en`, ni a bots. El selector ES / CA / EN guarda la cookie `lang` un año.
+- hreflang es / ca / en / x-default (→ castellano) en cada página y en `sitemap.xml`.
+- El claim «Más curvas. Menos tribuna.» va en castellano en `/ca` (con `lang="es"`) y en inglés en `/en`.
 
 ## Pendientes
 
