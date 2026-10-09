@@ -2,71 +2,121 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.lavirageclub.com/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/"/>
+  </url>
+  <url>
+    <loc>https://www.lavirageclub.com/ca</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/en</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/derechos</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/derechos"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/drets"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/rights"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/derechos"/>
+  </url>
+  <url>
+    <loc>https://www.lavirageclub.com/ca/drets</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/derechos"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/drets"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/rights"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/derechos"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/en/rights</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/derechos"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/drets"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/rights"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/derechos"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/servicios</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/servicios"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/serveis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/servicios"/>
+  </url>
+  <url>
+    <loc>https://www.lavirageclub.com/ca/serveis</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/servicios"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/serveis"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/services"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/servicios"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/en/services</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/servicios"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/serveis"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/services"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/servicios"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/veladas</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/veladas"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/vetllades"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/evenings"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/veladas"/>
+  </url>
+  <url>
+    <loc>https://www.lavirageclub.com/ca/vetllades</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/veladas"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/vetllades"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/evenings"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/veladas"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/en/evenings</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/veladas"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/vetllades"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/evenings"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/veladas"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/contacto</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/contacto"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/contacte"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/contacto"/>
+  </url>
+  <url>
+    <loc>https://www.lavirageclub.com/ca/contacte</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/contacto"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/contacte"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/contacto"/>
   </url>
   <url>
     <loc>https://www.lavirageclub.com/en/contact</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.lavirageclub.com/contacto"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.lavirageclub.com/ca/contacte"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lavirageclub.com/en/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lavirageclub.com/contacto"/>
   </url>

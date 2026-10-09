@@ -860,3 +860,13 @@
     .cta{padding-left:18px;padding-right:18px}
     .dorsal{width:min(280px,100%)}
   }
+
+  /* selector de idioma en el pie: solo por debajo de 360 px, donde en el nav ya no cabe con holgura */
+  footer .idioma-pie{display:none;align-items:center;gap:6px;font-family:var(--mono);font-size:.8rem}
+  footer .idioma-pie a{padding:8px 4px;letter-spacing:.1em;color:rgba(243,236,223,.75)}
+  footer .idioma-pie a[aria-current]{color:var(--crema);text-decoration:underline;text-decoration-color:var(--rojo);text-decoration-thickness:2px;text-underline-offset:5px}
+  footer .idioma-pie span{color:rgba(243,236,223,.45)}
+  @media(max-width:359.98px){
+    nav .idioma{display:none}
+    footer .idioma-pie{display:flex}
+  }
