@@ -1,0 +1,18 @@
+{
+  "idioma": "ca",
+  "locale": "ca_ES",
+  "nombre_idioma": "Català",
+  "claim": "Més revolts. Menys tribuna.",
+  "boton_contacto": "Contacte",
+  "ruta_contacto": "/ca/contacte",
+  "saltar": "Salta al contingut",
+  "etiqueta_idioma": "Idioma",
+  "etiqueta_paginas": "Pàgines",
+  "ruta_noticias": "/ca/actualitat",
+  "titulo_noticias": "Actualitat",
+  "leer_mas": "Llegeix-ne més",
+  "correo": "hola@lavirageclub.com",
+  "instagram": "lavirageclub",
+  "imagen_compartir": "/assets/og-ca.jpg",
+  "texto_legal": ""
+}

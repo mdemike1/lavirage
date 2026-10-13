@@ -1,0 +1,123 @@
+{
+  "clave": "veladas",
+  "ruta": "/veladas",
+  "publicada": true,
+  "titulo_seo": "Veladas de motorsport — La Virage Club",
+  "descripcion_seo": "Cenas y noches de alto nivel alrededor de rallies y grandes premios. Por encargo, para marcas, organizadores y privados. Concepto, producción y ejecución.",
+  "imagen_compartir": "/assets/og.jpg",
+  "en_menu": true,
+  "texto_menu": "Veladas",
+  "orden_menu": 3,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "VELADAS",
+      "titulo": "Veladas.",
+      "subtitulo": "",
+      "texto": "CENAS Y NOCHES DE ALTO NIVEL ALREDEDOR DE RALLIES Y GRANDES PREMIOS. LA PRUEBA VISIBLE DE CÓMO TRABAJAMOS.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "EL MANIFIESTO",
+      "titulo": "Los rallies son sucios,\nruidosos y maravillosos.\nNo queremos cambiarlos.",
+      "cuerpo": "<p><strong>Así es una velada de La Virage.</strong></p><p>Pero en algún punto del fin de semana te mereces <strong>una silla cómoda, una copa fría y gente interesante</strong> en un sitio que merezca la foto. Eso es una velada. Llegamos antes, encontramos el sitio —una bodega, un patio de piedra, una azotea— y lo convertimos en <strong>el mejor plan del fin de semana de carrera</strong>.</p><p>Las producimos por encargo, para marcas, organizadores y quien reúne a los suyos, y como parte de los fines de semana que comercializamos. Ellos ponen el motivo; nosotros, la velada entera.</p>",
+      "firma": "Ya sabes dónde encontrarnos. En la curva.",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "cita",
+      "frase": "El motor hace el ruido.\nNosotros hacemos el resto."
+    },
+    {
+      "tipo": "horario",
+      "antetitulo": "EL FORMATO DE LA CASA",
+      "titulo": "La noche, hora a hora",
+      "subtitulo": "ASÍ ESTRUCTURAMOS UNA VELADA · EL GUION SE ADAPTA A CADA ENCARGO",
+      "items": [
+        {
+          "hora": "19:47",
+          "titulo": "Las coordenadas",
+          "texto": "Recibes un punto GPS y una hora. Nada más. Llegas a un sitio que no sabías que existía —una bodega, un patio de piedra— y en la puerta, la horquilla grabada.",
+          "nota": "trae calzado cómodo, confía"
+        },
+        {
+          "hora": "20:30",
+          "titulo": "Ocho segundos de motor real",
+          "texto": "Las luces bajan. Un motor arranca donde no debería haber un motor. Ocho segundos a plena voz y silencio. Es toda la ceremonia que necesitamos: el resto de la noche es tuya.",
+          "nota": ""
+        },
+        {
+          "hora": "21:30",
+          "titulo": "La mesa larga",
+          "texto": "Una sola mesa larga. Nadie preside. El menú lo firma la zona: lo que se come aquí, bien hecho. A tu izquierda un piloto, a tu derecha alguien que diseña cascos.",
+          "nota": "las cartas llevan curvas"
+        },
+        {
+          "hora": "00:30",
+          "titulo": "La sobremesa se alarga",
+          "texto": "La mesa se convierte en barra. Música a volumen de conversación; luego, ya veremos. El coche sigue ahí, iluminado, recibiendo fotos.",
+          "nota": ""
+        },
+        {
+          "hora": "03:00",
+          "titulo": "Nadie quiere irse",
+          "texto": "Y esa es exactamente la métrica que nos importa. En la puerta, un detalle para el bolsillo: el sticker, el dorsal, algo que mañana te recuerde que esto pasó de verdad.",
+          "nota": "hasta la próxima curva"
+        }
+      ]
+    },
+    {
+      "tipo": "galeria",
+      "antetitulo": "ASÍ SE VE",
+      "titulo": "Las piezas de la casa",
+      "fotos": [],
+      "nota_vacia": "PIEZAS DE MUESTRA. EL ARCHIVO FOTOGRÁFICO LLEGA CON LA PRIMERA VELADA."
+    },
+    {
+      "tipo": "pasos",
+      "antetitulo": "LO QUE NO SE NEGOCIA",
+      "titulo": "Tres artículos. Punto.",
+      "subtitulo": "",
+      "estilo": "numerado",
+      "fondo": "gris",
+      "items": [
+        {
+          "titulo": "La curva es nuestro corazón",
+          "texto": "Otros tienen un corazón o un oso. Nosotros tenemos la horquilla: el punto exacto donde la velocidad se convierte en habilidad. Está en el logo, en los stickers y en cada noche que montemos."
+        },
+        {
+          "titulo": "El coche siempre en el centro",
+          "texto": "En cada espacio hay un coche iluminado como una pieza de museo. No está en un rincón: es el punto gravitacional de la noche. Queremos que la gente le haga fotos antes de pedir la primera copa."
+        },
+        {
+          "titulo": "Nada de tarima ni PowerPoint",
+          "texto": "En nuestras veladas, nada de tarima ni PowerPoint: la marca se vive en la copa, en la mesa y en el detalle de salida. La noche entera es el mensaje."
+        }
+      ]
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "HABLEMOS",
+      "titulo": "Cuéntanos qué carrera y nosotros hacemos la **noche**.",
+      "subtitulo": "VELADAS POR ENCARGO · MARCAS, ORGANIZADORES Y PRIVADOS",
+      "botones": [
+        {
+          "texto": "Encargar una velada",
+          "enlace": "/contacto?tipo=privado",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "Ver servicios",
+          "enlace": "/servicios",
+          "estilo": "linea"
+        }
+      ],
+      "columnas": []
+    }
+  ]
+}

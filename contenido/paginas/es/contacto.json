@@ -1,0 +1,54 @@
+{
+  "clave": "contacto",
+  "ruta": "/contacto",
+  "publicada": true,
+  "titulo_seo": "Contacto — La Virage Club",
+  "descripcion_seo": "Organizadores, pilotos y equipos, marcas y privados: cuéntanos qué tienes o qué necesitas. Escríbenos a hola@lavirageclub.com.",
+  "imagen_compartir": "/assets/og.jpg",
+  "en_menu": false,
+  "texto_menu": "Contacto",
+  "orden_menu": 9,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "CONTACTO",
+      "titulo": "Hablemos.",
+      "subtitulo": "",
+      "texto": "CUÉNTANOS QUÉ TIENES O QUÉ NECESITAS. RESPONDEMOS EN 48 HORAS LABORABLES.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "contacto",
+      "antetitulo": "QUÉ CONTARNOS",
+      "tipos": [
+        {
+          "clave": "organizador",
+          "titulo": "Organizadores",
+          "texto": "Qué evento, en qué fechas y qué estás vendiendo hoy, si vendes algo."
+        },
+        {
+          "clave": "piloto",
+          "titulo": "Pilotos y equipos",
+          "texto": "En qué campeonato corres, con qué calendario y qué espacios tienes libres en el coche, el mono y las redes."
+        },
+        {
+          "clave": "marca",
+          "titulo": "Marcas",
+          "texto": "Qué buscas en el motorsport y en qué fechas o zonas te interesa estar."
+        },
+        {
+          "clave": "privado",
+          "titulo": "Privados",
+          "texto": "Qué carrera, qué fecha aproximada y cuánta gente."
+        }
+      ],
+      "titulo": "Escríbenos.",
+      "boton_texto": "Escribir un correo",
+      "ayuda": "CON ESO BASTA PARA EMPEZAR.\nINSTAGRAM: @LAVIRAGECLUB\nBASE: CATALUÑA"
+    }
+  ]
+}

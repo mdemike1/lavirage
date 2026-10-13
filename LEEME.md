@@ -1,59 +1,64 @@
 # La Virage Club — web
 
-Sitio estático. Sin dependencias ni build: se sube tal cual.
+Web en tres idiomas (castellano, catalán, inglés) que se edita desde un panel, sin tocar código.
 Dominio principal: https://www.lavirageclub.com
 
-## Estructura
+## Cómo se edita: el panel
+
+1. Entra en https://app.pagescms.org con tu cuenta de GitHub.
+2. Abre el repositorio `mdemike1/lavirage` (rama `main`).
+3. En la barra lateral tienes:
+   - **Páginas · Castellano / Català / English**: cada página, con sus secciones. Puedes cambiar textos,
+     subir fotos, añadir, quitar y reordenar secciones, y crear páginas nuevas.
+   - **Noticias**: entradas con fecha, foto y texto. La sección «Actualidad» y su enlace en el menú
+     aparecen solos cuando hay al menos una noticia publicada en ese idioma.
+   - **Ajustes generales**: correo, Instagram, claim y textos comunes de cada idioma.
+   - **Fotos**: la biblioteca de imágenes (se guardan en `media/fotos`).
+4. Al **Guardar**, el panel hace un commit en GitHub y Vercel publica la web sola en uno o dos minutos.
+
+Trucos de los títulos: un salto de línea en el campo es un salto en la web, y `**así**` se pinta en rojo.
+
+Para dar acceso a alguien (Dani): invítalo como colaborador del repositorio en GitHub; con eso ya entra al panel.
+
+### Antes de subir fotos
+
+- JPG, de 2000 px de lado largo como mucho y menos de 1 MB. Las fotos pesadas ralentizan la web y llenan el repo.
+- Rellena siempre la descripción de la foto (para accesibilidad y Google).
+- Nada de fotos de stock ni generadas: solo fotos reales de La Virage.
+
+### Una página en tres idiomas
+
+Cada página existe una vez por idioma. La **clave interna** (inicio, derechos, servicios…) las une: tiene que ser
+igual en los tres para que el selector ES / CA / EN y Google sepan que son la misma página.
+Si creas una página nueva, créala en los tres idiomas con la misma clave (o el selector llevará a la portada de ese idioma).
+
+## Cómo está hecho
 
 ```
-index.html        Home: qué hacemos, para quién, cómo trabajamos, manifiesto, CTA
-derechos.html     Comercialización de derechos y cómo cobramos (a éxito)
-servicios.html    Eventos por encargo, activaciones, servicios a clubes y organizadores
-veladas.html      La línea de eventos: manifiesto, la noche hora a hora, principios
-contacto.html     Qué contarnos por tipo de cliente + correo (formulario desactivado)
-styles.css        Todos los estilos (compartido)
-script.js         Reveals, interludio, deriva, tilt, ?tipo= en contacto, envío del formulario
-middleware.js     Idioma por cookie, navegador y país (302 a /ca o /en)
-ca/               Versión en catalán
-en/               Versión en inglés
-vercel.json       URLs limpias + 301 del dominio de Vercel y del apex a www
-robots.txt        Permite todo y apunta al sitemap
-sitemap.xml       Páginas indexables
-assets/           og.jpg (es), og-ca.jpg (ca), og-en.jpg (en), iconos y, más adelante, las fotos
-scripts/          Generador de og.jpg e iconos (no se publica, ver .vercelignore)
+contenido/paginas/<es|ca|en>/*.json   Lo que edita el panel: cada archivo es una página
+contenido/noticias/*.json             Noticias
+contenido/ajustes/<idioma>.json       Ajustes por idioma
+media/                                Fotos y documentos subidos desde el panel
+src/                                  Plantillas (Eleventy), styles.css y script.js
+  _includes/secciones.njk             Cómo se pinta cada tipo de sección
+  _data/sitio.js                      Lee contenido/ y monta menú, idiomas y noticias
+.pages.yml                            Configuración del panel (qué campos tiene cada sección)
+middleware.js                         Idioma por cookie, navegador y país (302 a /ca o /en)
+vercel.json                           Build (npm run build → _site) + 301 del dominio de Vercel y del apex a www
+assets/                               Favicon, iconos e imágenes para compartir
+scripts/                              Generador de og.jpg e iconos (no se publica)
 ```
 
-Nav, footer y `<head>` se repiten en cada página: si se cambia uno, hay que cambiarlo en todas.
+Para probarla en local: `npm install` y `npm run dev` (abre http://localhost:8080).
 
-## Idiomas
-
-- Castellano en la raíz; catalán en `/ca` (`/ca`, `/ca/drets`, `/ca/serveis`, `/ca/vetllades`,
-  `/ca/contacte`); inglés en `/en` (`/en`, `/en/rights`, `/en/services`, `/en/evenings`, `/en/contact`).
-  Cada página existe tres veces: si se cambia el texto de una, hay que cambiar sus equivalentes.
-- `middleware.js` (Vercel Routing Middleware) decide el idioma al entrar en una página en castellano:
-  cookie `lang` → navegador en catalán (Accept-Language) → país AD → país distinto de ES (inglés)
-  → castellano. No toca `/ca` ni `/en`, ni a bots. El selector ES / CA / EN guarda la cookie `lang` un año.
-- hreflang es / ca / en / x-default (→ castellano) en cada página y en `sitemap.xml`.
-- El claim va traducido: «Más curvas. Menos tribuna.» (castellano), «Més revolts. Menys tribuna.» (`/ca`)
-  y «More bends. Less grandstand.» (`/en`), cada uno con su imagen para compartir.
-- El selector de idioma va en el nav; por debajo de 360 px pasa al pie.
+Para añadir un tipo de sección nuevo: plantilla en `src/_includes/secciones.njk`, estilos en `src/styles.css`
+y campos en `.pages.yml`.
 
 ## Pendientes
 
-1. **Legales.** Aviso legal y política de privacidad están en la rama `legales`, retirados hasta
-   tener los datos del titular. Al completarlos, volver a enlazarlos en el pie y en el sitemap.
-2. **Correo.** `hola@lavirageclub.com` tiene que recibir correo (MX en el dominio).
-3. **Formulario.** En `contacto.html` hay un formulario comentado con un TODO: poner el ID
-   de Formspree en el `action` y quitar el comentario.
-4. **Analítica.** Activar Web Analytics en el proyecto de Vercel (Analytics → Enable).
-5. **Instagram.** Confirmar que existe @lavirageclub.
-
-## Imágenes de marca
-
-`sh scripts/genera-imagenes.sh` regenera `assets/og.jpg`, `apple-touch-icon.png` y
-`favicon-32.png` desde las plantillas `scripts/og.html` y `scripts/icono.html` (macOS + Chrome).
-
-## Cuando lleguen las fotos
-
-Los bloques `.poster`, `.pola` y `.foto` de `veladas.html` son degradados CSS pensados para
-sustituirse por `<img>` con su `alt`. Nada de fotos de stock ni generadas.
+1. **Correo.** `hola@lavirageclub.com` tiene que recibir correo (MX en el dominio, por ejemplo con ImprovMX).
+2. **Legales.** Aviso legal y privacidad en la rama `legales`, retirados hasta tener los datos del titular.
+   Cuando estén, enlazarlos desde Ajustes generales → «Enlaces legales en el pie».
+3. **Formulario de contacto.** Desactivado hasta tener Formspree y la política de privacidad publicada.
+4. **Analítica.** Activar Web Analytics en el proyecto de Vercel.
+5. **Fotos.** La portada de inicio muestra un panel negro con el claim hasta que se suba la foto real.

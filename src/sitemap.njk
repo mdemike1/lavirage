@@ -1,0 +1,20 @@
+---
+permalink: sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for p in sitio.paginas %}
+  <url>
+    <loc>{{ sitio.URL_BASE }}{{ p.ruta }}</loc>
+    {%- for a in p.alternas %}{% if a.existe %}
+    <xhtml:link rel="alternate" hreflang="{{ a.idioma }}" href="{{ sitio.URL_BASE }}{{ a.ruta }}"/>{% endif %}{% endfor %}
+  </url>
+{%- endfor %}
+{%- for x in sitio.archivos %}
+  <url><loc>{{ sitio.URL_BASE }}{{ x.ruta }}</loc></url>
+{%- endfor %}
+{%- for n in sitio.noticias %}
+  <url><loc>{{ sitio.URL_BASE }}{{ n.ruta }}</loc></url>
+{%- endfor %}
+</urlset>

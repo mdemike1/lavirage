@@ -1,0 +1,362 @@
+# Panel de contenido de La Virage Club (Pages CMS · https://app.pagescms.org)
+# Cada página es un archivo de contenido/paginas/<idioma>/. Al guardar en el panel se hace un commit
+# en GitHub y Vercel vuelve a publicar la web sola en uno o dos minutos.
+
+media:
+  - name: fotos
+    label: Fotos
+    input: media/fotos
+    output: /media/fotos
+    rename: safe
+    extensions: [jpg, jpeg, png, webp, avif]
+  - name: documentos
+    label: Documentos
+    input: media/documentos
+    output: /media/documentos
+    rename: safe
+    categories: [document]
+
+components:
+  boton:
+    type: object
+    label: Botón
+    fields:
+      - { name: texto, label: Texto, type: string }
+      - { name: enlace, label: Enlace, type: string, description: "Ruta interna (/contacto) o dirección completa (https://…)" }
+      - name: estilo
+        label: Estilo
+        type: select
+        options:
+          values:
+            - { name: rojo, label: Rojo }
+            - { name: negro, label: Negro }
+            - { name: linea, label: Contorno }
+
+content:
+  - name: paginas_es
+    label: Páginas · Castellano
+    type: collection
+    path: contenido/paginas/es
+    format: json
+    filename: { template: "{clave}.json", field: create }
+    view: { primary: titulo_seo, fields: [titulo_seo, ruta, publicada] }
+    fields: &campos_pagina
+      - name: clave
+        label: Clave interna
+        type: string
+        required: true
+        pattern: { regex: "^[a-z0-9-]+$", message: "Solo minúsculas, números y guiones" }
+        description: "Une la misma página en los tres idiomas (inicio, derechos, servicios…). Usa la misma clave en castellano, catalán e inglés."
+      - name: ruta
+        label: Dirección (URL)
+        type: string
+        required: true
+        description: "Por ejemplo /derechos, /ca/drets o /en/rights. Al cambiarla, la dirección antigua deja de existir."
+      - { name: publicada, label: Publicada, type: boolean, description: "Desmárcalo para ocultar la página sin borrarla." }
+      - { name: titulo_seo, label: Título en Google y pestaña, type: string, required: true }
+      - { name: descripcion_seo, label: Descripción en Google, type: text }
+      - { name: imagen_compartir, label: Imagen al compartir (1200 × 630), type: image, options: { media: fotos } }
+      - { name: en_menu, label: Sale en el menú de arriba, type: boolean }
+      - { name: texto_menu, label: Texto en el menú y en el pie, type: string }
+      - { name: orden_menu, label: Orden en el menú, type: number }
+      - name: secciones
+        label: Secciones de la página
+        type: block
+        list: true
+        blockKey: tipo
+        blocks:
+          - name: portada
+            label: Portada (cabecera de página)
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text, description: "Un salto de línea = salto en la web. **Así** sale en rojo." }
+              - { name: subtitulo, label: Subtítulo, type: string }
+              - { name: texto, label: Texto, type: rich-text }
+              - { name: botones, label: Botones, component: boton, list: true }
+              - { name: nota, label: Nota pequeña, type: rich-text }
+              - { name: imagen, label: Foto, type: image, options: { media: fotos } }
+              - { name: imagen_alt, label: Descripción de la foto (accesibilidad), type: string }
+              - { name: imagen_hueco, label: Frase del panel negro si no hay foto, type: string, description: "Déjalo vacío para que la portada ocupe todo el ancho." }
+          - name: clientes
+            label: Barra de clientes (negra)
+            fields:
+              - name: items
+                label: Clientes
+                type: object
+                list: true
+                fields:
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: string }
+                  - { name: enlace, label: Enlace, type: string }
+          - name: tarjetas
+            label: Tarjetas
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: subtitulo, label: Subtítulo, type: string }
+              - name: fondo
+                label: Fondo
+                type: select
+                options: &opciones_fondo
+                  values:
+                    - { name: blanco, label: Blanco }
+                    - { name: gris, label: Gris claro }
+                    - { name: crema, label: Crema }
+                    - { name: negro, label: Negro }
+                    - { name: rojo, label: Rojo }
+              - name: items
+                label: Tarjetas
+                type: object
+                list: true
+                fields:
+                  - { name: etiqueta, label: Etiqueta, type: string }
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: text }
+                  - { name: enlace_texto, label: Texto del enlace, type: string }
+                  - { name: enlace, label: Enlace, type: string }
+                  - { name: imagen, label: Foto (opcional), type: image, options: { media: fotos } }
+                  - { name: imagen_alt, label: Descripción de la foto, type: string }
+          - name: pasos
+            label: Pasos numerados
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: subtitulo, label: Subtítulo, type: string }
+              - name: estilo
+                label: Estilo
+                type: select
+                options:
+                  values:
+                    - { name: numerado, label: Con números }
+                    - { name: barra, label: Con barra roja }
+              - { name: fondo, label: Fondo, type: select, options: *opciones_fondo }
+              - name: items
+                label: Pasos
+                type: object
+                list: true
+                fields:
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: text }
+          - name: lista
+            label: Lista con descripción
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: subtitulo, label: Subtítulo, type: string }
+              - { name: fondo, label: Fondo, type: select, options: *opciones_fondo }
+              - name: items
+                label: Elementos
+                type: object
+                list: true
+                fields:
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: text }
+                  - { name: etiqueta, label: Etiqueta, type: string }
+          - name: casillas
+            label: Casillas
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: subtitulo, label: Subtítulo, type: string }
+              - { name: fondo, label: Fondo, type: select, options: *opciones_fondo }
+              - name: items
+                label: Casillas
+                type: object
+                list: true
+                fields:
+                  - { name: etiqueta, label: Etiqueta (si no, número), type: string }
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: text }
+                  - { name: destacada, label: En rojo, type: boolean }
+          - name: texto
+            label: Texto largo (manifiesto)
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: cuerpo, label: Texto, type: rich-text }
+              - { name: firma, label: Firma a mano, type: string }
+              - { name: fondo, label: Fondo, type: select, options: *opciones_fondo }
+          - name: imagen_texto
+            label: Foto + texto
+            fields:
+              - { name: imagen, label: Foto, type: image, options: { media: fotos } }
+              - { name: imagen_alt, label: Descripción de la foto, type: string }
+              - name: lado
+                label: Foto a la
+                type: select
+                options:
+                  values:
+                    - { name: izquierda, label: Izquierda }
+                    - { name: derecha, label: Derecha }
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: cuerpo, label: Texto, type: rich-text }
+              - { name: boton_texto, label: Texto del botón, type: string }
+              - { name: boton_enlace, label: Enlace del botón, type: string }
+              - { name: fondo, label: Fondo, type: select, options: *opciones_fondo }
+          - name: cita
+            label: Frase grande
+            fields:
+              - { name: frase, label: Frase, type: text, description: "**Así** sale en rojo." }
+          - name: horario
+            label: La noche, hora a hora
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: subtitulo, label: Subtítulo, type: string }
+              - name: items
+                label: Momentos
+                type: object
+                list: true
+                fields:
+                  - { name: hora, label: Hora, type: string }
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: text }
+                  - { name: nota, label: Nota a mano, type: string }
+          - name: galeria
+            label: Galería de fotos
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: fondo, label: Fondo, type: select, options: *opciones_fondo }
+              - name: fotos
+                label: Fotos
+                type: object
+                list: true
+                fields:
+                  - { name: imagen, label: Foto, type: image, options: { media: fotos } }
+                  - { name: alt, label: Descripción (accesibilidad), type: string }
+                  - { name: pie, label: Pie de foto, type: string }
+              - { name: nota_vacia, label: Nota interna, type: string, description: "No se muestra. La galería no aparece en la web hasta que tenga fotos." }
+          - name: noticias
+            label: Últimas noticias
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: cantidad, label: Cuántas mostrar, type: number }
+              - { name: fondo, label: Fondo, type: select, options: *opciones_fondo }
+          - name: llamada
+            label: Franja roja de contacto
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - { name: titulo, label: Título, type: text }
+              - { name: subtitulo, label: Subtítulo, type: string }
+              - { name: botones, label: Botones, component: boton, list: true }
+              - name: columnas
+                label: Columnas (opcional)
+                type: object
+                list: true
+                fields:
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: text }
+                  - { name: boton_texto, label: Texto del botón, type: string }
+                  - { name: enlace, label: Enlace, type: string }
+          - name: contacto
+            label: Bloque de contacto
+            fields:
+              - { name: antetitulo, label: Antetítulo, type: string }
+              - name: tipos
+                label: Qué contarnos, por tipo de cliente
+                type: object
+                list: true
+                fields:
+                  - name: clave
+                    label: Tipo
+                    type: select
+                    options:
+                      values: [organizador, piloto, marca, privado]
+                  - { name: titulo, label: Título, type: string }
+                  - { name: texto, label: Texto, type: text }
+              - { name: titulo, label: Título, type: string }
+              - { name: boton_texto, label: Texto del botón, type: string }
+              - { name: ayuda, label: Texto pequeño, type: text }
+
+  - name: paginas_ca
+    label: Pàgines · Català
+    type: collection
+    path: contenido/paginas/ca
+    format: json
+    filename: { template: "{clave}.json", field: create }
+    view: { primary: titulo_seo, fields: [titulo_seo, ruta, publicada] }
+    fields: *campos_pagina
+
+  - name: paginas_en
+    label: Pages · English
+    type: collection
+    path: contenido/paginas/en
+    format: json
+    filename: { template: "{clave}.json", field: create }
+    view: { primary: titulo_seo, fields: [titulo_seo, ruta, publicada] }
+    fields: *campos_pagina
+
+  - name: noticias
+    label: Noticias
+    type: collection
+    path: contenido/noticias
+    format: json
+    filename: "{year}-{month}-{day}-{primary}.json"
+    view: { primary: titulo, fields: [titulo, fecha, idioma, publicada], sort: fecha, order: desc }
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - { name: fecha, label: Fecha, type: date, required: true }
+      - name: idioma
+        label: Idioma
+        type: select
+        required: true
+        options:
+          values:
+            - { name: es, label: Castellano }
+            - { name: ca, label: Català }
+            - { name: en, label: English }
+      - { name: publicada, label: Publicada, type: boolean }
+      - { name: resumen, label: Resumen (una o dos frases), type: text }
+      - { name: imagen, label: Foto principal, type: image, options: { media: fotos } }
+      - { name: imagen_alt, label: Descripción de la foto, type: string }
+      - { name: cuerpo, label: Texto, type: rich-text }
+      - name: fotos
+        label: Más fotos
+        type: object
+        list: true
+        fields:
+          - { name: imagen, label: Foto, type: image, options: { media: fotos } }
+          - { name: alt, label: Descripción, type: string }
+          - { name: pie, label: Pie de foto, type: string }
+
+  - name: ajustes
+    label: Ajustes generales
+    type: group
+    items:
+      - name: ajustes_es
+        label: Castellano
+        type: file
+        path: contenido/ajustes/es.json
+        format: json
+        fields: &campos_ajustes
+          - { name: claim, label: Claim, type: string }
+          - { name: correo, label: Correo de contacto, type: string }
+          - { name: instagram, label: Usuario de Instagram (sin @), type: string }
+          - { name: boton_contacto, label: Texto del botón de contacto, type: string }
+          - { name: ruta_contacto, label: Página de contacto, type: string }
+          - { name: titulo_noticias, label: Nombre de la sección de noticias, type: string }
+          - { name: ruta_noticias, label: Dirección de la sección de noticias, type: string }
+          - { name: leer_mas, label: Texto "leer más", type: string }
+          - { name: imagen_compartir, label: Imagen al compartir por defecto, type: image, options: { media: fotos } }
+          - { name: texto_legal, label: Enlaces legales en el pie, type: rich-text, description: "Aviso legal y privacidad, cuando estén publicados." }
+          - { name: idioma, label: Código de idioma, type: string, readonly: true }
+          - { name: locale, label: Locale, type: string, readonly: true }
+          - { name: nombre_idioma, label: Nombre del idioma, type: string, readonly: true }
+          - { name: saltar, label: Texto "saltar al contenido", type: string }
+          - { name: etiqueta_idioma, label: Etiqueta del selector de idioma, type: string, readonly: true }
+          - { name: etiqueta_paginas, label: Etiqueta de la lista del pie, type: string, readonly: true }
+      - name: ajustes_ca
+        label: Català
+        type: file
+        path: contenido/ajustes/ca.json
+        format: json
+        fields: *campos_ajustes
+      - name: ajustes_en
+        label: English
+        type: file
+        path: contenido/ajustes/en.json
+        format: json
+        fields: *campos_ajustes

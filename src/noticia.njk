@@ -1,0 +1,30 @@
+---
+pagination:
+  data: sitio.noticias
+  size: 1
+  alias: n
+permalink: "{{ n.salida }}"
+---
+{% extends "base.njk" %}
+{%- set idioma = n.idioma -%}
+{%- set ruta = n.ruta -%}
+{%- set titulo_seo = n.titulo + ' — La Virage Club' -%}
+{%- set descripcion = n.resumen or n.titulo -%}
+{%- set imagen = n.imagen -%}
+{%- set alternas = n.alternas -%}
+{% block contenido %}
+<article class="articulo">
+  <div class="ancho ancho-texto">
+    <p class="ante">— <a href="{{ sitio.ajustes[idioma].ruta_noticias }}">{{ sitio.ajustes[idioma].titulo_noticias }}</a> · <time datetime="{{ n.fecha }}">{{ n.fecha | fecha(idioma) }}</time></p>
+    <h1 class="portada-titulo">{{ n.titulo }}</h1>
+    {%- if n.resumen %}<p class="portada-sub">{{ n.resumen }}</p>{% endif %}
+  </div>
+  {%- if n.imagen %}<figure class="ancho articulo-foto"><img src="{{ n.imagen }}" alt="{{ n.imagen_alt }}"></figure>{% endif %}
+  <div class="ancho ancho-texto prosa">{{ n.cuerpo | safe }}</div>
+  {%- if n.fotos and n.fotos.length %}
+  <div class="ancho galeria">
+    {%- for f in n.fotos %}<figure><img src="{{ f.imagen }}" alt="{{ f.alt }}" loading="lazy">{% if f.pie %}<figcaption>{{ f.pie }}</figcaption>{% endif %}</figure>{% endfor %}
+  </div>
+  {%- endif %}
+</article>
+{% endblock %}

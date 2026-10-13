@@ -1,0 +1,54 @@
+{
+  "clave": "contacto",
+  "ruta": "/en/contact",
+  "publicada": true,
+  "titulo_seo": "Contact — La Virage Club",
+  "descripcion_seo": "Organisers, drivers and teams, brands and private clients: tell us what you've got or what you need. Write to hola@lavirageclub.com.",
+  "imagen_compartir": "/assets/og-en.jpg",
+  "en_menu": false,
+  "texto_menu": "Contact",
+  "orden_menu": 9,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "CONTACT",
+      "titulo": "Let's talk.",
+      "subtitulo": "",
+      "texto": "TELL US WHAT YOU'VE GOT OR WHAT YOU NEED. WE REPLY WITHIN 48 WORKING HOURS.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "contacto",
+      "antetitulo": "WHAT TO TELL US",
+      "tipos": [
+        {
+          "clave": "organizador",
+          "titulo": "Organisers",
+          "texto": "Which event, which dates and what you're selling today, if anything."
+        },
+        {
+          "clave": "piloto",
+          "titulo": "Drivers and teams",
+          "texto": "Which championship you race in, your calendar and what space you've got free on the car, the race suit and your channels."
+        },
+        {
+          "clave": "marca",
+          "titulo": "Brands",
+          "texto": "What you're after in motorsport and which dates or regions you'd like to be part of."
+        },
+        {
+          "clave": "privado",
+          "titulo": "Private clients",
+          "texto": "Which race, a rough date and how many people."
+        }
+      ],
+      "titulo": "Write to us.",
+      "boton_texto": "Send an email",
+      "ayuda": "THAT'S ALL WE NEED TO GET STARTED.\nINSTAGRAM: @LAVIRAGECLUB\nBASE: CATALONIA"
+    }
+  ]
+}

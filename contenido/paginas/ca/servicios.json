@@ -1,0 +1,160 @@
+{
+  "clave": "servicios",
+  "ruta": "/ca/serveis",
+  "publicada": true,
+  "titulo_seo": "Serveis i activacions del món del motor — La Virage Club",
+  "descripcion_seo": "Esdeveniments per encàrrec, activacions de marca i serveis per a clubs i organitzadors del món del motor. Concepte, producció i execució.",
+  "imagen_compartir": "/assets/og-ca.jpg",
+  "en_menu": true,
+  "texto_menu": "Serveis",
+  "orden_menu": 2,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "SERVEIS",
+      "titulo": "Serveis i activacions.",
+      "subtitulo": "",
+      "texto": "EL QUE ES VEN S'HA DE MUNTAR. ESDEVENIMENTS PER ENCÀRREC, ACTIVACIONS DE MARCA I SERVEIS PER A CLUBS I ORGANITZADORS.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "lista",
+      "antetitulo": "QUÈ FEM",
+      "titulo": "Tres serveis.",
+      "subtitulo": "SOLS O AMB LA COMERCIALITZACIÓ DE DRETS",
+      "fondo": "negro",
+      "items": [
+        {
+          "titulo": "Esdeveniments per encàrrec",
+          "texto": "Un sopar, una presentació, un lliurament de premis. El que necessitis al voltant d'una cursa, de la idea al desmuntatge.",
+          "etiqueta": "Encàrrec"
+        },
+        {
+          "titulo": "Activacions de marca",
+          "texto": "La marca present al ral·li i ben integrada: a la zona d'hospitality, en una experiència, a taula. Que es vegi i que es recordi.",
+          "etiqueta": "Marques"
+        },
+        {
+          "titulo": "Serveis a clubs i organitzadors",
+          "texto": "La nit oficial, les zones d'hospitality, les peces impreses i la senyalètica, l'acollida i la cobertura. El que el teu equip no arriba a fer.",
+          "etiqueta": "Clubs · Organitzadors"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "LA MARCA",
+      "titulo": "La marca hi és.\nBen posada.",
+      "cuerpo": "<p>Una activació funciona quan la gent la viu, no quan l'esquiva. Integrem la marca en el que passa durant el cap de setmana: <strong>a la zona d'hospitality, en l'experiència, a taula</strong> i en el record que s'enduen els convidats.</p><p>I també al cartell, a la lona o a la porta del cotxe quan toca, amb la mateixa cura que tota la resta. <strong>Present, visible i ben integrada.</strong></p>",
+      "firma": "",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "tarjetas",
+      "antetitulo": "COM HO FEM",
+      "titulo": "Concepte, producció\ni execució.",
+      "subtitulo": "DE LA IDEA A LES TRES DE LA MATINADA",
+      "fondo": "blanco",
+      "items": [
+        {
+          "etiqueta": "01",
+          "titulo": "Concepte",
+          "texto": "Idea de l'esdeveniment o de l'activació, escenografia, invitació, menú i senyalètica. Comencem pel perquè i pel lloc.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "02",
+          "titulo": "Producció",
+          "texto": "Localització, permisos, càtering, il·luminació, so i proveïdors. Cada element, especificat.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "03",
+          "titulo": "Execució",
+          "texto": "Acollida, programació musical, fotografia i aftermovie. El dia que toca, tot funciona.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        }
+      ]
+    },
+    {
+      "tipo": "casillas",
+      "antetitulo": "QUÈ INCLOU UN ENCÀRREC",
+      "titulo": "Tot el que hi ha\ndarrere d'un encàrrec.",
+      "subtitulo": "L'ABAST COMPLET · S'AJUSTA A CADA ENCÀRREC",
+      "items": [
+        {
+          "titulo": "Localització i permisos",
+          "texto": "Recerca de l'espai, negociació amb la propietat i tràmits.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Escenografia i muntatge",
+          "texto": "Ambientació de l'espai, mobiliari, taula i desmuntatge.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Càtering i beguda",
+          "texto": "Menú amb producte de la zona, barra, servei de sala i personal.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Il·luminació i so",
+          "texto": "Esquema de llum, equip d'àudio, tècnics i subministrament elèctric.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Programació musical",
+          "texto": "Selecció i contractació de música en directe o DJ, i el ritme de la nit.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Acollida",
+          "texto": "Recepció, llista de convidats i acompanyament durant tot l'esdeveniment.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Fotografia i aftermovie",
+          "texto": "Cobertura completa i peça de vídeo editada per al teu ús.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Peces impreses",
+          "texto": "Invitació, menú, senyalètica i peces de marca. Produïdes i instal·lades.",
+          "etiqueta": ""
+        }
+      ]
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "SEGÜENT PAS",
+      "titulo": "Explica'ns què s'ha de **muntar**.",
+      "subtitulo": "ESDEVENIMENTS · ACTIVACIONS · CLUBS I ORGANITZADORS",
+      "botones": [
+        {
+          "texto": "Parlem-ne",
+          "enlace": "/ca/contacte",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "Mira els drets",
+          "enlace": "/ca/drets",
+          "estilo": "linea"
+        }
+      ],
+      "columnas": []
+    }
+  ]
+}

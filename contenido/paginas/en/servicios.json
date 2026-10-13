@@ -1,0 +1,160 @@
+{
+  "clave": "servicios",
+  "ruta": "/en/services",
+  "publicada": true,
+  "titulo_seo": "Motorsport services and activations — La Virage Club",
+  "descripcion_seo": "Commissioned events, brand activations and services for motorsport clubs and organisers. Concept, production and delivery.",
+  "imagen_compartir": "/assets/og-en.jpg",
+  "en_menu": true,
+  "texto_menu": "Services",
+  "orden_menu": 2,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "SERVICES",
+      "titulo": "Services and activations.",
+      "subtitulo": "",
+      "texto": "WHATEVER GETS SOLD HAS TO BE BUILT. COMMISSIONED EVENTS, BRAND ACTIVATIONS AND SERVICES FOR CLUBS AND ORGANISERS.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "lista",
+      "antetitulo": "WHAT WE DO",
+      "titulo": "Three services.",
+      "subtitulo": "ON THEIR OWN OR ALONGSIDE RIGHTS SALES",
+      "fondo": "negro",
+      "items": [
+        {
+          "titulo": "Commissioned events",
+          "texto": "A dinner, a launch, a prize-giving. Whatever you need around a race, from the first idea to the get-out.",
+          "etiqueta": "Commission"
+        },
+        {
+          "titulo": "Brand activations",
+          "texto": "The brand at the rally, properly integrated: in the hospitality area, in an experience, at the table. Seen and remembered.",
+          "etiqueta": "Brands"
+        },
+        {
+          "titulo": "Services for clubs and organisers",
+          "texto": "The official night, hospitality areas, print and signage, hosting and coverage. The things your team never gets round to.",
+          "etiqueta": "Clubs · Organisers"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "THE BRAND",
+      "titulo": "The brand is there.\nDone properly.",
+      "cuerpo": "<p>An activation works when people live it, not when they walk round it. We build the brand into what happens over the weekend: <strong>in the hospitality area, in the experience, at the table</strong> and in what guests take home with them.</p><p>And on the banner, the board or the car door when it's called for, with the same care as everything else. <strong>Present, visible and properly integrated.</strong></p>",
+      "firma": "",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "tarjetas",
+      "antetitulo": "HOW WE DO IT",
+      "titulo": "Concept, production\nand delivery.",
+      "subtitulo": "FROM THE FIRST IDEA TO THREE IN THE MORNING",
+      "fondo": "blanco",
+      "items": [
+        {
+          "etiqueta": "01",
+          "titulo": "Concept",
+          "texto": "The idea behind the event or activation, set design, invitation, menu and signage. We start with the why and the where.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "02",
+          "titulo": "Production",
+          "texto": "Venue, permits, catering, lighting, sound and suppliers. Every element specified.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "03",
+          "titulo": "Delivery",
+          "texto": "Hosting, music, photography and aftermovie. On the day, everything works.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        }
+      ]
+    },
+    {
+      "tipo": "casillas",
+      "antetitulo": "WHAT A COMMISSION INCLUDES",
+      "titulo": "Everything behind\na commission.",
+      "subtitulo": "THE FULL SCOPE · ADJUSTED TO EACH COMMISSION",
+      "items": [
+        {
+          "titulo": "Venue and permits",
+          "texto": "Finding the space, negotiating with the owners and handling the paperwork.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Set design and build",
+          "texto": "Dressing the space, furniture, the table and the get-out.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Catering and drinks",
+          "texto": "A menu built on local produce, a bar, front-of-house service and staff.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Lighting and sound",
+          "texto": "Lighting plan, audio kit, technicians and power.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Music",
+          "texto": "Choosing and booking live music or a DJ, and setting the pace of the night.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Hosting",
+          "texto": "Welcome, guest list and looking after people from start to finish.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Photography and aftermovie",
+          "texto": "Full coverage and an edited film for your own use.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Printed pieces",
+          "texto": "Invitation, menu, signage and branded pieces. Produced and installed.",
+          "etiqueta": ""
+        }
+      ]
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "NEXT STEP",
+      "titulo": "Tell us what needs **building**.",
+      "subtitulo": "EVENTS · ACTIVATIONS · CLUBS AND ORGANISERS",
+      "botones": [
+        {
+          "texto": "Let's talk",
+          "enlace": "/en/contact",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "See rights",
+          "enlace": "/en/rights",
+          "estilo": "linea"
+        }
+      ],
+      "columnas": []
+    }
+  ]
+}

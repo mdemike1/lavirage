@@ -1,0 +1,160 @@
+{
+  "clave": "servicios",
+  "ruta": "/servicios",
+  "publicada": true,
+  "titulo_seo": "Servicios y activaciones de motorsport — La Virage Club",
+  "descripcion_seo": "Eventos por encargo, activaciones de marca y servicios para clubes y organizadores de motorsport. Concepto, producción y ejecución.",
+  "imagen_compartir": "/assets/og.jpg",
+  "en_menu": true,
+  "texto_menu": "Servicios",
+  "orden_menu": 2,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "SERVICIOS",
+      "titulo": "Servicios y activaciones.",
+      "subtitulo": "",
+      "texto": "LO QUE SE VENDE, HAY QUE MONTARLO. EVENTOS POR ENCARGO, ACTIVACIONES DE MARCA Y SERVICIOS PARA CLUBES Y ORGANIZADORES.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "lista",
+      "antetitulo": "QUÉ HACEMOS",
+      "titulo": "Tres servicios.",
+      "subtitulo": "SOLOS O JUNTO A LA COMERCIALIZACIÓN DE DERECHOS",
+      "fondo": "negro",
+      "items": [
+        {
+          "titulo": "Eventos por encargo",
+          "texto": "Una cena, una presentación, una entrega de premios. Lo que necesites alrededor de una carrera, de la idea al desmontaje.",
+          "etiqueta": "Encargo"
+        },
+        {
+          "titulo": "Activaciones de marca",
+          "texto": "La marca presente en el rally y bien integrada: en la zona de hospitality, en una experiencia, en la mesa. Que se vea y que se recuerde.",
+          "etiqueta": "Marcas"
+        },
+        {
+          "titulo": "Servicios a clubes y organizadores",
+          "texto": "La noche oficial, las zonas de hospitality, las piezas impresas y la señalética, el anfitrionaje y la cobertura. Lo que tu equipo no llega a hacer.",
+          "etiqueta": "Clubes · Organizadores"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "LA MARCA",
+      "titulo": "La marca está.\nBien puesta.",
+      "cuerpo": "<p>Una activación funciona cuando la gente la vive, no cuando la esquiva. Integramos la marca en lo que pasa durante el fin de semana: <strong>en la zona de hospitality, en la experiencia, en la mesa</strong> y en el recuerdo que se llevan los invitados.</p><p>Y también en el cartel, la lona o la puerta del coche cuando toca, con el mismo cuidado que todo lo demás. <strong>Presente, visible y bien integrada.</strong></p>",
+      "firma": "",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "tarjetas",
+      "antetitulo": "CÓMO LO HACEMOS",
+      "titulo": "Concepto, producción\ny ejecución.",
+      "subtitulo": "DE LA IDEA A LAS TRES DE LA MAÑANA",
+      "fondo": "blanco",
+      "items": [
+        {
+          "etiqueta": "01",
+          "titulo": "Concepto",
+          "texto": "Idea del evento o de la activación, escenografía, invitación, menú y señalética. Empezamos por el porqué y por el sitio.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "02",
+          "titulo": "Producción",
+          "texto": "Localización, permisos, catering, iluminación, sonido y proveedores. Cada elemento especificado.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "03",
+          "titulo": "Ejecución",
+          "texto": "Anfitrionaje, programación musical, fotografía y aftermovie. El día que toca, todo funciona.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        }
+      ]
+    },
+    {
+      "tipo": "casillas",
+      "antetitulo": "QUÉ INCLUYE UN ENCARGO",
+      "titulo": "Todo lo que hay\ndetrás de un encargo.",
+      "subtitulo": "EL ALCANCE COMPLETO · SE AJUSTA A CADA ENCARGO",
+      "items": [
+        {
+          "titulo": "Localización y permisos",
+          "texto": "Búsqueda del espacio, negociación con la propiedad y tramitación.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Escenografía y montaje",
+          "texto": "Ambientación del espacio, mobiliario, mesa y desmontaje.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Catering y bebida",
+          "texto": "Menú con producto de la zona, barra, servicio de sala y personal.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Iluminación y sonido",
+          "texto": "Esquema de luz, equipo de audio, técnicos y suministro eléctrico.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Programación musical",
+          "texto": "Selección y contratación de música en directo o DJ, y el ritmo de la noche.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Anfitrionaje",
+          "texto": "Recepción, lista de invitados y acompañamiento durante todo el evento.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Fotografía y aftermovie",
+          "texto": "Cobertura completa y pieza de vídeo editada para tu propio uso.",
+          "etiqueta": ""
+        },
+        {
+          "titulo": "Piezas impresas",
+          "texto": "Invitación, menú, señalética y piezas de marca. Producidas e instaladas.",
+          "etiqueta": ""
+        }
+      ]
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "SIGUIENTE PASO",
+      "titulo": "Cuéntanos qué hay que **montar**.",
+      "subtitulo": "EVENTOS · ACTIVACIONES · CLUBES Y ORGANIZADORES",
+      "botones": [
+        {
+          "texto": "Hablemos",
+          "enlace": "/contacto",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "Ver derechos",
+          "enlace": "/derechos",
+          "estilo": "linea"
+        }
+      ],
+      "columnas": []
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "clave": "derechos",
+  "ruta": "/ca/drets",
+  "publicada": true,
+  "titulo_seo": "Comercialització de drets del món del motor — La Virage Club",
+  "descripcion_seo": "Venem el patrocini, el merchandising, les entrades i l'hospitality de ral·lis, circuits, clubs, pilots i equips. Treballem a èxit, amb un percentatge pactat del que venem.",
+  "imagen_compartir": "/assets/og-ca.jpg",
+  "en_menu": true,
+  "texto_menu": "Drets",
+  "orden_menu": 1,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "DRETS",
+      "titulo": "El que val el teu ral·li, venut.",
+      "subtitulo": "",
+      "texto": "PATROCINI, MERCHANDISING, ENTRADES, HOSPITALITY I TOTA LA RESTA. PER A ORGANITZADORS, PILOTS I EQUIPS. A ÈXIT, AMB UN PERCENTATGE PACTAT.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "QUÈ SÓN ELS DRETS",
+      "titulo": "Tot el que genera la teva cursa\ni que algú pagaria\nper tenir.",
+      "cuerpo": "<p>El nom al cartell. La porta del cotxe. La carpa al costat del parc d'assistència. La samarreta que la gent s'endú a casa. El sopar de dissabte al vespre. <strong>Tot això té un preu</strong>, i gairebé mai no es ven sencer.</p><p>Si organitzes un ral·li, una prova en circuit o un esdeveniment de club, aquests drets són teus. Si corres, també: el teu cotxe, la teva granota, la teva temporada i les teves xarxes. <strong>La nostra feina és vendre'ls.</strong></p>",
+      "firma": "",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "lista",
+      "antetitulo": "EL QUE COMERCIALITZEM",
+      "titulo": "El que venem.",
+      "subtitulo": "UN PER UN · PER ESDEVENIMENT O PER TEMPORADA",
+      "fondo": "negro",
+      "items": [
+        {
+          "titulo": "Patrocini",
+          "texto": "La marca al nom de l'esdeveniment, en un tram, al podi, al cotxe o a la granota. Per un cap de setmana o per tota la temporada.",
+          "etiqueta": "Esdeveniments · Pilots"
+        },
+        {
+          "titulo": "Merchandising",
+          "texto": "El que l'afició s'endú a casa: samarretes, gorres, parxes, enganxines. Disseny, producció i venda a l'esdeveniment.",
+          "etiqueta": "Esdeveniments · Pilots"
+        },
+        {
+          "titulo": "Entrades a festes i esdeveniments",
+          "texto": "La festa de dissabte, el sopar oficial, el lliurament de premis. El que passa fora del tram també pot tenir entrada.",
+          "etiqueta": "Esdeveniments"
+        },
+        {
+          "titulo": "Hospitality",
+          "texto": "Un lloc ben triat, bona taula i bona companyia per als convidats d'una marca. Rebre com a la Fórmula 1, amb la pols del ral·li.",
+          "etiqueta": "Esdeveniments · Marques"
+        },
+        {
+          "titulo": "Tota la resta",
+          "texto": "Qualsevol actiu del cap de setmana que es pugui vendre: espais, contingut, experiències, accessos. Si té valor, li busquem comprador.",
+          "etiqueta": "El que hi hagi"
+        }
+      ]
+    },
+    {
+      "tipo": "pasos",
+      "antetitulo": "COM COBREM",
+      "titulo": "A èxit, amb un\npercentatge pactat.",
+      "subtitulo": "",
+      "estilo": "numerado",
+      "fondo": "gris",
+      "items": [
+        {
+          "titulo": "Una part del que venem",
+          "texto": "Per començar, treballem a èxit: pactem amb tu un percentatge sobre el que venguem i el cobrem quan tu cobres."
+        },
+        {
+          "titulo": "Es pacta abans de començar",
+          "texto": "El percentatge l'acordem amb tu al principi i depèn del que s'ha de vendre i de la feina que hi ha darrere. Sense lletra petita."
+        }
+      ]
+    },
+    {
+      "tipo": "tarjetas",
+      "antetitulo": "PER QUÈ NOSALTRES",
+      "titulo": "El ral·li, per dins.\nVenut com la F1.",
+      "subtitulo": "LA TESI DE LA CASA",
+      "fondo": "blanco",
+      "items": [
+        {
+          "etiqueta": "01",
+          "titulo": "Coneixem el ral·li per dins",
+          "texto": "Sabem com es munta un cap de setmana de cursa, què necessita un organitzador i què amoïna un pilot. Parlem la llengua del parc d'assistència.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "02",
+          "titulo": "El tractem com un producte prèmium",
+          "texto": "Un ral·li no és un esdeveniment menor. El venem amb els codis de la Fórmula 1: paquets clars, ben presentats i una experiència que la marca vol repetir.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "03",
+          "titulo": "Venem i produïm",
+          "texto": "El que venem, ho muntem nosaltres. La marca no compra una promesa: compra una cosa que farem realitat el cap de setmana de la cursa.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        }
+      ]
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "PARLEM-NE",
+      "titulo": "Organitzes o **corres**?",
+      "subtitulo": "EXPLICA'NS QUÈ TENS I ET DIREM QUÈ ES POT VENDRE",
+      "botones": [],
+      "columnas": [
+        {
+          "titulo": "Organitzo un esdeveniment",
+          "texto": "Ral·li, circuit o club. Digues-nos quin esdeveniment, en quines dates i què estàs venent avui, si és que vens res.",
+          "boton_texto": "Parlem-ne",
+          "enlace": "/ca/contacte?tipus=organitzador"
+        },
+        {
+          "titulo": "Corro o tinc un equip",
+          "texto": "Digues-nos en quin campionat, amb quin calendari i quins espais tens lliures al cotxe, a la granota i a les xarxes.",
+          "boton_texto": "Parlem-ne",
+          "enlace": "/ca/contacte?tipus=pilot"
+        }
+      ]
+    }
+  ]
+}

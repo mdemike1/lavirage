@@ -1,0 +1,18 @@
+{
+  "idioma": "es",
+  "locale": "es_ES",
+  "nombre_idioma": "Español",
+  "claim": "Más curvas. Menos tribuna.",
+  "boton_contacto": "Contacto",
+  "ruta_contacto": "/contacto",
+  "saltar": "Saltar al contenido",
+  "etiqueta_idioma": "Idioma",
+  "etiqueta_paginas": "Páginas",
+  "ruta_noticias": "/actualidad",
+  "titulo_noticias": "Actualidad",
+  "leer_mas": "Leer más",
+  "correo": "hola@lavirageclub.com",
+  "instagram": "lavirageclub",
+  "imagen_compartir": "/assets/og.jpg",
+  "texto_legal": ""
+}

@@ -1,0 +1,79 @@
+{%- set aj = sitio.ajustes[idioma] -%}
+{%- set img = (imagen or aj.imagen_compartir) -%}
+{%- set img_abs = img if (img and img.startsWith('http')) else sitio.URL_BASE + img -%}
+<!DOCTYPE html>
+<html lang="{{ idioma }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0E0B0A">
+<title>{{ titulo_seo }}</title>
+<meta name="description" content="{{ descripcion }}">
+<link rel="canonical" href="{{ sitio.URL_BASE }}{{ ruta }}">
+{%- for a in alternas %}{% if a.existe %}
+<link rel="alternate" hreflang="{{ a.idioma }}" href="{{ sitio.URL_BASE }}{{ a.ruta }}">{% endif %}{% endfor %}
+{%- for a in alternas %}{% if a.existe and a.idioma == 'es' %}
+<link rel="alternate" hreflang="x-default" href="{{ sitio.URL_BASE }}{{ a.ruta }}">{% endif %}{% endfor %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Virage Club">
+<meta property="og:locale" content="{{ aj.locale }}">
+<meta property="og:url" content="{{ sitio.URL_BASE }}{{ ruta }}">
+<meta property="og:title" content="{{ titulo_seo }}">
+<meta property="og:description" content="{{ descripcion }}">
+<meta property="og:image" content="{{ img_abs }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ img_abs }}">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+{%- if ruta == sitio.inicio[idioma] %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"La Virage Club","url":"{{ sitio.URL_BASE }}/","email":"{{ aj.correo }}","slogan":{{ aj.claim | json | safe }},"sameAs":["https://www.instagram.com/{{ aj.instagram }}/"]}</script>
+{%- endif %}
+</head>
+<body>
+<a class="saltar" href="#contenido">{{ aj.saltar }}</a>
+<header class="cabecera">
+  <div class="ancho cabecera-in">
+    <a class="marca" href="{{ sitio.inicio[idioma] }}" aria-label="La Virage Club">{% include "wordmark.njk" %}</a>
+    <nav class="nav" aria-label="Principal">
+      {%- for m in sitio.menu[idioma] %}
+      <a href="{{ m.ruta }}"{% if m.ruta == ruta %} aria-current="page"{% endif %}>{{ m.texto }}</a>
+      {%- endfor %}
+      <a class="btn btn-rojo btn-peq" href="{{ aj.ruta_contacto }}">{{ aj.boton_contacto }}</a>
+      <div class="idioma" role="group" aria-label="{{ aj.etiqueta_idioma }}">
+        {%- for a in alternas %}
+        <a href="{{ a.ruta }}" hreflang="{{ a.idioma }}" lang="{{ a.idioma }}" data-lang="{{ a.idioma }}" aria-label="{{ sitio.ajustes[a.idioma].nombre_idioma }}"{% if a.idioma == idioma %} aria-current="true"{% endif %}>{{ a.idioma | upper }}</a>
+        {%- endfor %}
+      </div>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+{% block contenido %}{% endblock %}
+</main>
+<footer class="pie">
+  <div class="ancho">
+    <div class="pie-arriba">
+      <span class="marca marca-pie">{% include "wordmark.njk" %}</span>
+      <ul class="pie-paginas" aria-label="{{ aj.etiqueta_paginas }}">
+        {%- for m in sitio.pie[idioma] %}<li><a href="{{ m.ruta }}">{{ m.texto }}</a></li>{% endfor %}
+      </ul>
+      <div class="pie-contacto">
+        <a href="mailto:{{ aj.correo }}">{{ aj.correo }}</a>
+        <a href="https://www.instagram.com/{{ aj.instagram }}/" target="_blank" rel="noopener">@{{ aj.instagram }}</a>
+      </div>
+    </div>
+    <div class="pie-abajo">
+      <span>© {{ sitio.anio }} La Virage Club · {{ aj.claim }}</span>
+      {%- if aj.texto_legal %}<span>{{ aj.texto_legal | safe }}</span>{% endif %}
+    </div>
+  </div>
+</footer>
+<script src="/script.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

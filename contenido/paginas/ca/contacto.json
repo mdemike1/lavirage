@@ -1,0 +1,54 @@
+{
+  "clave": "contacto",
+  "ruta": "/ca/contacte",
+  "publicada": true,
+  "titulo_seo": "Contacte — La Virage Club",
+  "descripcion_seo": "Organitzadors, pilots i equips, marques i particulars: explica'ns què tens o què necessites. Escriu-nos a hola@lavirageclub.com.",
+  "imagen_compartir": "/assets/og-ca.jpg",
+  "en_menu": false,
+  "texto_menu": "Contacte",
+  "orden_menu": 9,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "CONTACTE",
+      "titulo": "Parlem-ne.",
+      "subtitulo": "",
+      "texto": "EXPLICA'NS QUÈ TENS O QUÈ NECESSITES. RESPONEM EN 48 HORES LABORABLES.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "contacto",
+      "antetitulo": "QUÈ ENS HAS D'EXPLICAR",
+      "tipos": [
+        {
+          "clave": "organizador",
+          "titulo": "Organitzadors",
+          "texto": "Quin esdeveniment, en quines dates i què estàs venent avui, si és que vens res."
+        },
+        {
+          "clave": "piloto",
+          "titulo": "Pilots i equips",
+          "texto": "En quin campionat corres, amb quin calendari i quins espais tens lliures al cotxe, a la granota i a les xarxes."
+        },
+        {
+          "clave": "marca",
+          "titulo": "Marques",
+          "texto": "Què busques en el món del motor i en quines dates o zones t'interessa ser-hi."
+        },
+        {
+          "clave": "privado",
+          "titulo": "Particulars",
+          "texto": "Quina cursa, quina data aproximada i quanta gent."
+        }
+      ],
+      "titulo": "Escriu-nos.",
+      "boton_texto": "Envia un correu",
+      "ayuda": "AMB AIXÒ N'HI HA PROU PER COMENÇAR.\nINSTAGRAM: @LAVIRAGECLUB\nBASE: CATALUNYA"
+    }
+  ]
+}

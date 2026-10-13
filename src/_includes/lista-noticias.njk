@@ -1,0 +1,10 @@
+<div class="noticias">
+  {%- for n in noticias_lista %}
+  <article class="noticia">
+    {%- if n.imagen %}<a href="{{ n.ruta }}" tabindex="-1" aria-hidden="true"><img src="{{ n.imagen }}" alt="" loading="lazy"></a>{% endif %}
+    <time datetime="{{ n.fecha }}">{{ n.fecha | fecha(n.idioma) }}</time>
+    <h3><a href="{{ n.ruta }}">{{ n.titulo }}</a></h3>
+    {%- if n.resumen %}<p>{{ n.resumen }}</p>{% endif %}
+  </article>
+  {%- endfor %}
+</div>

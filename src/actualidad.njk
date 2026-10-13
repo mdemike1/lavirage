@@ -1,0 +1,22 @@
+---
+pagination:
+  data: sitio.archivos
+  size: 1
+  alias: arch
+permalink: "{{ arch.salida }}"
+---
+{% extends "base.njk" %}
+{%- set idioma = arch.idioma -%}
+{%- set ruta = arch.ruta -%}
+{%- set titulo_seo = sitio.ajustes[idioma].titulo_noticias + ' — La Virage Club' -%}
+{%- set descripcion = sitio.ajustes[idioma].titulo_noticias + ' · La Virage Club' -%}
+{%- set imagen = '' -%}
+{%- set alternas = arch.alternas -%}
+{% block contenido %}
+<section class="bloque f-blanco">
+  <div class="ancho">
+    <div class="cabeza"><h1 class="portada-titulo">{{ sitio.ajustes[idioma].titulo_noticias }}</h1></div>
+    {% set noticias_lista = sitio.noticias | deIdioma(idioma) %}{% include "lista-noticias.njk" %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,123 @@
+{
+  "clave": "veladas",
+  "ruta": "/ca/vetllades",
+  "publicada": true,
+  "titulo_seo": "Vetllades del món del motor — La Virage Club",
+  "descripcion_seo": "Sopars i nits d'alt nivell al voltant de ral·lis i grans premis. Per encàrrec, per a marques, organitzadors i particulars. Concepte, producció i execució.",
+  "imagen_compartir": "/assets/og-ca.jpg",
+  "en_menu": true,
+  "texto_menu": "Vetllades",
+  "orden_menu": 3,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "VETLLADES",
+      "titulo": "Vetllades.",
+      "subtitulo": "",
+      "texto": "SOPARS I NITS D'ALT NIVELL AL VOLTANT DE RAL·LIS I GRANS PREMIS. LA PROVA VISIBLE DE COM TREBALLEM.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "EL MANIFEST",
+      "titulo": "Els ral·lis són bruts,\nsorollosos i meravellosos.\nNo els volem canviar.",
+      "cuerpo": "<p><strong>Així és una vetllada de La Virage.</strong></p><p>Però en algun moment del cap de setmana et mereixes <strong>una cadira còmoda, una copa freda i gent interessant</strong> en un lloc que valgui la foto. Això és una vetllada. Hi arribem abans, trobem el lloc —un celler, un pati de pedra, un terrat— i el convertim en <strong>el millor pla del cap de setmana de cursa</strong>.</p><p>Les produïm per encàrrec, per a marques, organitzadors i qui reuneix els seus, i com a part dels caps de setmana que comercialitzem. Ells hi posen el motiu; nosaltres, la vetllada sencera.</p>",
+      "firma": "Ja saps on trobar-nos. Al revolt.",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "cita",
+      "frase": "El motor fa el soroll.\nNosaltres fem la resta."
+    },
+    {
+      "tipo": "horario",
+      "antetitulo": "EL FORMAT DE LA CASA",
+      "titulo": "La nit, hora a hora",
+      "subtitulo": "AIXÍ ESTRUCTUREM UNA VETLLADA · EL GUIÓ S'ADAPTA A CADA ENCÀRREC",
+      "items": [
+        {
+          "hora": "19:47",
+          "titulo": "Les coordenades",
+          "texto": "Reps un punt GPS i una hora. Res més. Arribes a un lloc que no sabies que existia —un celler, un pati de pedra— i a la porta, el revolt gravat.",
+          "nota": "porta calçat còmode, confia"
+        },
+        {
+          "hora": "20:30",
+          "titulo": "Vuit segons de motor de veritat",
+          "texto": "Els llums s'abaixen. Un motor arrenca on no hi hauria d'haver cap motor. Vuit segons a tota veu, i silenci. És tota la cerimònia que necessitem: la resta de la nit és teva.",
+          "nota": ""
+        },
+        {
+          "hora": "21:30",
+          "titulo": "La taula llarga",
+          "texto": "Una sola taula llarga. Ningú no la presideix. El menú el signa la zona: el que es menja aquí, ben fet. A l'esquerra, un pilot; a la dreta, algú que dissenya cascos.",
+          "nota": "les cartes porten revolts"
+        },
+        {
+          "hora": "00:30",
+          "titulo": "La sobretaula s'allarga",
+          "texto": "La taula es converteix en barra. Música a volum de conversa; després, ja veurem. El cotxe continua allà, il·luminat, rebent fotos.",
+          "nota": ""
+        },
+        {
+          "hora": "03:00",
+          "titulo": "Ningú no vol marxar",
+          "texto": "I aquesta és exactament la mètrica que ens importa. A la porta, un detall per a la butxaca: l'enganxina, el dorsal, alguna cosa que demà et recordi que això va passar de debò.",
+          "nota": "fins al pròxim revolt"
+        }
+      ]
+    },
+    {
+      "tipo": "galeria",
+      "antetitulo": "AIXÍ ES VEU",
+      "titulo": "Les peces de la casa",
+      "fotos": [],
+      "nota_vacia": "PECES DE MOSTRA. L'ARXIU FOTOGRÀFIC ARRIBA AMB LA PRIMERA VETLLADA."
+    },
+    {
+      "tipo": "pasos",
+      "antetitulo": "EL QUE NO ES NEGOCIA",
+      "titulo": "Tres articles. I prou.",
+      "subtitulo": "",
+      "estilo": "numerado",
+      "fondo": "gris",
+      "items": [
+        {
+          "titulo": "El revolt és el nostre cor",
+          "texto": "Altres tenen un cor o un ós. Nosaltres tenim el revolt: el punt exacte on la velocitat es converteix en habilitat. És al logo, a les enganxines i a cada nit que muntem."
+        },
+        {
+          "titulo": "El cotxe, sempre al centre",
+          "texto": "A cada espai hi ha un cotxe il·luminat com una peça de museu. No és en un racó: és el centre de gravetat de la nit. Volem que la gent li faci fotos abans de demanar la primera copa."
+        },
+        {
+          "titulo": "Res de tarima ni PowerPoint",
+          "texto": "A les nostres vetllades, res de tarima ni PowerPoint: la marca es viu a la copa, a taula i en el detall de sortida. Tota la nit és el missatge."
+        }
+      ]
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "PARLEM-NE",
+      "titulo": "Explica'ns quina cursa i nosaltres fem la **nit**.",
+      "subtitulo": "VETLLADES PER ENCÀRREC · MARQUES, ORGANITZADORS I PARTICULARS",
+      "botones": [
+        {
+          "texto": "Encarrega una vetllada",
+          "enlace": "/ca/contacte?tipus=particular",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "Mira els serveis",
+          "enlace": "/ca/serveis",
+          "estilo": "linea"
+        }
+      ],
+      "columnas": []
+    }
+  ]
+}

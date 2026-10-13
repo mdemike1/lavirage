@@ -1,16 +1,28 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "lavirage.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "lavirage.vercel.app"
+        }
+      ],
       "destination": "https://www.lavirageclub.com/$1",
       "statusCode": 301
     },
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "lavirageclub.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "lavirageclub.com"
+        }
+      ],
       "destination": "https://www.lavirageclub.com/$1",
       "statusCode": 301
     }

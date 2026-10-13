@@ -1,0 +1,142 @@
+{
+  "clave": "derechos",
+  "ruta": "/en/rights",
+  "publicada": true,
+  "titulo_seo": "Motorsport rights sales — La Virage Club",
+  "descripcion_seo": "We sell the sponsorship, merchandising, tickets and hospitality of rallies, circuits, clubs, drivers and teams. We work on results, for an agreed percentage of what we sell.",
+  "imagen_compartir": "/assets/og-en.jpg",
+  "en_menu": true,
+  "texto_menu": "Rights",
+  "orden_menu": 1,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "RIGHTS",
+      "titulo": "What your rally is worth, sold.",
+      "subtitulo": "",
+      "texto": "SPONSORSHIP, MERCHANDISING, TICKETS, HOSPITALITY AND EVERYTHING ELSE. FOR ORGANISERS, DRIVERS AND TEAMS. ON RESULTS, FOR AN AGREED PERCENTAGE.",
+      "botones": [],
+      "nota": "",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": ""
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "WHAT RIGHTS ARE",
+      "titulo": "Everything your race generates\nthat someone would pay\nto be part of.",
+      "cuerpo": "<p>The name on the poster. The car door. The marquee next to the service park. The T-shirt fans take home. Saturday night's dinner. <strong>All of it has a price</strong>, and it's hardly ever sold in full.</p><p>If you run a rally, a circuit meeting or a club event, those rights are yours. If you race, so are yours: your car, your race suit, your season and your social channels. <strong>Our job is to sell them.</strong></p>",
+      "firma": "",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "lista",
+      "antetitulo": "WHAT WE SELL",
+      "titulo": "What we sell.",
+      "subtitulo": "ONE BY ONE · PER EVENT OR PER SEASON",
+      "fondo": "negro",
+      "items": [
+        {
+          "titulo": "Sponsorship",
+          "texto": "The brand in the event name, on a stage, on the podium, on the car or on the race suit. For one weekend or the whole season.",
+          "etiqueta": "Events · Drivers"
+        },
+        {
+          "titulo": "Merchandising",
+          "texto": "What fans take home: t-shirts, caps, patches, stickers. Design, production and sales at the event.",
+          "etiqueta": "Events · Drivers"
+        },
+        {
+          "titulo": "Tickets to parties and events",
+          "texto": "Saturday's party, the official dinner, the prize-giving. What happens off the stages can have a ticket too.",
+          "etiqueta": "Events"
+        },
+        {
+          "titulo": "Hospitality",
+          "texto": "A well-chosen spot, a good table and good company for a brand's guests. Formula 1 hospitality, with rally dust.",
+          "etiqueta": "Events · Brands"
+        },
+        {
+          "titulo": "Everything else",
+          "texto": "Any asset from the weekend that can be sold: spaces, content, experiences, access. If it's worth something, we'll find a buyer.",
+          "etiqueta": "Whatever there is"
+        }
+      ]
+    },
+    {
+      "tipo": "pasos",
+      "antetitulo": "HOW WE GET PAID",
+      "titulo": "On results, for an\nagreed percentage.",
+      "subtitulo": "",
+      "estilo": "numerado",
+      "fondo": "gris",
+      "items": [
+        {
+          "titulo": "A share of what we sell",
+          "texto": "To start with, we work on results: we agree with you a percentage of whatever we sell, and we get paid when you do."
+        },
+        {
+          "titulo": "Agreed before we start",
+          "texto": "The percentage is agreed with you up front and depends on what needs selling and the work behind it. No small print."
+        }
+      ]
+    },
+    {
+      "tipo": "tarjetas",
+      "antetitulo": "WHY US",
+      "titulo": "Rallying from the inside.\nSold like F1.",
+      "subtitulo": "THE HOUSE THESIS",
+      "fondo": "blanco",
+      "items": [
+        {
+          "etiqueta": "01",
+          "titulo": "We know rallying from the inside",
+          "texto": "We know how a race weekend comes together, what an organiser needs and what keeps a driver up at night. We speak the language of the service park.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "02",
+          "titulo": "We treat it as a premium product",
+          "texto": "A rally isn't a lesser event. We sell it with Formula 1's playbook: clear packages, properly presented, and an experience the brand wants to come back to.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "03",
+          "titulo": "We sell and we produce",
+          "texto": "Whatever we sell, we build ourselves. The brand isn't buying a promise: it's buying something we'll make happen on race weekend.",
+          "enlace_texto": "",
+          "enlace": "",
+          "imagen": "",
+          "imagen_alt": ""
+        }
+      ]
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "LET'S TALK",
+      "titulo": "Do you organise or **race**?",
+      "subtitulo": "TELL US WHAT YOU'VE GOT AND WE'LL TELL YOU WHAT CAN BE SOLD",
+      "botones": [],
+      "columnas": [
+        {
+          "titulo": "I run an event",
+          "texto": "Rally, circuit or club. Tell us which event, the dates and what you're selling today, if anything.",
+          "boton_texto": "Let's talk",
+          "enlace": "/en/contact?type=organiser"
+        },
+        {
+          "titulo": "I race or run a team",
+          "texto": "Tell us the championship, the calendar and what space you've got free on the car, the race suit and your channels.",
+          "boton_texto": "Let's talk",
+          "enlace": "/en/contact?type=driver"
+        }
+      ]
+    }
+  ]
+}

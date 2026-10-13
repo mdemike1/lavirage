@@ -1,0 +1,150 @@
+{
+  "clave": "inicio",
+  "ruta": "/en",
+  "publicada": true,
+  "titulo_seo": "La Virage Club — Motorsport rights, activations and evenings",
+  "descripcion_seo": "We sell the sponsorship, tickets, hospitality and merchandising of rallies, circuits, clubs, drivers and teams, and produce their activations and evenings.",
+  "imagen_compartir": "/assets/og-en.jpg",
+  "en_menu": false,
+  "texto_menu": "Home",
+  "orden_menu": 0,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "RIGHTS · SERVICES AND EVENINGS",
+      "titulo": "We sell what a rally is worth.",
+      "subtitulo": "And put on the night that proves it.",
+      "texto": "Motorsport rights, activations and evenings for <b>organisers, drivers and teams, brands and private clients</b>.",
+      "botones": [
+        {
+          "texto": "Let's talk",
+          "enlace": "/en/contact",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "What we sell",
+          "enlace": "/en/rights",
+          "estilo": "linea"
+        }
+      ],
+      "nota": "<b>We work on results:</b> an agreed percentage of what we sell.",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": "More bends. Less grandstand."
+    },
+    {
+      "tipo": "clientes",
+      "items": [
+        {
+          "titulo": "ORGANISERS",
+          "texto": "Make your event earn what it's worth.",
+          "enlace": "/en/contact?type=organiser"
+        },
+        {
+          "titulo": "DRIVERS AND TEAMS",
+          "texto": "You race. We sell your season.",
+          "enlace": "/en/contact?type=driver"
+        },
+        {
+          "titulo": "BRANDS",
+          "texto": "Get into rallying with more than a logo on a door.",
+          "enlace": "/en/contact?type=brand"
+        },
+        {
+          "titulo": "PRIVATE CLIENTS",
+          "texto": "Your dinner, built around a race.",
+          "enlace": "/en/contact?type=private"
+        }
+      ]
+    },
+    {
+      "tipo": "tarjetas",
+      "antetitulo": "WHAT WE DO",
+      "titulo": "We sell, produce\nand deliver.",
+      "subtitulo": "THREE LINES · ONE HOUSE",
+      "fondo": "blanco",
+      "items": [
+        {
+          "etiqueta": "01",
+          "titulo": "Rights",
+          "texto": "We sell the sponsorship, tickets, hospitality and merchandising of your event or your season. We take an agreed percentage of what sells.",
+          "enlace_texto": "See rights",
+          "enlace": "/en/rights",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "02",
+          "titulo": "Services and activations",
+          "texto": "Commissioned events, brand activations and services for clubs and organisers. Whatever gets sold, we build.",
+          "enlace_texto": "See services",
+          "enlace": "/en/services",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "03",
+          "titulo": "Evenings",
+          "texto": "High-end dinners and nights around rallies and grands prix. The clearest proof of how we work.",
+          "enlace_texto": "See evenings",
+          "enlace": "/en/evenings",
+          "imagen": "",
+          "imagen_alt": ""
+        }
+      ]
+    },
+    {
+      "tipo": "pasos",
+      "antetitulo": "HOW WE WORK",
+      "titulo": "Four steps.",
+      "subtitulo": "",
+      "estilo": "numerado",
+      "fondo": "gris",
+      "items": [
+        {
+          "titulo": "We sit down and take stock",
+          "texto": "Of everything you have: the event or the season, the crowd, the spaces, the dates. Everything that's worth something and isn't being sold today."
+        },
+        {
+          "titulo": "We package it",
+          "texto": "We turn that inventory into packages a brand understands and can buy: sponsorship, hospitality, tickets, merchandising and activations."
+        },
+        {
+          "titulo": "We sell it and we produce it",
+          "texto": "We go out and sell it. And whatever sells, we build ourselves, so what's promised to the brand actually shows up on race weekend."
+        },
+        {
+          "titulo": "We get paid when you do",
+          "texto": "To start with, we work on results: we take an agreed share of what we sell."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "THE MANIFESTO",
+      "titulo": "Rallies are dirty,\nloud and wonderful.\nWe don't want to change them.",
+      "cuerpo": "<p>We want them to earn what they're worth. Formula 1 knows how to sell every metre of its weekend and how to look after its people. That's the house idea: <strong>bring Formula 1's playbook to rallying</strong>, in how its assets are sold and in how its guests are welcomed.</p><p>Without washing off the mud. With <strong>a comfortable chair, a cold drink and interesting people</strong> once the last stage goes quiet.</p>",
+      "firma": "You know where to find us. On the bend.",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "LET'S TALK",
+      "titulo": "Tell us what you've got and we'll tell you what can be **sold**.",
+      "subtitulo": "ON RESULTS · AN AGREED PERCENTAGE",
+      "botones": [
+        {
+          "texto": "Let's talk",
+          "enlace": "/en/contact",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "See rights",
+          "enlace": "/en/rights",
+          "estilo": "linea"
+        }
+      ],
+      "columnas": []
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "clave": "inicio",
+  "ruta": "/",
+  "publicada": true,
+  "titulo_seo": "La Virage Club — Derechos, activaciones y veladas de motorsport",
+  "descripcion_seo": "Vendemos el patrocinio, las entradas, el hospitality y el merchandising de rallies, circuitos, clubes, pilotos y equipos, y producimos sus activaciones y veladas.",
+  "imagen_compartir": "/assets/og.jpg",
+  "en_menu": false,
+  "texto_menu": "Inicio",
+  "orden_menu": 0,
+  "secciones": [
+    {
+      "tipo": "portada",
+      "antetitulo": "DERECHOS · SERVICIOS Y VELADAS",
+      "titulo": "Vendemos lo que vale un rally.",
+      "subtitulo": "Y montamos la noche que lo demuestra.",
+      "texto": "Derechos, activaciones y veladas de motorsport para <b>organizadores, pilotos y equipos, marcas y privados</b>.",
+      "botones": [
+        {
+          "texto": "Hablemos",
+          "enlace": "/contacto",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "Qué vendemos",
+          "enlace": "/derechos",
+          "estilo": "linea"
+        }
+      ],
+      "nota": "<b>Trabajamos a éxito:</b> un porcentaje pactado de lo que vendemos.",
+      "imagen": "",
+      "imagen_alt": "",
+      "imagen_hueco": "Más curvas. Menos tribuna."
+    },
+    {
+      "tipo": "clientes",
+      "items": [
+        {
+          "titulo": "ORGANIZADORES",
+          "texto": "Que tu evento rinda lo que vale.",
+          "enlace": "/contacto?tipo=organizador"
+        },
+        {
+          "titulo": "PILOTOS Y EQUIPOS",
+          "texto": "Tú corres. Nosotros vendemos tu temporada.",
+          "enlace": "/contacto?tipo=piloto"
+        },
+        {
+          "titulo": "MARCAS",
+          "texto": "Entrar en el rally con algo más que un logo en una puerta.",
+          "enlace": "/contacto?tipo=marca"
+        },
+        {
+          "titulo": "PRIVADOS",
+          "texto": "Tu cena alrededor de una carrera.",
+          "enlace": "/contacto?tipo=privado"
+        }
+      ]
+    },
+    {
+      "tipo": "tarjetas",
+      "antetitulo": "QUÉ HACEMOS",
+      "titulo": "Vendemos, producimos\ny ejecutamos.",
+      "subtitulo": "TRES LÍNEAS · UNA SOLA CASA",
+      "fondo": "blanco",
+      "items": [
+        {
+          "etiqueta": "01",
+          "titulo": "Derechos",
+          "texto": "Vendemos el patrocinio, las entradas, el hospitality y el merchandising de tu evento o de tu temporada. Cobramos un porcentaje pactado de lo que se vende.",
+          "enlace_texto": "Ver derechos",
+          "enlace": "/derechos",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "02",
+          "titulo": "Servicios y activaciones",
+          "texto": "Eventos por encargo, activaciones de marca y servicios para clubes y organizadores. Lo que se vende, lo montamos.",
+          "enlace_texto": "Ver servicios",
+          "enlace": "/servicios",
+          "imagen": "",
+          "imagen_alt": ""
+        },
+        {
+          "etiqueta": "03",
+          "titulo": "Veladas",
+          "texto": "Cenas y noches de alto nivel alrededor de rallies y grandes premios. La prueba visible de cómo trabajamos.",
+          "enlace_texto": "Ver veladas",
+          "enlace": "/veladas",
+          "imagen": "",
+          "imagen_alt": ""
+        }
+      ]
+    },
+    {
+      "tipo": "pasos",
+      "antetitulo": "CÓMO TRABAJAMOS",
+      "titulo": "Cuatro pasos.",
+      "subtitulo": "",
+      "estilo": "numerado",
+      "fondo": "gris",
+      "items": [
+        {
+          "titulo": "Nos sentamos y hacemos inventario",
+          "texto": "De todo lo que tienes: el evento o la temporada, el público, los espacios, las fechas. Todo lo que tiene valor y hoy no se está vendiendo."
+        },
+        {
+          "titulo": "Lo empaquetamos",
+          "texto": "Convertimos ese inventario en paquetes que una marca entiende y puede comprar: patrocinio, hospitality, entradas, merchandising y activaciones."
+        },
+        {
+          "titulo": "Lo vendemos y lo producimos",
+          "texto": "Salimos a venderlo. Y lo que se vende, lo montamos nosotros, para que lo que se le promete a la marca se vea el fin de semana de la carrera."
+        },
+        {
+          "titulo": "Cobramos cuando tú cobras",
+          "texto": "Para empezar, trabajamos a éxito: nos llevamos una parte pactada de lo que vendemos."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "antetitulo": "EL MANIFIESTO",
+      "titulo": "Los rallies son sucios,\nruidosos y maravillosos.\nNo queremos cambiarlos.",
+      "cuerpo": "<p>Queremos que rindan lo que valen. La Fórmula 1 sabe vender cada metro de su fin de semana y sabe recibir a su gente. Esa es la idea de la casa: <strong>llevar al rally los códigos de la Fórmula 1</strong>, en cómo se venden sus activos y en cómo se recibe a quien viene.</p><p>Sin quitarle el barro. Con <strong>una silla cómoda, una copa fría y gente interesante</strong> cuando se apaga el último tramo.</p>",
+      "firma": "Ya sabes dónde encontrarnos. En la curva.",
+      "fondo": "crema"
+    },
+    {
+      "tipo": "llamada",
+      "antetitulo": "HABLEMOS",
+      "titulo": "Cuéntanos qué tienes y te decimos qué se puede **vender**.",
+      "subtitulo": "A ÉXITO · CON UN PORCENTAJE PACTADO",
+      "botones": [
+        {
+          "texto": "Hablemos",
+          "enlace": "/contacto",
+          "estilo": "rojo"
+        },
+        {
+          "texto": "Ver derechos",
+          "enlace": "/derechos",
+          "estilo": "linea"
+        }
+      ],
+      "columnas": []
+    }
+  ]
+}

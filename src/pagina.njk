@@ -1,0 +1,18 @@
+---
+pagination:
+  data: sitio.paginas
+  size: 1
+  alias: pagina
+permalink: "{{ pagina.salida }}"
+---
+{% extends "base.njk" %}
+{%- set idioma = pagina.idioma -%}
+{%- set ruta = pagina.ruta -%}
+{%- set titulo_seo = pagina.titulo_seo -%}
+{%- set descripcion = pagina.descripcion_seo -%}
+{%- set imagen = pagina.imagen_compartir -%}
+{%- set alternas = pagina.alternas -%}
+{% block contenido %}
+{%- set secciones = pagina.secciones -%}
+{% include "secciones.njk" %}
+{% endblock %}

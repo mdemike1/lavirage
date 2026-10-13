@@ -1,0 +1,22 @@
+{
+  "name": "lavirage",
+  "version": "1.0.0",
+  "description": "Web de La Virage Club",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdemike1/lavirage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdemike1/lavirage/issues"
+  },
+  "homepage": "https://github.com/mdemike1/lavirage#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  },
+  "private": true,
+  "type": "module"
+}
