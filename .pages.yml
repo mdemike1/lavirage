@@ -101,7 +101,6 @@ content:
                   values:
                     - { name: blanco, label: Blanco }
                     - { name: gris, label: Gris claro }
-                    - { name: crema, label: Crema }
                     - { name: negro, label: Negro }
                     - { name: rojo, label: Rojo }
               - name: items

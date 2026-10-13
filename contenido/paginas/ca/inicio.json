@@ -120,14 +120,6 @@
       ]
     },
     {
-      "tipo": "texto",
-      "antetitulo": "EL MANIFEST",
-      "titulo": "Els ral·lis són bruts,\nsorollosos i meravellosos.\nNo els volem canviar.",
-      "cuerpo": "<p>Volem que rendeixin el que valen. La Fórmula 1 sap vendre cada metre del seu cap de setmana i sap rebre la seva gent. Aquesta és la idea de la casa: <strong>portar al ral·li els codis de la Fórmula 1</strong>, en com se'n venen els actius i en com es rep qui hi ve.</p><p>Sense treure-li el fang. Amb <strong>una cadira còmoda, una copa freda i gent interessant</strong> quan s'apaga l'últim tram.</p>",
-      "firma": "Ja saps on trobar-nos. Al revolt.",
-      "fondo": "crema"
-    },
-    {
       "tipo": "llamada",
       "antetitulo": "PARLEM-NE",
       "titulo": "Explica'ns què tens i et direm què es pot **vendre**.",

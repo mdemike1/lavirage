@@ -22,14 +22,6 @@
       "imagen_hueco": ""
     },
     {
-      "tipo": "texto",
-      "antetitulo": "EL MANIFIESTO",
-      "titulo": "Los rallies son sucios,\nruidosos y maravillosos.\nNo queremos cambiarlos.",
-      "cuerpo": "<p><strong>Así es una velada de La Virage.</strong></p><p>Pero en algún punto del fin de semana te mereces <strong>una silla cómoda, una copa fría y gente interesante</strong> en un sitio que merezca la foto. Eso es una velada. Llegamos antes, encontramos el sitio —una bodega, un patio de piedra, una azotea— y lo convertimos en <strong>el mejor plan del fin de semana de carrera</strong>.</p><p>Las producimos por encargo, para marcas, organizadores y quien reúne a los suyos, y como parte de los fines de semana que comercializamos. Ellos ponen el motivo; nosotros, la velada entera.</p>",
-      "firma": "Ya sabes dónde encontrarnos. En la curva.",
-      "fondo": "crema"
-    },
-    {
       "tipo": "cita",
       "frase": "El motor hace el ruido.\nNosotros hacemos el resto."
     },

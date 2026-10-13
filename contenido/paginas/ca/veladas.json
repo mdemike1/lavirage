@@ -22,14 +22,6 @@
       "imagen_hueco": ""
     },
     {
-      "tipo": "texto",
-      "antetitulo": "EL MANIFEST",
-      "titulo": "Els ral·lis són bruts,\nsorollosos i meravellosos.\nNo els volem canviar.",
-      "cuerpo": "<p><strong>Així és una vetllada de La Virage.</strong></p><p>Però en algun moment del cap de setmana et mereixes <strong>una cadira còmoda, una copa freda i gent interessant</strong> en un lloc que valgui la foto. Això és una vetllada. Hi arribem abans, trobem el lloc —un celler, un pati de pedra, un terrat— i el convertim en <strong>el millor pla del cap de setmana de cursa</strong>.</p><p>Les produïm per encàrrec, per a marques, organitzadors i qui reuneix els seus, i com a part dels caps de setmana que comercialitzem. Ells hi posen el motiu; nosaltres, la vetllada sencera.</p>",
-      "firma": "Ja saps on trobar-nos. Al revolt.",
-      "fondo": "crema"
-    },
-    {
       "tipo": "cita",
       "frase": "El motor fa el soroll.\nNosaltres fem la resta."
     },

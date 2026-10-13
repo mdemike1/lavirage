@@ -120,14 +120,6 @@
       ]
     },
     {
-      "tipo": "texto",
-      "antetitulo": "EL MANIFIESTO",
-      "titulo": "Los rallies son sucios,\nruidosos y maravillosos.\nNo queremos cambiarlos.",
-      "cuerpo": "<p>Queremos que rindan lo que valen. La Fórmula 1 sabe vender cada metro de su fin de semana y sabe recibir a su gente. Esa es la idea de la casa: <strong>llevar al rally los códigos de la Fórmula 1</strong>, en cómo se venden sus activos y en cómo se recibe a quien viene.</p><p>Sin quitarle el barro. Con <strong>una silla cómoda, una copa fría y gente interesante</strong> cuando se apaga el último tramo.</p>",
-      "firma": "Ya sabes dónde encontrarnos. En la curva.",
-      "fondo": "crema"
-    },
-    {
       "tipo": "llamada",
       "antetitulo": "HABLEMOS",
       "titulo": "Cuéntanos qué tienes y te decimos qué se puede **vender**.",

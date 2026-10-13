@@ -99,7 +99,7 @@ p{margin:0}
 .bloque{padding:clamp(64px,8vw,96px) 0}
 .f-blanco{background:var(--blanco)}
 .f-gris{background:var(--gris);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
-.f-crema{background:var(--crema)}
+.f-blanco+.f-blanco{border-top:1px solid var(--linea)}
 .f-negro{background:var(--negro);color:var(--blanco-roto)}
 .f-rojo{background:var(--rojo);color:#fff}
 .f-negro .ante,.f-negro .num,.f-negro .etiqueta,.f-negro .acento{color:var(--rojo-claro)}
