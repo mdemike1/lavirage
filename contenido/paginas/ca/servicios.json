@@ -30,7 +30,7 @@
       "items": [
         {
           "titulo": "Esdeveniments per encàrrec",
-          "texto": "Un sopar, una presentació, un lliurament de premis. El que necessitis al voltant d'una cursa, de la idea al desmuntatge.",
+          "texto": "Una presentació, un lliurament de premis. El que necessitis al voltant d'una cursa, de la idea al desmuntatge.",
           "etiqueta": "Encàrrec"
         },
         {
@@ -40,7 +40,7 @@
         },
         {
           "titulo": "Serveis a clubs i organitzadors",
-          "texto": "La nit oficial, les zones d'hospitality, les peces impreses i la senyalètica, l'acollida i la cobertura. El que el teu equip no arriba a fer.",
+          "texto": "Les zones d'hospitality, les peces impreses i la senyalètica, l'acollida i la cobertura. El que el teu equip no arriba a fer.",
           "etiqueta": "Clubs · Organitzadors"
         }
       ]
@@ -57,7 +57,7 @@
       "tipo": "tarjetas",
       "antetitulo": "COM HO FEM",
       "titulo": "Concepte, producció\ni execució.",
-      "subtitulo": "DE LA IDEA A LES TRES DE LA MATINADA",
+      "subtitulo": "DE LA IDEA AL DESMUNTATGE",
       "fondo": "blanco",
       "items": [
         {

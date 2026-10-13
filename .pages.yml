@@ -263,7 +263,7 @@ content:
                     label: Tipo
                     type: select
                     options:
-                      values: [organizador, piloto, marca, privado]
+                      values: [organizador, marca]
                   - { name: titulo, label: Título, type: string }
                   - { name: texto, label: Texto, type: text }
               - { name: titulo, label: Título, type: string }

@@ -30,7 +30,7 @@
       "items": [
         {
           "titulo": "Eventos por encargo",
-          "texto": "Una cena, una presentación, una entrega de premios. Lo que necesites alrededor de una carrera, de la idea al desmontaje.",
+          "texto": "Una presentación, una entrega de premios. Lo que necesites alrededor de una carrera, de la idea al desmontaje.",
           "etiqueta": "Encargo"
         },
         {
@@ -40,7 +40,7 @@
         },
         {
           "titulo": "Servicios a clubes y organizadores",
-          "texto": "La noche oficial, las zonas de hospitality, las piezas impresas y la señalética, el anfitrionaje y la cobertura. Lo que tu equipo no llega a hacer.",
+          "texto": "Las zonas de hospitality, las piezas impresas y la señalética, el anfitrionaje y la cobertura. Lo que tu equipo no llega a hacer.",
           "etiqueta": "Clubes · Organizadores"
         }
       ]
@@ -57,7 +57,7 @@
       "tipo": "tarjetas",
       "antetitulo": "CÓMO LO HACEMOS",
       "titulo": "Concepto, producción\ny ejecución.",
-      "subtitulo": "DE LA IDEA A LAS TRES DE LA MAÑANA",
+      "subtitulo": "DE LA IDEA AL DESMONTAJE",
       "fondo": "blanco",
       "items": [
         {

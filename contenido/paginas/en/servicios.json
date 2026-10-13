@@ -30,7 +30,7 @@
       "items": [
         {
           "titulo": "Commissioned events",
-          "texto": "A dinner, a launch, a prize-giving. Whatever you need around a race, from the first idea to the get-out.",
+          "texto": "A launch, a prize-giving. Whatever you need around a race, from the first idea to the get-out.",
           "etiqueta": "Commission"
         },
         {
@@ -40,7 +40,7 @@
         },
         {
           "titulo": "Services for clubs and organisers",
-          "texto": "The official night, hospitality areas, print and signage, hosting and coverage. The things your team never gets round to.",
+          "texto": "Hospitality areas, print and signage, hosting and coverage. The things your team never gets round to.",
           "etiqueta": "Clubs · Organisers"
         }
       ]
@@ -57,7 +57,7 @@
       "tipo": "tarjetas",
       "antetitulo": "HOW WE DO IT",
       "titulo": "Concept, production\nand delivery.",
-      "subtitulo": "FROM THE FIRST IDEA TO THREE IN THE MORNING",
+      "subtitulo": "FROM THE FIRST IDEA TO THE GET-OUT",
       "fondo": "blanco",
       "items": [
         {

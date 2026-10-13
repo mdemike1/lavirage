@@ -16,20 +16,18 @@ const EQUIVALENTE = {
     '/': '/ca',
     '/derechos': '/ca/drets',
     '/servicios': '/ca/serveis',
-    '/veladas': '/ca/vetllades',
     '/contacto': '/ca/contacte',
   },
   en: {
     '/': '/en',
     '/derechos': '/en/rights',
     '/servicios': '/en/services',
-    '/veladas': '/en/evenings',
     '/contacto': '/en/contact',
   },
 };
 
 export const config = {
-  matcher: ['/', '/derechos', '/servicios', '/veladas', '/contacto'],
+  matcher: ['/', '/derechos', '/servicios', '/contacto'],
 };
 
 const BOTS = /bot\b|bot\/|crawl|spider|slurp|googlebot|google-inspectiontool|bingbot|bingpreview|duckduckbot|baiduspider|yandex|applebot|facebookexternalhit|facebot|meta-externalagent|twitterbot|linkedinbot|slackbot|slack-imgproxy|telegrambot|whatsapp|discordbot|pinterest|embedly|skypeuripreview|redditbot|vkshare|lighthouse|headlesschrome/i;

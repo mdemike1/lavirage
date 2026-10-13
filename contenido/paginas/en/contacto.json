@@ -3,7 +3,7 @@
   "ruta": "/en/contact",
   "publicada": true,
   "titulo_seo": "Contact — La Virage Club",
-  "descripcion_seo": "Organisers, drivers and teams, brands and private clients: tell us what you've got or what you need. Write to hola@lavirageclub.com.",
+  "descripcion_seo": "Rally organisers and brands: tell us what you've got or what you need. Write to hola@lavirageclub.com.",
   "imagen_compartir": "/assets/og-en.jpg",
   "en_menu": false,
   "texto_menu": "Contact",
@@ -31,19 +31,9 @@
           "texto": "Which event, which dates and what you're selling today, if anything."
         },
         {
-          "clave": "piloto",
-          "titulo": "Drivers and teams",
-          "texto": "Which championship you race in, your calendar and what space you've got free on the car, the race suit and your channels."
-        },
-        {
           "clave": "marca",
           "titulo": "Brands",
           "texto": "What you're after in motorsport and which dates or regions you'd like to be part of."
-        },
-        {
-          "clave": "privado",
-          "titulo": "Private clients",
-          "texto": "Which race, a rough date and how many people."
         }
       ],
       "titulo": "Write to us.",

@@ -8,15 +8,15 @@
     });
   });
 
-  /* Contacto: ?tipo=organizador|piloto|marca|privado (también ?tipus= y ?type=) marca el tipo y pone asunto al correo */
+  /* Contacto: ?tipo=organizador|marca (también ?tipus= y ?type=) marca el tipo y pone asunto al correo */
   const ASUNTOS = {
-    es: {organizador: 'Organizo un evento', piloto: 'Soy piloto o equipo', marca: 'Soy una marca', privado: 'Quiero una velada privada'},
-    ca: {organizador: 'Organitzo un esdeveniment', piloto: 'Soc pilot o equip', marca: 'Soc una marca', privado: 'Vull una vetllada particular'},
-    en: {organizador: 'I run an event', piloto: "I'm a driver or a team", marca: "I'm a brand", privado: "I'd like a private evening"}
+    es: {organizador: 'Organizo un evento', marca: 'Soy una marca'},
+    ca: {organizador: 'Organitzo un esdeveniment', marca: 'Soc una marca'},
+    en: {organizador: 'I run an event', marca: "I'm a brand"}
   }[LANG];
   const ALIAS = {
-    organiser:'organizador', organizer:'organizador', driver:'piloto', team:'piloto', brand:'marca', private:'privado',
-    organitzador:'organizador', pilot:'piloto', equip:'piloto', particular:'privado'
+    organiser:'organizador', organizer:'organizador', brand:'marca',
+    organitzador:'organizador',
   };
   const params = new URLSearchParams(location.search);
   let tipo = params.get('tipus') || params.get('tipo') || params.get('type');

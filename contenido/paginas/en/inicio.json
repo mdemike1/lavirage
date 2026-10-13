@@ -2,8 +2,8 @@
   "clave": "inicio",
   "ruta": "/en",
   "publicada": true,
-  "titulo_seo": "La Virage Club — Motorsport rights, activations and evenings",
-  "descripcion_seo": "We sell the sponsorship, tickets, hospitality and merchandising of rallies, circuits, clubs, drivers and teams, and produce their activations and evenings.",
+  "titulo_seo": "La Virage Club — Rally sponsorship, rights and production",
+  "descripcion_seo": "We sell rally sponsorship, tickets, hospitality and merchandising, and produce the activations. For organisers and brands. On results.",
   "imagen_compartir": "/assets/og-en.jpg",
   "en_menu": false,
   "texto_menu": "Home",
@@ -11,10 +11,10 @@
   "secciones": [
     {
       "tipo": "portada",
-      "antetitulo": "RIGHTS · SERVICES AND EVENINGS",
+      "antetitulo": "RIGHTS · SPONSORSHIP · PRODUCTION",
       "titulo": "We sell what a rally is worth.",
-      "subtitulo": "And put on the night that proves it.",
-      "texto": "Motorsport rights, activations and evenings for <b>organisers, drivers and teams, brands and private clients</b>.",
+      "subtitulo": "And make sure it lives up to it.",
+      "texto": "Sponsorship, rights and production for <b>rally organisers and brands</b>.",
       "botones": [
         {
           "texto": "Let's talk",
@@ -41,19 +41,9 @@
           "enlace": "/en/contact?type=organiser"
         },
         {
-          "titulo": "DRIVERS AND TEAMS",
-          "texto": "You race. We sell your season.",
-          "enlace": "/en/contact?type=driver"
-        },
-        {
           "titulo": "BRANDS",
           "texto": "Get into rallying with more than a logo on a door.",
           "enlace": "/en/contact?type=brand"
-        },
-        {
-          "titulo": "PRIVATE CLIENTS",
-          "texto": "Your dinner, built around a race.",
-          "enlace": "/en/contact?type=private"
         }
       ]
     },
@@ -61,13 +51,13 @@
       "tipo": "tarjetas",
       "antetitulo": "WHAT WE DO",
       "titulo": "We sell, produce\nand deliver.",
-      "subtitulo": "THREE LINES · ONE HOUSE",
+      "subtitulo": "TWO LINES · ONE HOUSE",
       "fondo": "blanco",
       "items": [
         {
           "etiqueta": "01",
           "titulo": "Rights",
-          "texto": "We sell the sponsorship, tickets, hospitality and merchandising of your event or your season. We take an agreed percentage of what sells.",
+          "texto": "We sell the sponsorship, tickets, hospitality and merchandising of your event. We take an agreed percentage of what sells.",
           "enlace_texto": "See rights",
           "enlace": "/en/rights",
           "imagen": "",
@@ -79,15 +69,6 @@
           "texto": "Commissioned events, brand activations and services for clubs and organisers. Whatever gets sold, we build.",
           "enlace_texto": "See services",
           "enlace": "/en/services",
-          "imagen": "",
-          "imagen_alt": ""
-        },
-        {
-          "etiqueta": "03",
-          "titulo": "Evenings",
-          "texto": "High-end dinners and nights around rallies and grands prix. The clearest proof of how we work.",
-          "enlace_texto": "See evenings",
-          "enlace": "/en/evenings",
           "imagen": "",
           "imagen_alt": ""
         }
@@ -103,7 +84,7 @@
       "items": [
         {
           "titulo": "We sit down and take stock",
-          "texto": "Of everything you have: the event or the season, the crowd, the spaces, the dates. Everything that's worth something and isn't being sold today."
+          "texto": "Of everything you have: the event, the crowd, the spaces, the dates. Everything that's worth something and isn't being sold today."
         },
         {
           "titulo": "We package it",

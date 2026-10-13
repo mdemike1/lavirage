@@ -2,8 +2,8 @@
   "clave": "inicio",
   "ruta": "/ca",
   "publicada": true,
-  "titulo_seo": "La Virage Club — Drets, activacions i vetllades del món del motor",
-  "descripcion_seo": "Venem el patrocini, les entrades, l'hospitality i el merchandising de ral·lis, circuits, clubs, pilots i equips, i en produïm les activacions i les vetllades.",
+  "titulo_seo": "La Virage Club — Patrocini, drets i producció de ral·lis",
+  "descripcion_seo": "Venem el patrocini, les entrades, l'hospitality i el merchandising dels ral·lis, i en produïm les activacions. Per a organitzadors i marques. A èxit.",
   "imagen_compartir": "/assets/og-ca.jpg",
   "en_menu": false,
   "texto_menu": "Inici",
@@ -11,10 +11,10 @@
   "secciones": [
     {
       "tipo": "portada",
-      "antetitulo": "DRETS · SERVEIS I VETLLADES",
+      "antetitulo": "DRETS · PATROCINI · PRODUCCIÓ",
       "titulo": "Venem el que val un ral·li.",
-      "subtitulo": "I muntem la nit que ho demostra.",
-      "texto": "Drets, activacions i vetllades del món del motor per a <b>organitzadors, pilots i equips, marques i particulars</b>.",
+      "subtitulo": "I fem que estigui a l'altura.",
+      "texto": "Patrocini, drets i producció per a <b>organitzadors de ral·lis i marques</b>.",
       "botones": [
         {
           "texto": "Parlem-ne",
@@ -41,19 +41,9 @@
           "enlace": "/ca/contacte?tipus=organitzador"
         },
         {
-          "titulo": "PILOTS I EQUIPS",
-          "texto": "Tu corres. Nosaltres venem la teva temporada.",
-          "enlace": "/ca/contacte?tipus=pilot"
-        },
-        {
           "titulo": "MARQUES",
           "texto": "Entrar al ral·li amb alguna cosa més que un logo a la porta.",
           "enlace": "/ca/contacte?tipus=marca"
-        },
-        {
-          "titulo": "PARTICULARS",
-          "texto": "El teu sopar al voltant d'una cursa.",
-          "enlace": "/ca/contacte?tipus=particular"
         }
       ]
     },
@@ -61,13 +51,13 @@
       "tipo": "tarjetas",
       "antetitulo": "QUÈ FEM",
       "titulo": "Venem, produïm\ni executem.",
-      "subtitulo": "TRES LÍNIES · UNA SOLA CASA",
+      "subtitulo": "DUES LÍNIES · UNA SOLA CASA",
       "fondo": "blanco",
       "items": [
         {
           "etiqueta": "01",
           "titulo": "Drets",
-          "texto": "Venem el patrocini, les entrades, l'hospitality i el merchandising del teu esdeveniment o de la teva temporada. Cobrem un percentatge pactat del que es ven.",
+          "texto": "Venem el patrocini, les entrades, l'hospitality i el merchandising del teu esdeveniment. Cobrem un percentatge pactat del que es ven.",
           "enlace_texto": "Mira els drets",
           "enlace": "/ca/drets",
           "imagen": "",
@@ -79,15 +69,6 @@
           "texto": "Esdeveniments per encàrrec, activacions de marca i serveis per a clubs i organitzadors. El que es ven, ho muntem.",
           "enlace_texto": "Mira els serveis",
           "enlace": "/ca/serveis",
-          "imagen": "",
-          "imagen_alt": ""
-        },
-        {
-          "etiqueta": "03",
-          "titulo": "Vetllades",
-          "texto": "Sopars i nits d'alt nivell al voltant de ral·lis i grans premis. La prova visible de com treballem.",
-          "enlace_texto": "Mira les vetllades",
-          "enlace": "/ca/vetllades",
           "imagen": "",
           "imagen_alt": ""
         }
@@ -103,7 +84,7 @@
       "items": [
         {
           "titulo": "Seiem i fem inventari",
-          "texto": "De tot el que tens: l'esdeveniment o la temporada, el públic, els espais, les dates. Tot el que té valor i avui no s'està venent."
+          "texto": "De tot el que tens: l'esdeveniment, el públic, els espais, les dates. Tot el que té valor i avui no s'està venent."
         },
         {
           "titulo": "Ho empaquetem",

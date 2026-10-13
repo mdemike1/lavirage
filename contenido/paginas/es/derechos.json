@@ -3,7 +3,7 @@
   "ruta": "/derechos",
   "publicada": true,
   "titulo_seo": "Comercialización de derechos de motorsport — La Virage Club",
-  "descripcion_seo": "Vendemos el patrocinio, el merchandising, las entradas y el hospitality de rallies, circuitos, clubes, pilotos y equipos. Trabajamos a éxito, con un porcentaje pactado de lo que vendemos.",
+  "descripcion_seo": "Vendemos el patrocinio, el merchandising, las entradas y el hospitality de los rallies. Trabajamos a éxito, con un porcentaje pactado de lo que vendemos.",
   "imagen_compartir": "/assets/og.jpg",
   "en_menu": true,
   "texto_menu": "Derechos",
@@ -14,7 +14,7 @@
       "antetitulo": "DERECHOS",
       "titulo": "Lo que vale tu rally, vendido.",
       "subtitulo": "",
-      "texto": "PATROCINIO, MERCHANDISING, ENTRADAS, HOSPITALITY Y TODO LO DEMÁS. PARA ORGANIZADORES, PILOTOS Y EQUIPOS. A ÉXITO, CON UN PORCENTAJE PACTADO.",
+      "texto": "PATROCINIO, MERCHANDISING, ENTRADAS, HOSPITALITY Y TODO LO DEMÁS. PARA ORGANIZADORES DE RALLIES Y MARCAS. A ÉXITO, CON UN PORCENTAJE PACTADO.",
       "botones": [],
       "nota": "",
       "imagen": "",
@@ -25,7 +25,7 @@
       "tipo": "texto",
       "antetitulo": "QUÉ SON LOS DERECHOS",
       "titulo": "Todo lo que tu carrera genera\ny alguien pagaría\npor tener.",
-      "cuerpo": "<p>El nombre en el cartel. La puerta del coche. La carpa junto al parque de asistencia. La camiseta que se lleva la gente a casa. La cena del sábado por la noche. <strong>Todo eso tiene un precio</strong>, y casi nunca se vende entero.</p><p>Si organizas un rally, una prueba en circuito o un evento de club, esos derechos son tuyos. Si corres, también: tu coche, tu mono, tu temporada y tus redes. <strong>Nuestro trabajo es venderlos.</strong></p>",
+      "cuerpo": "<p>El nombre en el cartel. La puerta del coche. La carpa junto al parque de asistencia. La camiseta que se lleva la gente a casa. La cena del sábado por la noche. <strong>Todo eso tiene un precio</strong>, y casi nunca se vende entero.</p><p>Si organizas un rally, una prueba en circuito o un evento de club, esos derechos son tuyos. <strong>Nuestro trabajo es venderlos.</strong></p>",
       "firma": "",
       "fondo": "blanco"
     },
@@ -33,18 +33,18 @@
       "tipo": "lista",
       "antetitulo": "LO QUE COMERCIALIZAMOS",
       "titulo": "Lo que vendemos.",
-      "subtitulo": "UNO A UNO · POR EVENTO O POR TEMPORADA",
+      "subtitulo": "UNO A UNO · POR EVENTO",
       "fondo": "negro",
       "items": [
         {
           "titulo": "Patrocinio",
-          "texto": "La marca en el nombre del evento, en un tramo, en el podio, en el coche o en el mono. Por un fin de semana o por toda la temporada.",
-          "etiqueta": "Eventos · Pilotos"
+          "texto": "La marca en el nombre del evento, en un tramo, en el podio o en el parque de asistencia. Por un evento o por varios.",
+          "etiqueta": "Eventos"
         },
         {
           "titulo": "Merchandising",
           "texto": "Lo que la afición se lleva a casa: camisetas, gorras, parches, stickers. Diseño, producción y venta en el evento.",
-          "etiqueta": "Eventos · Pilotos"
+          "etiqueta": "Eventos"
         },
         {
           "titulo": "Entradas a fiestas y eventos",
@@ -91,7 +91,7 @@
         {
           "etiqueta": "01",
           "titulo": "Conocemos el rally por dentro",
-          "texto": "Sabemos cómo se monta un fin de semana de carrera, qué necesita un organizador y qué le preocupa a un piloto. Hablamos el idioma del parque de asistencia.",
+          "texto": "Sabemos cómo se monta un fin de semana de carrera, qué necesita un organizador y qué busca una marca. Hablamos el idioma del parque de asistencia.",
           "enlace_texto": "",
           "enlace": "",
           "imagen": "",
@@ -120,21 +120,21 @@
     {
       "tipo": "llamada",
       "antetitulo": "HABLEMOS",
-      "titulo": "¿Organizas o **corres**?",
+      "titulo": "¿Organizas un **rally**?",
       "subtitulo": "CUÉNTANOS QUÉ TIENES Y TE DECIMOS QUÉ SE PUEDE VENDER",
       "botones": [],
       "columnas": [
         {
           "titulo": "Organizo un evento",
-          "texto": "Rally, circuito o club. Dinos qué evento, en qué fechas y qué estás vendiendo hoy, si vendes algo.",
+          "texto": "Dinos qué rally, en qué fechas y qué estás vendiendo hoy, si vendes algo.",
           "boton_texto": "Hablemos",
           "enlace": "/contacto?tipo=organizador"
         },
         {
-          "titulo": "Corro o tengo un equipo",
-          "texto": "Dinos en qué campeonato, con qué calendario y qué espacios tienes libres en el coche, el mono y las redes.",
+          "titulo": "Soy una marca",
+          "texto": "Dinos qué buscas en el motorsport y en qué fechas o zonas te interesa estar.",
           "boton_texto": "Hablemos",
-          "enlace": "/contacto?tipo=piloto"
+          "enlace": "/contacto?tipo=marca"
         }
       ]
     }

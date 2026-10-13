@@ -5,6 +5,21 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/veladas",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ca/vetllades",
+      "destination": "/ca",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/evenings",
+      "destination": "/en",
+      "statusCode": 301
+    },
+    {
       "source": "/(.*)",
       "has": [
         {

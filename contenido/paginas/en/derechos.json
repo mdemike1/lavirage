@@ -3,7 +3,7 @@
   "ruta": "/en/rights",
   "publicada": true,
   "titulo_seo": "Motorsport rights sales — La Virage Club",
-  "descripcion_seo": "We sell the sponsorship, merchandising, tickets and hospitality of rallies, circuits, clubs, drivers and teams. We work on results, for an agreed percentage of what we sell.",
+  "descripcion_seo": "We sell rally sponsorship, merchandising, tickets and hospitality. We work on results, for an agreed percentage of what we sell.",
   "imagen_compartir": "/assets/og-en.jpg",
   "en_menu": true,
   "texto_menu": "Rights",
@@ -14,7 +14,7 @@
       "antetitulo": "RIGHTS",
       "titulo": "What your rally is worth, sold.",
       "subtitulo": "",
-      "texto": "SPONSORSHIP, MERCHANDISING, TICKETS, HOSPITALITY AND EVERYTHING ELSE. FOR ORGANISERS, DRIVERS AND TEAMS. ON RESULTS, FOR AN AGREED PERCENTAGE.",
+      "texto": "SPONSORSHIP, MERCHANDISING, TICKETS, HOSPITALITY AND EVERYTHING ELSE. FOR RALLY ORGANISERS AND BRANDS. ON RESULTS, FOR AN AGREED PERCENTAGE.",
       "botones": [],
       "nota": "",
       "imagen": "",
@@ -25,7 +25,7 @@
       "tipo": "texto",
       "antetitulo": "WHAT RIGHTS ARE",
       "titulo": "Everything your race generates\nthat someone would pay\nto be part of.",
-      "cuerpo": "<p>The name on the poster. The car door. The marquee next to the service park. The T-shirt fans take home. Saturday night's dinner. <strong>All of it has a price</strong>, and it's hardly ever sold in full.</p><p>If you run a rally, a circuit meeting or a club event, those rights are yours. If you race, so are yours: your car, your race suit, your season and your social channels. <strong>Our job is to sell them.</strong></p>",
+      "cuerpo": "<p>The name on the poster. The car door. The marquee next to the service park. The T-shirt fans take home. Saturday night's dinner. <strong>All of it has a price</strong>, and it's hardly ever sold in full.</p><p>If you run a rally, a circuit meeting or a club event, those rights are yours. <strong>Our job is to sell them.</strong></p>",
       "firma": "",
       "fondo": "blanco"
     },
@@ -33,18 +33,18 @@
       "tipo": "lista",
       "antetitulo": "WHAT WE SELL",
       "titulo": "What we sell.",
-      "subtitulo": "ONE BY ONE · PER EVENT OR PER SEASON",
+      "subtitulo": "ONE BY ONE · PER EVENT",
       "fondo": "negro",
       "items": [
         {
           "titulo": "Sponsorship",
-          "texto": "The brand in the event name, on a stage, on the podium, on the car or on the race suit. For one weekend or the whole season.",
-          "etiqueta": "Events · Drivers"
+          "texto": "The brand in the event name, on a stage, on the podium or in the service park. For one event or several.",
+          "etiqueta": "Events"
         },
         {
           "titulo": "Merchandising",
           "texto": "What fans take home: t-shirts, caps, patches, stickers. Design, production and sales at the event.",
-          "etiqueta": "Events · Drivers"
+          "etiqueta": "Events"
         },
         {
           "titulo": "Tickets to parties and events",
@@ -91,7 +91,7 @@
         {
           "etiqueta": "01",
           "titulo": "We know rallying from the inside",
-          "texto": "We know how a race weekend comes together, what an organiser needs and what keeps a driver up at night. We speak the language of the service park.",
+          "texto": "We know how a race weekend comes together, what an organiser needs and what a brand is looking for. We speak the language of the service park.",
           "enlace_texto": "",
           "enlace": "",
           "imagen": "",
@@ -120,21 +120,21 @@
     {
       "tipo": "llamada",
       "antetitulo": "LET'S TALK",
-      "titulo": "Do you organise or **race**?",
+      "titulo": "Do you run a **rally**?",
       "subtitulo": "TELL US WHAT YOU'VE GOT AND WE'LL TELL YOU WHAT CAN BE SOLD",
       "botones": [],
       "columnas": [
         {
           "titulo": "I run an event",
-          "texto": "Rally, circuit or club. Tell us which event, the dates and what you're selling today, if anything.",
+          "texto": "Tell us which rally, the dates and what you're selling today, if anything.",
           "boton_texto": "Let's talk",
           "enlace": "/en/contact?type=organiser"
         },
         {
-          "titulo": "I race or run a team",
-          "texto": "Tell us the championship, the calendar and what space you've got free on the car, the race suit and your channels.",
+          "titulo": "I'm a brand",
+          "texto": "Tell us what you're after in motorsport and which dates or regions you'd like to be part of.",
           "boton_texto": "Let's talk",
-          "enlace": "/en/contact?type=driver"
+          "enlace": "/en/contact?type=brand"
         }
       ]
     }
