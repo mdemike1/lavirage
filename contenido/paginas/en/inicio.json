@@ -28,9 +28,10 @@
         }
       ],
       "nota": "<b>We work on results:</b> an agreed percentage of what we sell.",
-      "imagen": "",
-      "imagen_alt": "",
-      "imagen_hueco": "More bends. Less grandstand."
+      "imagen": "/media/fotos/lavirage-hero-rally-poster.jpg",
+      "imagen_alt": "A rally car takes a gravel bend between pine trees, kicking up a cloud of dust.",
+      "imagen_hueco": "",
+      "video": "/media/videos/lavirage-hero-rally.mp4"
     },
     {
       "tipo": "clientes",

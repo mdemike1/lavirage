@@ -28,9 +28,10 @@
         }
       ],
       "nota": "<b>Trabajamos a éxito:</b> un porcentaje pactado de lo que vendemos.",
-      "imagen": "",
-      "imagen_alt": "",
-      "imagen_hueco": "Más curvas. Menos tribuna."
+      "imagen": "/media/fotos/lavirage-hero-rally-poster.jpg",
+      "imagen_alt": "Un coche de rally pasa una curva de tierra entre pinos y levanta una nube de polvo.",
+      "imagen_hueco": "",
+      "video": "/media/videos/lavirage-hero-rally.mp4"
     },
     {
       "tipo": "clientes",

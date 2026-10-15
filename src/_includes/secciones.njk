@@ -12,7 +12,7 @@
 {%- set primera = loop.first %}
 
 {%- if s.tipo == 'portada' %}
-{%- set con_panel = s.imagen or s.imagen_hueco %}
+{%- set con_panel = s.video or s.imagen or s.imagen_hueco %}
 <section class="portada{% if not con_panel %} portada-solo{% endif %}">
   <div class="ancho portada-in">
     <div class="portada-texto">
@@ -25,7 +25,11 @@
       {%- endif %}
       {%- if s.nota %}<p class="portada-nota">{{ s.nota | safe }}</p>{% endif %}
     </div>
-    {%- if s.imagen %}
+    {%- if s.video %}
+    <figure class="portada-foto portada-video">
+      <video src="{{ s.video }}"{% if s.imagen %} poster="{{ s.imagen }}"{% endif %} autoplay muted loop playsinline preload="auto" aria-label="{{ s.imagen_alt }}"></video>
+    </figure>
+    {%- elif s.imagen %}
     <figure class="portada-foto"><img src="{{ s.imagen }}" alt="{{ s.imagen_alt }}" loading="eager"></figure>
     {%- elif s.imagen_hueco %}
     <div class="portada-panel" aria-hidden="true"><span>{{ s.imagen_hueco }}</span></div>

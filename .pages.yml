@@ -15,6 +15,12 @@ media:
     output: /media/documentos
     rename: safe
     categories: [document]
+  - name: videos
+    label: Vídeos
+    input: media/videos
+    output: /media/videos
+    rename: safe
+    extensions: [mp4, webm]
 
 components:
   boton:
@@ -74,9 +80,10 @@ content:
               - { name: texto, label: Texto, type: rich-text }
               - { name: botones, label: Botones, component: boton, list: true }
               - { name: nota, label: Nota pequeña, type: rich-text }
+              - { name: video, label: Vídeo (MP4 sin sonido, menos de 5 MB), type: file, options: { media: videos }, description: "Se reproduce en bucle y en silencio. Si hay vídeo, la foto se usa como imagen de carga." }
               - { name: imagen, label: Foto, type: image, options: { media: fotos } }
-              - { name: imagen_alt, label: Descripción de la foto (accesibilidad), type: string }
-              - { name: imagen_hueco, label: Frase del panel negro si no hay foto, type: string, description: "Déjalo vacío para que la portada ocupe todo el ancho." }
+              - { name: imagen_alt, label: Descripción de la foto o del vídeo (accesibilidad), type: string }
+              - { name: imagen_hueco, label: Frase del panel negro si no hay foto ni vídeo, type: string, description: "Déjalo vacío para que la portada ocupe todo el ancho." }
           - name: clientes
             label: Barra de clientes (negra)
             fields:

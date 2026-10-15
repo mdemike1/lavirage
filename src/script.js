@@ -29,3 +29,9 @@
     });
   }
 })();
+
+/* Vídeos de portada: parados si el usuario pide menos movimiento */
+(function(){
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('.portada-video video').forEach(v=>{ v.removeAttribute('autoplay'); v.pause(); });
+})();

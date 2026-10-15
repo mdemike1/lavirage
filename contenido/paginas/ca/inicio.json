@@ -28,9 +28,10 @@
         }
       ],
       "nota": "<b>Treballem a èxit:</b> un percentatge pactat del que venem.",
-      "imagen": "",
-      "imagen_alt": "",
-      "imagen_hueco": "Més revolts. Menys tribuna."
+      "imagen": "/media/fotos/lavirage-hero-rally-poster.jpg",
+      "imagen_alt": "Un cotxe de ral·li passa un revolt de terra entre pins i aixeca un núvol de pols.",
+      "imagen_hueco": "",
+      "video": "/media/videos/lavirage-hero-rally.mp4"
     },
     {
       "tipo": "clientes",
