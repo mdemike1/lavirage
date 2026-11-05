@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0E0B0A">
+<meta name="theme-color" content="#000000">
 <title>{{ titulo_seo }}</title>
 <meta name="description" content="{{ descripcion }}">
 <link rel="canonical" href="{{ sitio.URL_BASE }}{{ ruta }}">
@@ -28,10 +28,10 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Lexend+Exa:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 {%- if ruta == sitio.inicio[idioma] %}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"La Virage Club","url":"{{ sitio.URL_BASE }}/","email":"{{ aj.correo }}","slogan":{{ aj.claim | json | safe }},"sameAs":["https://www.instagram.com/{{ aj.instagram }}/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"La Virage Club","url":"{{ sitio.URL_BASE }}/","email":"{{ aj.correo }}","logo":"{{ sitio.URL_BASE }}/assets/marca/lavirageclub-logo-apilado-plata.svg","sameAs":["https://www.instagram.com/{{ aj.instagram }}/"]}</script>
 {%- endif %}
 </head>
 <body>
@@ -43,7 +43,7 @@
       {%- for m in sitio.menu[idioma] %}
       <a href="{{ m.ruta }}"{% if m.ruta == ruta %} aria-current="page"{% endif %}>{{ m.texto }}</a>
       {%- endfor %}
-      <a class="btn btn-rojo btn-peq" href="{{ aj.ruta_contacto }}">{{ aj.boton_contacto }}</a>
+      <a class="btn btn-contorno btn-peq" href="{{ aj.ruta_contacto }}">{{ aj.boton_contacto }}</a>
       <div class="idioma" role="group" aria-label="{{ aj.etiqueta_idioma }}">
         {%- for a in alternas %}
         <a href="{{ a.ruta }}" hreflang="{{ a.idioma }}" lang="{{ a.idioma }}" data-lang="{{ a.idioma }}" aria-label="{{ sitio.ajustes[a.idioma].nombre_idioma }}"{% if a.idioma == idioma %} aria-current="true"{% endif %}>{{ a.idioma | upper }}</a>
@@ -58,7 +58,7 @@
 <footer class="pie">
   <div class="ancho">
     <div class="pie-arriba">
-      <span class="marca marca-pie">{% include "wordmark.njk" %}</span>
+      <span class="marca marca-pie"><img src="/assets/marca/lavirageclub-logo-horizontal-blanco.svg" alt="La Virage Club" width="260" height="15"></span>
       <ul class="pie-paginas" aria-label="{{ aj.etiqueta_paginas }}">
         {%- for m in sitio.pie[idioma] %}<li><a href="{{ m.ruta }}">{{ m.texto }}</a></li>{% endfor %}
       </ul>
@@ -68,8 +68,9 @@
       </div>
     </div>
     <div class="pie-abajo">
-      <span>© {{ sitio.anio }} La Virage Club · {{ aj.claim }}</span>
+      <span>© {{ sitio.anio }} La Virage Club • lavirageclub.com</span>
       {%- if aj.texto_legal %}<span>{{ aj.texto_legal | safe }}</span>{% endif %}
+      <span class="barras" aria-hidden="true"><i></i><i></i><i></i></span>
     </div>
   </div>
 </footer>

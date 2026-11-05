@@ -26,7 +26,7 @@
       "antetitulo": "QUÉ HACEMOS",
       "titulo": "Tres servicios.",
       "subtitulo": "SOLOS O JUNTO A LA COMERCIALIZACIÓN DE DERECHOS",
-      "fondo": "negro",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Eventos por encargo",
@@ -41,7 +41,7 @@
         {
           "titulo": "Servicios a clubes y organizadores",
           "texto": "Las zonas de hospitality, las piezas impresas y la señalética, el anfitrionaje y la cobertura. Lo que tu equipo no llega a hacer.",
-          "etiqueta": "Clubes · Organizadores"
+          "etiqueta": "Clubes • Organizadores"
         }
       ]
     },
@@ -51,14 +51,14 @@
       "titulo": "La marca está.\nBien puesta.",
       "cuerpo": "<p>Una activación funciona cuando la gente la vive, no cuando la esquiva. Integramos la marca en lo que pasa durante el fin de semana: <strong>en la zona de hospitality, en la experiencia, en la mesa</strong> y en el recuerdo que se llevan los invitados.</p><p>Y también en el cartel, la lona o la puerta del coche cuando toca, con el mismo cuidado que todo lo demás. <strong>Presente, visible y bien integrada.</strong></p>",
       "firma": "",
-      "fondo": "blanco"
+      "fondo": "negro"
     },
     {
       "tipo": "tarjetas",
       "antetitulo": "CÓMO LO HACEMOS",
       "titulo": "Concepto, producción\ny ejecución.",
       "subtitulo": "DE LA IDEA AL DESMONTAJE",
-      "fondo": "blanco",
+      "fondo": "negro",
       "items": [
         {
           "etiqueta": "01",
@@ -93,7 +93,7 @@
       "tipo": "casillas",
       "antetitulo": "QUÉ INCLUYE UN ENCARGO",
       "titulo": "Todo lo que hay\ndetrás de un encargo.",
-      "subtitulo": "EL ALCANCE COMPLETO · SE AJUSTA A CADA ENCARGO",
+      "subtitulo": "EL ALCANCE COMPLETO • SE AJUSTA A CADA ENCARGO",
       "items": [
         {
           "titulo": "Localización y permisos",
@@ -141,17 +141,17 @@
       "tipo": "llamada",
       "antetitulo": "SIGUIENTE PASO",
       "titulo": "Cuéntanos qué hay que **montar**.",
-      "subtitulo": "EVENTOS · ACTIVACIONES · CLUBES Y ORGANIZADORES",
+      "subtitulo": "EVENTOS • ACTIVACIONES • CLUBES Y ORGANIZADORES",
       "botones": [
         {
           "texto": "Hablemos",
           "enlace": "/contacto",
-          "estilo": "rojo"
+          "estilo": "principal"
         },
         {
           "texto": "Ver derechos",
           "enlace": "/derechos",
-          "estilo": "linea"
+          "estilo": "contorno"
         }
       ],
       "columnas": []

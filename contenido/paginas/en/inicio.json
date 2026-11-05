@@ -11,7 +11,7 @@
   "secciones": [
     {
       "tipo": "portada",
-      "antetitulo": "RIGHTS · SPONSORSHIP · PRODUCTION",
+      "antetitulo": "RIGHTS • SPONSORSHIP • PRODUCTION",
       "titulo": "We sell what a rally is worth.",
       "subtitulo": "And make sure it lives up to it.",
       "texto": "Sponsorship, rights and production for <b>rally organisers and brands</b>.",
@@ -19,12 +19,12 @@
         {
           "texto": "Let's talk",
           "enlace": "/en/contact",
-          "estilo": "rojo"
+          "estilo": "principal"
         },
         {
           "texto": "What we sell",
           "enlace": "/en/rights",
-          "estilo": "linea"
+          "estilo": "contorno"
         }
       ],
       "nota": "<b>We work on results:</b> an agreed percentage of what we sell.",
@@ -52,8 +52,8 @@
       "tipo": "tarjetas",
       "antetitulo": "WHAT WE DO",
       "titulo": "We sell, produce\nand deliver.",
-      "subtitulo": "TWO LINES · ONE HOUSE",
-      "fondo": "blanco",
+      "subtitulo": "TWO LINES • ONE HOUSE",
+      "fondo": "negro",
       "items": [
         {
           "etiqueta": "01",
@@ -81,7 +81,7 @@
       "titulo": "Four steps.",
       "subtitulo": "",
       "estilo": "numerado",
-      "fondo": "gris",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "We sit down and take stock",
@@ -105,17 +105,17 @@
       "tipo": "llamada",
       "antetitulo": "LET'S TALK",
       "titulo": "Tell us what you've got and we'll tell you what can be **sold**.",
-      "subtitulo": "ON RESULTS · AN AGREED PERCENTAGE",
+      "subtitulo": "ON RESULTS • AN AGREED PERCENTAGE",
       "botones": [
         {
           "texto": "Let's talk",
           "enlace": "/en/contact",
-          "estilo": "rojo"
+          "estilo": "principal"
         },
         {
           "texto": "See rights",
           "enlace": "/en/rights",
-          "estilo": "linea"
+          "estilo": "contorno"
         }
       ],
       "columnas": []

@@ -11,7 +11,7 @@
   "secciones": [
     {
       "tipo": "portada",
-      "antetitulo": "DRETS · PATROCINI · PRODUCCIÓ",
+      "antetitulo": "DRETS • PATROCINI • PRODUCCIÓ",
       "titulo": "Venem el que val un ral·li.",
       "subtitulo": "I fem que estigui a l'altura.",
       "texto": "Patrocini, drets i producció per a <b>organitzadors de ral·lis i marques</b>.",
@@ -19,12 +19,12 @@
         {
           "texto": "Parlem-ne",
           "enlace": "/ca/contacte",
-          "estilo": "rojo"
+          "estilo": "principal"
         },
         {
           "texto": "Què venem",
           "enlace": "/ca/drets",
-          "estilo": "linea"
+          "estilo": "contorno"
         }
       ],
       "nota": "<b>Treballem a èxit:</b> un percentatge pactat del que venem.",
@@ -52,8 +52,8 @@
       "tipo": "tarjetas",
       "antetitulo": "QUÈ FEM",
       "titulo": "Venem, produïm\ni executem.",
-      "subtitulo": "DUES LÍNIES · UNA SOLA CASA",
-      "fondo": "blanco",
+      "subtitulo": "DUES LÍNIES • UNA SOLA CASA",
+      "fondo": "negro",
       "items": [
         {
           "etiqueta": "01",
@@ -81,7 +81,7 @@
       "titulo": "Quatre passos.",
       "subtitulo": "",
       "estilo": "numerado",
-      "fondo": "gris",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Seiem i fem inventari",
@@ -105,17 +105,17 @@
       "tipo": "llamada",
       "antetitulo": "PARLEM-NE",
       "titulo": "Explica'ns què tens i et direm què es pot **vendre**.",
-      "subtitulo": "A ÈXIT · AMB UN PERCENTATGE PACTAT",
+      "subtitulo": "A ÈXIT • AMB UN PERCENTATGE PACTAT",
       "botones": [
         {
           "texto": "Parlem-ne",
           "enlace": "/ca/contacte",
-          "estilo": "rojo"
+          "estilo": "principal"
         },
         {
           "texto": "Mira els drets",
           "enlace": "/ca/drets",
-          "estilo": "linea"
+          "estilo": "contorno"
         }
       ],
       "columnas": []

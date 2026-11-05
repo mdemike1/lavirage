@@ -26,7 +26,7 @@
       "antetitulo": "WHAT WE DO",
       "titulo": "Three services.",
       "subtitulo": "ON THEIR OWN OR ALONGSIDE RIGHTS SALES",
-      "fondo": "negro",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Commissioned events",
@@ -41,7 +41,7 @@
         {
           "titulo": "Services for clubs and organisers",
           "texto": "Hospitality areas, print and signage, hosting and coverage. The things your team never gets round to.",
-          "etiqueta": "Clubs · Organisers"
+          "etiqueta": "Clubs • Organisers"
         }
       ]
     },
@@ -51,14 +51,14 @@
       "titulo": "The brand is there.\nDone properly.",
       "cuerpo": "<p>An activation works when people live it, not when they walk round it. We build the brand into what happens over the weekend: <strong>in the hospitality area, in the experience, at the table</strong> and in what guests take home with them.</p><p>And on the banner, the board or the car door when it's called for, with the same care as everything else. <strong>Present, visible and properly integrated.</strong></p>",
       "firma": "",
-      "fondo": "blanco"
+      "fondo": "negro"
     },
     {
       "tipo": "tarjetas",
       "antetitulo": "HOW WE DO IT",
       "titulo": "Concept, production\nand delivery.",
       "subtitulo": "FROM THE FIRST IDEA TO THE GET-OUT",
-      "fondo": "blanco",
+      "fondo": "negro",
       "items": [
         {
           "etiqueta": "01",
@@ -93,7 +93,7 @@
       "tipo": "casillas",
       "antetitulo": "WHAT A COMMISSION INCLUDES",
       "titulo": "Everything behind\na commission.",
-      "subtitulo": "THE FULL SCOPE · ADJUSTED TO EACH COMMISSION",
+      "subtitulo": "THE FULL SCOPE • ADJUSTED TO EACH COMMISSION",
       "items": [
         {
           "titulo": "Venue and permits",
@@ -141,17 +141,17 @@
       "tipo": "llamada",
       "antetitulo": "NEXT STEP",
       "titulo": "Tell us what needs **building**.",
-      "subtitulo": "EVENTS · ACTIVATIONS · CLUBS AND ORGANISERS",
+      "subtitulo": "EVENTS • ACTIVATIONS • CLUBS AND ORGANISERS",
       "botones": [
         {
           "texto": "Let's talk",
           "enlace": "/en/contact",
-          "estilo": "rojo"
+          "estilo": "principal"
         },
         {
           "texto": "See rights",
           "enlace": "/en/rights",
-          "estilo": "linea"
+          "estilo": "contorno"
         }
       ],
       "columnas": []

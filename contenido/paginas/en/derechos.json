@@ -27,14 +27,14 @@
       "titulo": "Everything your race generates\nthat someone would pay\nto be part of.",
       "cuerpo": "<p>The name on the poster. The car door. The marquee next to the service park. The T-shirt fans take home. Saturday night's dinner. <strong>All of it has a price</strong>, and it's hardly ever sold in full.</p><p>If you run a rally, a circuit meeting or a club event, those rights are yours. <strong>Our job is to sell them.</strong></p>",
       "firma": "",
-      "fondo": "blanco"
+      "fondo": "negro"
     },
     {
       "tipo": "lista",
       "antetitulo": "WHAT WE SELL",
       "titulo": "What we sell.",
-      "subtitulo": "ONE BY ONE · PER EVENT",
-      "fondo": "negro",
+      "subtitulo": "ONE BY ONE • PER EVENT",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Sponsorship",
@@ -54,7 +54,7 @@
         {
           "titulo": "Hospitality",
           "texto": "A well-chosen spot, a good table and good company for a brand's guests. Formula 1 hospitality, with rally dust.",
-          "etiqueta": "Events · Brands"
+          "etiqueta": "Events • Brands"
         },
         {
           "titulo": "Everything else",
@@ -69,7 +69,7 @@
       "titulo": "On results, for an\nagreed percentage.",
       "subtitulo": "",
       "estilo": "numerado",
-      "fondo": "gris",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "A share of what we sell",
@@ -86,7 +86,7 @@
       "antetitulo": "WHY US",
       "titulo": "Rallying from the inside.\nSold like F1.",
       "subtitulo": "THE HOUSE THESIS",
-      "fondo": "blanco",
+      "fondo": "negro",
       "items": [
         {
           "etiqueta": "01",

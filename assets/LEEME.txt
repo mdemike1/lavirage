@@ -1,9 +1,8 @@
-Imágenes del sitio. Las de marca se generan con: sh scripts/genera-imagenes.sh
+Imágenes del sitio (identidad de noviembre de 2026).
 
-og.jpg               1200 × 630  imagen al compartir el enlace (WhatsApp, Instagram, X, LinkedIn)
-apple-touch-icon.png  180 × 180  icono al guardar la web en el móvil
-favicon.svg / favicon-32.png     favicon (la horquilla)
+marca/               logos en SVG: horizontal blanco (cabecera y pie), apilado plata, símbolo y wordmark
+og.jpg, og-ca.jpg, og-en.jpg   1200 × 630  imagen al compartir el enlace: logo apilado plata sobre negro
+apple-touch-icon.png  180 × 180  icono al guardar la web en el móvil (símbolo blanco sobre negro)
+favicon.svg / favicon-32.png     favicon (el símbolo V)
 
-Aquí van también las fotos de las veladas cuando lleguen: los bloques
-.poster, .pola y .foto de veladas.html son degradados CSS pensados para
-sustituirse por <img> con su alt.
+Los originales y el resto de versiones están en el brandbook de La Virage Club.

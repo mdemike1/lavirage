@@ -34,9 +34,8 @@ components:
         type: select
         options:
           values:
-            - { name: rojo, label: Rojo }
-            - { name: negro, label: Negro }
-            - { name: linea, label: Contorno }
+            - { name: principal, label: Principal (blanco) }
+            - { name: contorno, label: Secundario (contorno) }
 
 content:
   - name: paginas_es
@@ -75,7 +74,7 @@ content:
             label: Portada (cabecera de página)
             fields:
               - { name: antetitulo, label: Antetítulo, type: string }
-              - { name: titulo, label: Título, type: text, description: "Un salto de línea = salto en la web. **Así** sale en rojo." }
+              - { name: titulo, label: Título, type: text, description: "Un salto de línea = salto en la web. **Así** sale en plata." }
               - { name: subtitulo, label: Subtítulo, type: string }
               - { name: texto, label: Texto, type: rich-text }
               - { name: botones, label: Botones, component: boton, list: true }
@@ -106,10 +105,9 @@ content:
                 type: select
                 options: &opciones_fondo
                   values:
-                    - { name: blanco, label: Blanco }
-                    - { name: gris, label: Gris claro }
                     - { name: negro, label: Negro }
-                    - { name: rojo, label: Rojo }
+                    - { name: carbon, label: Carbón }
+                    - { name: petroleo, label: Petróleo (como mucho un bloque por página) }
               - name: items
                 label: Tarjetas
                 type: object
@@ -173,7 +171,7 @@ content:
                   - { name: etiqueta, label: Etiqueta (si no, número), type: string }
                   - { name: titulo, label: Título, type: string }
                   - { name: texto, label: Texto, type: text }
-                  - { name: destacada, label: En rojo, type: boolean }
+                  - { name: destacada, label: Destacada (fondo petróleo), type: boolean }
           - name: texto
             label: Texto largo (manifiesto)
             fields:
@@ -203,7 +201,7 @@ content:
           - name: cita
             label: Frase grande
             fields:
-              - { name: frase, label: Frase, type: text, description: "**Así** sale en rojo." }
+              - { name: frase, label: Frase, type: text, description: "**Así** sale en plata." }
           - name: horario
             label: La noche, hora a hora
             fields:
@@ -338,7 +336,6 @@ content:
         path: contenido/ajustes/es.json
         format: json
         fields: &campos_ajustes
-          - { name: claim, label: Claim, type: string }
           - { name: correo, label: Correo de contacto, type: string }
           - { name: instagram, label: Usuario de Instagram (sin @), type: string }
           - { name: boton_contacto, label: Texto del botón de contacto, type: string }

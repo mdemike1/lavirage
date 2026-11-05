@@ -1,5 +1,7 @@
 # La Virage Club — web
 
+Identidad: la del brandbook de noviembre de 2026 (símbolo V y wordmark LAVIRAGECLUB, negro y plata, Lexend Exa + Archivo, petróleo como único color). Los logos están en `assets/marca/`; los originales y las normas, en el brandbook.
+
 Web en tres idiomas (castellano, catalán, inglés) que se edita desde un panel, sin tocar código.
 Dominio principal: https://www.lavirageclub.com
 
@@ -45,8 +47,7 @@ src/                                  Plantillas (Eleventy), styles.css y script
 .pages.yml                            Configuración del panel (qué campos tiene cada sección)
 middleware.js                         Idioma por cookie, navegador y país (302 a /ca o /en)
 vercel.json                           Build (npm run build → _site) + 301 del dominio de Vercel y del apex a www
-assets/                               Favicon, iconos e imágenes para compartir
-scripts/                              Generador de og.jpg e iconos (no se publica)
+assets/                               Favicon, iconos, imágenes para compartir y logos (assets/marca/)
 ```
 
 Para probarla en local: `npm install` y `npm run dev` (abre http://localhost:8080).
@@ -61,4 +62,4 @@ y campos en `.pages.yml`.
    Cuando estén, enlazarlos desde Ajustes generales → «Enlaces legales en el pie».
 3. **Formulario de contacto.** Desactivado hasta tener Formspree y la política de privacidad publicada.
 4. **Analítica.** Activar Web Analytics en el proyecto de Vercel.
-5. **Fotos.** La portada de inicio muestra un panel negro con el claim hasta que se suba la foto real.
+5. **Fotos.** La portada de inicio lleva el vídeo de rally; cuando haya fotos propias, súbelas desde el panel.

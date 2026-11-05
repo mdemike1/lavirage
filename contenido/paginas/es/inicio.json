@@ -11,7 +11,7 @@
   "secciones": [
     {
       "tipo": "portada",
-      "antetitulo": "DERECHOS · PATROCINIO · PRODUCCIÓN",
+      "antetitulo": "DERECHOS • PATROCINIO • PRODUCCIÓN",
       "titulo": "Vendemos lo que vale un rally.",
       "subtitulo": "Y hacemos que esté a la altura.",
       "texto": "Patrocinio, derechos y producción para <b>organizadores de rallies y marcas</b>.",
@@ -19,12 +19,12 @@
         {
           "texto": "Hablemos",
           "enlace": "/contacto",
-          "estilo": "rojo"
+          "estilo": "principal"
         },
         {
           "texto": "Qué vendemos",
           "enlace": "/derechos",
-          "estilo": "linea"
+          "estilo": "contorno"
         }
       ],
       "nota": "<b>Trabajamos a éxito:</b> un porcentaje pactado de lo que vendemos.",
@@ -52,8 +52,8 @@
       "tipo": "tarjetas",
       "antetitulo": "QUÉ HACEMOS",
       "titulo": "Vendemos, producimos\ny ejecutamos.",
-      "subtitulo": "DOS LÍNEAS · UNA SOLA CASA",
-      "fondo": "blanco",
+      "subtitulo": "DOS LÍNEAS • UNA SOLA CASA",
+      "fondo": "negro",
       "items": [
         {
           "etiqueta": "01",
@@ -81,7 +81,7 @@
       "titulo": "Cuatro pasos.",
       "subtitulo": "",
       "estilo": "numerado",
-      "fondo": "gris",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Nos sentamos y hacemos inventario",
@@ -105,17 +105,17 @@
       "tipo": "llamada",
       "antetitulo": "HABLEMOS",
       "titulo": "Cuéntanos qué tienes y te decimos qué se puede **vender**.",
-      "subtitulo": "A ÉXITO · CON UN PORCENTAJE PACTADO",
+      "subtitulo": "A ÉXITO • CON UN PORCENTAJE PACTADO",
       "botones": [
         {
           "texto": "Hablemos",
           "enlace": "/contacto",
-          "estilo": "rojo"
+          "estilo": "principal"
         },
         {
           "texto": "Ver derechos",
           "enlace": "/derechos",
-          "estilo": "linea"
+          "estilo": "contorno"
         }
       ],
       "columnas": []

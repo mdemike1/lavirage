@@ -1,11 +1,11 @@
 {#- Pinta cada sección de una página según su tipo. Los tipos y sus campos están en .pages.yml -#}
 {%- macro cabeza(s, h = 'h2') -%}
-{%- if s.antetitulo %}<p class="ante">— {{ s.antetitulo }}</p>{% endif -%}
+{%- if s.antetitulo %}<p class="ante">{{ s.antetitulo }}</p>{% endif -%}
 {%- if s.titulo %}<{{ h }} class="titular">{{ s.titulo | titulo | safe }}</{{ h }}>{% endif -%}
 {%- if s.subtitulo %}<p class="sub">{{ s.subtitulo }}</p>{% endif -%}
 {%- endmacro -%}
 {%- macro boton(b) -%}
-<a class="btn btn-{{ b.estilo or 'negro' }}" href="{{ b.enlace }}">{{ b.texto }}</a>
+<a class="btn btn-{{ b.estilo or 'contorno' }}" href="{{ b.enlace }}">{{ b.texto }}</a>
 {%- endmacro -%}
 
 {%- for s in secciones %}
@@ -16,7 +16,7 @@
 <section class="portada{% if not con_panel %} portada-solo{% endif %}">
   <div class="ancho portada-in">
     <div class="portada-texto">
-      {%- if s.antetitulo %}<p class="ante">— {{ s.antetitulo }}</p>{% endif %}
+      {%- if s.antetitulo %}<p class="ante">{{ s.antetitulo }}</p>{% endif %}
       <{{ 'h1' if primera else 'h2' }} class="portada-titulo">{{ s.titulo | titulo | safe }}</{{ 'h1' if primera else 'h2' }}>
       {%- if s.subtitulo %}<p class="portada-sub">{{ s.subtitulo }}</p>{% endif %}
       {%- if s.texto %}<p class="portada-texto-p">{{ s.texto | safe }}</p>{% endif %}
@@ -49,7 +49,7 @@
 </section>
 
 {%- elif s.tipo == 'tarjetas' %}
-<section class="bloque f-{{ s.fondo or 'blanco' }}">
+<section class="bloque f-{{ s.fondo or 'negro' }}">
   <div class="ancho">
     <div class="cabeza">{{ cabeza(s) }}</div>
     <div class="tarjetas">
@@ -69,7 +69,7 @@
 </section>
 
 {%- elif s.tipo == 'pasos' %}
-<section class="bloque f-{{ s.fondo or 'gris' }}">
+<section class="bloque f-{{ s.fondo or 'carbon' }}">
   <div class="ancho">
     <div class="cabeza">{{ cabeza(s) }}</div>
     <ol class="pasos pasos-{{ s.estilo or 'numerado' }}">
@@ -93,7 +93,7 @@
 </section>
 
 {%- elif s.tipo == 'casillas' %}
-<section class="bloque f-{{ s.fondo or 'gris' }}">
+<section class="bloque f-{{ s.fondo or 'carbon' }}">
   <div class="ancho dos-col">
     <div class="cabeza">{{ cabeza(s) }}</div>
     <div class="casillas">
@@ -105,9 +105,9 @@
 </section>
 
 {%- elif s.tipo == 'texto' %}
-<section class="bloque f-{{ s.fondo or 'blanco' }}">
+<section class="bloque f-{{ s.fondo or 'negro' }}">
   <div class="ancho dos-col">
-    <div class="cabeza">{%- if s.antetitulo %}<p class="ante">— {{ s.antetitulo }}</p>{% endif %}</div>
+    <div class="cabeza">{%- if s.antetitulo %}<p class="ante">{{ s.antetitulo }}</p>{% endif %}</div>
     <div class="texto">
       {%- if s.titulo %}<h2 class="texto-titulo">{{ s.titulo | titulo | safe }}</h2>{% endif %}
       <div class="prosa">{{ s.cuerpo | safe }}</div>
@@ -117,13 +117,13 @@
 </section>
 
 {%- elif s.tipo == 'imagen_texto' %}
-<section class="bloque f-{{ s.fondo or 'blanco' }}">
+<section class="bloque f-{{ s.fondo or 'negro' }}">
   <div class="ancho foto-texto{% if s.lado == 'derecha' %} foto-derecha{% endif %}">
     {%- if s.imagen %}<figure class="ft-foto"><img src="{{ s.imagen }}" alt="{{ s.imagen_alt }}" loading="lazy"></figure>{% endif %}
     <div class="ft-texto">
       {{ cabeza(s) }}
       <div class="prosa">{{ s.cuerpo | safe }}</div>
-      {%- if s.boton_texto %}<a class="btn btn-negro" href="{{ s.boton_enlace }}">{{ s.boton_texto }}</a>{% endif %}
+      {%- if s.boton_texto %}<a class="btn btn-principal" href="{{ s.boton_enlace }}">{{ s.boton_texto }}</a>{% endif %}
     </div>
   </div>
 </section>
@@ -134,7 +134,7 @@
 </section>
 
 {%- elif s.tipo == 'horario' %}
-<section class="bloque f-{{ s.fondo or 'blanco' }}">
+<section class="bloque f-{{ s.fondo or 'negro' }}">
   <div class="ancho">
     <div class="cabeza">{{ cabeza(s) }}</div>
     <ol class="horario">
@@ -147,7 +147,7 @@
 
 {%- elif s.tipo == 'galeria' %}
 {%- if s.fotos and s.fotos.length %}
-<section class="bloque f-{{ s.fondo or 'blanco' }}">
+<section class="bloque f-{{ s.fondo or 'negro' }}">
   <div class="ancho">
     <div class="cabeza">{{ cabeza(s) }}</div>
     <div class="galeria">
@@ -162,7 +162,7 @@
 {%- elif s.tipo == 'noticias' %}
 {%- set lista = sitio.noticias | deIdioma(idioma) | primeros(s.cantidad or 3) %}
 {%- if lista.length %}
-<section class="bloque f-{{ s.fondo or 'blanco' }}">
+<section class="bloque f-{{ s.fondo or 'negro' }}">
   <div class="ancho">
     <div class="cabeza cabeza-fila">{{ cabeza(s) }}<a class="mas" href="{{ sitio.ajustes[idioma].ruta_noticias }}">{{ sitio.ajustes[idioma].titulo_noticias }} →</a></div>
     {% set noticias_lista = lista %}{% include "lista-noticias.njk" %}
@@ -175,18 +175,18 @@
   <div class="ancho">
     <div class="llamada-fila">
       <div>
-        {%- if s.antetitulo %}<p class="ante">— {{ s.antetitulo }}</p>{% endif %}
+        {%- if s.antetitulo %}<p class="ante">{{ s.antetitulo }}</p>{% endif %}
         <h2 class="titular">{{ s.titulo | titulo | safe }}</h2>
         {%- if s.subtitulo %}<p class="sub">{{ s.subtitulo }}</p>{% endif %}
       </div>
       {%- if s.botones and s.botones.length %}
-      <div class="botones">{% for b in s.botones %}<a class="btn {{ 'btn-negro' if b.estilo == 'rojo' else 'btn-blanco-linea' }}" href="{{ b.enlace }}">{{ b.texto }}</a>{% endfor %}</div>
+      <div class="botones">{% for b in s.botones %}<a class="btn {{ 'btn-principal' if b.estilo == 'principal' else 'btn-contorno' }}" href="{{ b.enlace }}">{{ b.texto }}</a>{% endfor %}</div>
       {%- endif %}
     </div>
     {%- if s.columnas and s.columnas.length %}
     <div class="llamada-cols">
       {%- for c in s.columnas %}
-      <div class="llamada-col"><h3>{{ c.titulo }}</h3><p>{{ c.texto }}</p><a class="btn btn-negro" href="{{ c.enlace }}">{{ c.boton_texto }}</a></div>
+      <div class="llamada-col"><h3>{{ c.titulo }}</h3><p>{{ c.texto }}</p><a class="btn btn-principal" href="{{ c.enlace }}">{{ c.boton_texto }}</a></div>
       {%- endfor %}
     </div>
     {%- endif %}
@@ -195,10 +195,10 @@
 
 {%- elif s.tipo == 'contacto' %}
 {%- set aj = sitio.ajustes[idioma] %}
-<section class="bloque f-blanco">
+<section class="bloque f-negro">
   <div class="ancho dos-col">
     <div>
-      {%- if s.antetitulo %}<p class="ante">— {{ s.antetitulo }}</p>{% endif %}
+      {%- if s.antetitulo %}<p class="ante">{{ s.antetitulo }}</p>{% endif %}
       <ul class="tipos">
         {%- for t in s.tipos %}
         <li data-tipo="{{ t.clave }}"><strong>{{ t.titulo }}</strong><span>{{ t.texto }}</span></li>
@@ -208,7 +208,7 @@
     <div class="escribe">
       <h2 class="titular">{{ s.titulo }}</h2>
       <a class="correo-grande" data-mailto href="mailto:{{ aj.correo }}">{{ aj.correo }}</a>
-      <a class="btn btn-rojo" data-mailto href="mailto:{{ aj.correo }}">{{ s.boton_texto }}</a>
+      <a class="btn btn-principal" data-mailto href="mailto:{{ aj.correo }}">{{ s.boton_texto }}</a>
       {%- if s.ayuda %}<p class="ayuda">{% for l in s.ayuda | lineas %}{{ l }}<br>{% endfor %}</p>{% endif %}
     </div>
   </div>

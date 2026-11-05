@@ -15,7 +15,7 @@ permalink: "{{ n.salida }}"
 {% block contenido %}
 <article class="articulo">
   <div class="ancho ancho-texto">
-    <p class="ante">— <a href="{{ sitio.ajustes[idioma].ruta_noticias }}">{{ sitio.ajustes[idioma].titulo_noticias }}</a> · <time datetime="{{ n.fecha }}">{{ n.fecha | fecha(idioma) }}</time></p>
+    <p class="ante"><a href="{{ sitio.ajustes[idioma].ruta_noticias }}">{{ sitio.ajustes[idioma].titulo_noticias }}</a> • <time datetime="{{ n.fecha }}">{{ n.fecha | fecha(idioma) }}</time></p>
     <h1 class="portada-titulo">{{ n.titulo }}</h1>
     {%- if n.resumen %}<p class="portada-sub">{{ n.resumen }}</p>{% endif %}
   </div>

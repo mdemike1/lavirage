@@ -27,14 +27,14 @@
       "titulo": "Tot el que genera la teva cursa\ni que algú pagaria\nper tenir.",
       "cuerpo": "<p>El nom al cartell. La porta del cotxe. La carpa al costat del parc d'assistència. La samarreta que la gent s'endú a casa. El sopar de dissabte al vespre. <strong>Tot això té un preu</strong>, i gairebé mai no es ven sencer.</p><p>Si organitzes un ral·li, una prova en circuit o un esdeveniment de club, aquests drets són teus. <strong>La nostra feina és vendre'ls.</strong></p>",
       "firma": "",
-      "fondo": "blanco"
+      "fondo": "negro"
     },
     {
       "tipo": "lista",
       "antetitulo": "EL QUE COMERCIALITZEM",
       "titulo": "El que venem.",
-      "subtitulo": "UN PER UN · PER ESDEVENIMENT",
-      "fondo": "negro",
+      "subtitulo": "UN PER UN • PER ESDEVENIMENT",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Patrocini",
@@ -54,7 +54,7 @@
         {
           "titulo": "Hospitality",
           "texto": "Un lloc ben triat, bona taula i bona companyia per als convidats d'una marca. Rebre com a la Fórmula 1, amb la pols del ral·li.",
-          "etiqueta": "Esdeveniments · Marques"
+          "etiqueta": "Esdeveniments • Marques"
         },
         {
           "titulo": "Tota la resta",
@@ -69,7 +69,7 @@
       "titulo": "A èxit, amb un\npercentatge pactat.",
       "subtitulo": "",
       "estilo": "numerado",
-      "fondo": "gris",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Una part del que venem",
@@ -86,7 +86,7 @@
       "antetitulo": "PER QUÈ NOSALTRES",
       "titulo": "El ral·li, per dins.\nVenut com la F1.",
       "subtitulo": "LA TESI DE LA CASA",
-      "fondo": "blanco",
+      "fondo": "negro",
       "items": [
         {
           "etiqueta": "01",

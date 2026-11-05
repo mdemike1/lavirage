@@ -27,14 +27,14 @@
       "titulo": "Todo lo que tu carrera genera\ny alguien pagaría\npor tener.",
       "cuerpo": "<p>El nombre en el cartel. La puerta del coche. La carpa junto al parque de asistencia. La camiseta que se lleva la gente a casa. La cena del sábado por la noche. <strong>Todo eso tiene un precio</strong>, y casi nunca se vende entero.</p><p>Si organizas un rally, una prueba en circuito o un evento de club, esos derechos son tuyos. <strong>Nuestro trabajo es venderlos.</strong></p>",
       "firma": "",
-      "fondo": "blanco"
+      "fondo": "negro"
     },
     {
       "tipo": "lista",
       "antetitulo": "LO QUE COMERCIALIZAMOS",
       "titulo": "Lo que vendemos.",
-      "subtitulo": "UNO A UNO · POR EVENTO",
-      "fondo": "negro",
+      "subtitulo": "UNO A UNO • POR EVENTO",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Patrocinio",
@@ -54,7 +54,7 @@
         {
           "titulo": "Hospitality",
           "texto": "Un sitio bien elegido, buena mesa y buena compañía para los invitados de una marca. Recibir como en la Fórmula 1, con el polvo del rally.",
-          "etiqueta": "Eventos · Marcas"
+          "etiqueta": "Eventos • Marcas"
         },
         {
           "titulo": "Todo lo demás",
@@ -69,7 +69,7 @@
       "titulo": "A éxito, con un\nporcentaje pactado.",
       "subtitulo": "",
       "estilo": "numerado",
-      "fondo": "gris",
+      "fondo": "carbon",
       "items": [
         {
           "titulo": "Una parte de lo que vendemos",
@@ -86,7 +86,7 @@
       "antetitulo": "POR QUÉ NOSOTROS",
       "titulo": "El rally, por dentro.\nVendido como la F1.",
       "subtitulo": "LA TESIS DE LA CASA",
-      "fondo": "blanco",
+      "fondo": "negro",
       "items": [
         {
           "etiqueta": "01",
