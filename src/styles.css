@@ -329,3 +329,5 @@ main{padding-top:0}
 .portada:has(.portada-video) .ante{color:#C9C9CC}
 .llamada .botones{justify-content:center}
 @media (max-width:860px){.paso{padding-bottom:40px}}
+/* el vídeo actual es de baja resolución: más oscuro y menos saturado para que no se note al estirarlo */
+.portada:has(.portada-video) .portada-video video{filter:saturate(.6) contrast(1.08) brightness(.82)}
